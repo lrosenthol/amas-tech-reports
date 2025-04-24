@@ -5,8 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content="Leonard Rosenthol &lt;lrosenth@adobe.com&gt;, Touradj Ebrahimi &lt;touradj.ebrahimi@epfl.ch&gt;">
-<title>Technical Report on AI and Multimedia Authenticity Standards</title>
+<title>Technical Report on AI and Multimedia Authenticity Standards: Mapping the standardisation landscape</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -437,71 +436,48 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Technical Report on AI and Multimedia Authenticity Standards</h1>
+<h1>Technical Report on AI and Multimedia Authenticity Standards: Mapping the standardisation landscape</h1>
 <div class="details">
-<span id="author" class="author">Leonard Rosenthol &lt;lrosenth@adobe.com&gt;, Touradj Ebrahimi &lt;touradj.ebrahimi@epfl.ch&gt;</span><br>
 <span id="revnumber">version 1.0,</span>
-<span id="revdate">2025-03-28</span>
-<br><span id="revremark">Draft</span>
+<span id="revdate">2025-04-24</span>
+<br><span id="revremark">Draft 0.2</span>
 </div>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sect1">
+<h2 id="_executive_summary">Executive Summary</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>TBD</p>
+</div>
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_introduction">Introduction</a></li>
-<li><a href="#_content_provenance">1. Content Provenance</a>
+<li><a href="#_executive_summary">Executive Summary</a></li>
+<li><a href="#_introduction">1. Introduction</a>
 <ul class="sectlevel2">
-<li><a href="#_content_credentials_c2pa">1.1. Content Credentials (C2PA)</a></li>
-<li><a href="#_content_credentials_iso_22144">1.2. Content Credentials (ISO 22144)</a></li>
-<li><a href="#_jpeg_trust">1.3. JPEG Trust</a></li>
-<li><a href="#_originator_profile">1.4. Originator Profile</a></li>
-<li><a href="#_prov">1.5. PROV</a></li>
+<li><a href="#_about_the_amas_initiative">1.1. About the AMAS initiative</a></li>
+<li><a href="#_approach">1.2. Approach</a></li>
 </ul>
 </li>
-<li><a href="#_trust_and_authenticity">2. Trust and Authenticity</a>
+<li><a href="#_categories_of_standards">2. Categories of Standards</a>
 <ul class="sectlevel2">
-<li><a href="#_h_mmauth_framework_for_authentication_of_multimedia_content">2.1. H.MMAUTH: Framework for Authentication of Multimedia Content</a></li>
-<li><a href="#_overview_of_trustworthiness_in_artificial_intelligence">2.2. Overview of trustworthiness in artificial intelligence</a></li>
-<li><a href="#_framework_for_trust_based_media_services">2.3. Framework for trust-based media services</a></li>
-<li><a href="#_trust_txt">2.4. Trust.txt</a></li>
-<li><a href="#_chromium_reputation_provider_framework">2.5. Chromium Reputation Provider Framework</a></li>
+<li><a href="#_content_provenance">2.1. Content Provenance</a></li>
+<li><a href="#_trust_and_authenticity">2.2. Trust and Authenticity</a></li>
+<li><a href="#_asset_identifiers">2.3. Asset Identifiers</a></li>
+<li><a href="#_opt_out_mechanisms">2.4. Opt-Out Mechanisms</a></li>
+<li><a href="#_watermarking">2.5. Watermarking</a></li>
 </ul>
 </li>
-<li><a href="#_asset_identifiers">3. Asset Identifiers</a>
-<ul class="sectlevel2">
-<li><a href="#_international_standard_content_code_iscc">3.1. International Standard Content Code (ISCC)</a></li>
-<li><a href="#_unique_media_identifier_umid">3.2. Unique Media Identifier (UMid)</a></li>
-</ul>
-</li>
-<li><a href="#_opt_out_mechanisms">4. Opt-Out Mechanisms</a>
-<ul class="sectlevel2">
-<li><a href="#_tdm_reservation_protocol">4.1. TDM Reservation Protocol</a></li>
-<li><a href="#_spawning_ai_txt">4.2. Spawning ai.txt</a></li>
-<li><a href="#_robots_txt">4.3. Robots.txt</a></li>
-<li><a href="#_vocabulary_for_expressing_content_preferences_for_ai">4.4. Vocabulary for Expressing Content Preferences for AI</a></li>
-</ul>
-</li>
-<li><a href="#_watermarking">5. Watermarking</a>
-<ul class="sectlevel2">
-<li><a href="#_open_binding_of_content_identifiers_obid">5.1. Open Binding of Content Identifiers (OBID)</a></li>
-<li><a href="#_x_ig_dw_implementation_guidelines_for_digital_watermarking">5.2. X.ig-dw: Implementation Guidelines for Digital Watermarking</a></li>
-<li><a href="#_specification_of_digital_rights_management_drm_technology_for_digital_publications">5.3. Specification of Digital Rights Management (DRM) Technology for Digital Publications</a></li>
-<li><a href="#_a_review_of_medical_image_watermarking_requirements_for_teleradiology">5.4. A Review of Medical Image Watermarking Requirements for Teleradiology</a></li>
-<li><a href="#_evaluation_tools_for_persistent_association_technologies">5.5. Evaluation Tools for Persistent Association Technologies</a></li>
-<li><a href="#_ieee_draft_standard_for_evaluation_method_of_robustness_of_digital_watermarking_implementation_in_digital_contents">5.6. IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents</a></li>
-</ul>
-</li>
-<li><a href="#_conclusion">6. Conclusion</a></li>
+<li><a href="#_standardization_map">3. Standardization Map</a></li>
+<li><a href="#_conclusion_and_next_steps">4. Conclusion and next steps</a></li>
 </ul>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_introduction">Introduction</h2>
+<h2 id="_introduction">1. Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This report provides a comprehensive overview of various standards and specifications related to digital media, focusing on content provenance, trust authenticity, asset identifiers, opt-out mechanisms, and watermarking. These standards are essential for ensuring the authenticity of both synthetic and non-synthetic digital content. As generative AI continues to evolve, the need for robust standards becomes increasingly critical to protect the interests of creators, consumers, and organizations.</p>
@@ -509,16 +485,30 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>The standards discussed in this report are developed by various Standard Development Organizations (SDOs) and groups, each contributing to different aspects of AI and authenticity. By adhering to these guidelines, organizations can maintain the trustworthiness and provenance of their digital assets, ensuring that content remains authentic and traceable throughout its lifecycle.</p>
 </div>
+<div class="sect2">
+<h3 id="_about_the_amas_initiative">1.1. About the AMAS initiative</h3>
+<div class="paragraph">
+<p>TBD</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_approach">1.2. Approach</h3>
+<div class="paragraph">
+<p>The approach taken in this report involves a thorough review of existing standards and specifications related to digital media. The focus is on identifying key areas where standards already exist, and from that, what are still are needed to ensure the authenticity and integrity of digital content. From that review, we have broken this report into the categories: content provenance, trust and authenticity, asset identifiers, opt-out mechanisms, and watermarking.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_content_provenance">1. Content Provenance</h2>
+<h2 id="_categories_of_standards">2. Categories of Standards</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_content_provenance">2.1. Content Provenance</h3>
 <div class="paragraph">
 <p>Content provenance refers to the documentation of the origin and history of digital content. It is crucial for verifying the authenticity and integrity of digital assets. Provenance information helps in tracking the creation, modification, and distribution of content, providing a transparent record that can be used to establish trust and accountability. This is particularly important in contexts where the authenticity of content is paramount, such as in journalism, scientific research, and digital art.</p>
 </div>
-<div class="sect2">
-<h3 id="_content_credentials_c2pa">1.1. Content Credentials (C2PA)</h3>
+<div class="sect3">
+<h4 id="_content_credentials_c2pa">2.1.1. Content Credentials (C2PA)</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -528,13 +518,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html">C2PA Specification</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This standard provides guidelines for embedding content credentials in digital media to ensure provenance. It outlines methods for attaching metadata to digital assets, which can include information about the creator, creation date, and any modifications made to the content. This helps in maintaining a verifiable record of the content&#8217;s history.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This standard provides guidelines for embedding content credentials in digital media to ensure provenance. It outlines methods for attaching metadata to digital assets, which can include information about the creator, creation date, and any modifications made to the content. This helps in maintaining a verifiable record of the content&#8217;s history.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_content_credentials_iso_22144">1.2. Content Credentials (ISO 22144)</h3>
+<div class="sect3">
+<h4 id="_content_credentials_iso_22144">2.1.2. Content Credentials (ISO 22144)</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -544,13 +537,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://www.iso.org/standard/90726.html">ISO 22144</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This ISO standard outlines methods for documenting content credentials to maintain provenance. It specifies the types of metadata that should be included and the formats for storing this information. By following these guidelines, organizations can ensure that their digital content is traceable and its authenticity can be verified.</p>
+<p><strong>Status:</strong> In progress</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This ISO standard outlines methods for documenting content credentials to maintain provenance. It specifies the types of metadata that should be included and the formats for storing this information. By following these guidelines, organizations can ensure that their digital content is traceable and its authenticity can be verified.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_jpeg_trust">1.3. JPEG Trust</h3>
+<div class="sect3">
+<h4 id="_jpeg_trust">2.1.3. JPEG Trust</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -560,13 +556,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://www.iso.org/standard/86831.html">ISO 21617-1:2025</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This standard focuses on ensuring trust in JPEG images through provenance documentation. It provides a framework for embedding provenance information directly into JPEG files, allowing users to verify the authenticity and history of the images. This is particularly useful in contexts where image manipulation is common, such as in digital forensics and media.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This standard focuses on ensuring trust in JPEG images through provenance documentation. It provides a framework for embedding provenance information directly into JPEG files, allowing users to verify the authenticity and history of the images. This is particularly useful in contexts where image manipulation is common, such as in digital forensics and media.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_originator_profile">1.4. Originator Profile</h3>
+<div class="sect3">
+<h4 id="_originator_profile">2.1.4. Originator Profile</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -576,13 +575,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://originator-profile.org/en-US/">Originator Profile</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This specification provides a framework for documenting the origin of digital content. It includes guidelines for creating and maintaining profiles that capture detailed information about the content&#8217;s creator and its creation process. This helps in establishing a clear and verifiable record of the content&#8217;s provenance.</p>
+<p><strong>Status:</strong> Published, In progress, Initiated</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This specification provides a framework for documenting the origin of digital content. It includes guidelines for creating and maintaining profiles that capture detailed information about the content&#8217;s creator and its creation process. This helps in establishing a clear and verifiable record of the content&#8217;s provenance.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_prov">1.5. PROV</h3>
+<div class="sect3">
+<h4 id="_prov">2.1.5. PROV</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -592,34 +594,38 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://openprovenance.org/">PROV</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This standard offers a model for representing provenance information in digital content. It defines a set of concepts and relationships that can be used to describe the history of a digital asset, including its creation, modification, and distribution. This model can be applied across various types of digital content, providing a flexible and comprehensive approach to provenance documentation.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This standard offers a model for representing provenance information in digital content. It defines a set of concepts and relationships that can be used to describe the history of a digital asset, including its creation, modification, and distribution. This model can be applied across various types of digital content, providing a flexible and comprehensive approach to provenance documentation.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_trust_and_authenticity">2. Trust and Authenticity</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_trust_and_authenticity">2.2. Trust and Authenticity</h3>
 <div class="paragraph">
 <p>Trust and authenticity standards ensure that digital content is genuine and has not been tampered with. These standards are essential for maintaining the integrity of digital media, especially in environments where content manipulation is a significant concern. By implementing trust and authenticity measures, organizations can protect their digital assets from unauthorized alterations and ensure that consumers can rely on the content they receive.</p>
 </div>
-<div class="sect2">
-<h3 id="_h_mmauth_framework_for_authentication_of_multimedia_content">2.1. H.MMAUTH: Framework for Authentication of Multimedia Content</h3>
+<div class="sect3">
+<h4 id="_h_mmauth_framework_for_authentication_of_multimedia_content">2.2.1. H.MMAUTH: Framework for Authentication of Multimedia Content</h4>
 <div class="ulist">
 <ul>
 <li>
 <p><strong>SDO/Group:</strong> ITU-T/SG-13 &amp; ISO/IEC JTC 1/SC29</p>
 </li>
 <li>
-<p><strong>Details:</strong> This framework provides guidelines for authenticating multimedia content. It includes methods for verifying the integrity of digital media files and ensuring that they have not been altered since their creation. This helps in maintaining the trustworthiness of multimedia content in various applications, such as broadcasting and digital archiving.</p>
+<p><strong>Status:</strong> Initiated</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This framework provides guidelines for authenticating multimedia content. It includes methods for verifying the integrity of digital media files and ensuring that they have not been altered since their creation. This helps in maintaining the trustworthiness of multimedia content in various applications, such as broadcasting and digital archiving.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_overview_of_trustworthiness_in_artificial_intelligence">2.2. Overview of trustworthiness in artificial intelligence</h3>
+<div class="sect3">
+<h4 id="_overview_of_trustworthiness_in_artificial_intelligence">2.2.2. Overview of trustworthiness in artificial intelligence</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -629,13 +635,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://www.iso.org/standard/77608.html?browse=tc">ISO/IEC TR 24028:2020</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This standard offers an overview of trustworthiness in artificial intelligence. It provides guidelines for assessing the reliability and integrity of AI systems, ensuring that they produce trustworthy results. This is crucial in applications where AI is used to generate or manipulate digital content, as it helps in maintaining the authenticity of the output.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This standard offers an overview of trustworthiness in artificial intelligence. It provides guidelines for assessing the reliability and integrity of AI systems, ensuring that they produce trustworthy results. This is crucial in applications where AI is used to generate or manipulate digital content, as it helps in maintaining the authenticity of the output.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_framework_for_trust_based_media_services">2.3. Framework for trust-based media services</h3>
+<div class="sect3">
+<h4 id="_framework_for_trust_based_media_services">2.2.3. Framework for trust-based media services</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -645,13 +654,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://standards.globalspec.com/std/13059031/itu-t-y-3054">ITU-T Y.3054</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This framework provides guidelines for trust-based media services. It includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This framework provides guidelines for trust-based media services. It includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_trust_txt">2.4. Trust.txt</h3>
+<div class="sect3">
+<h4 id="_trust_txt">2.2.4. Trust.txt</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -661,13 +673,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://journallist.net/reference-document-for-trust-txt-specifications">Trust.txt</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This specification outlines methods for establishing trust in digital content. It includes guidelines for creating and maintaining trust.txt files, which can be used to document the trustworthiness of digital assets. This helps in ensuring that users can verify the authenticity of the content they receive.</p>
+<p><strong>Status:</strong> Initiated</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This specification outlines methods for establishing trust in digital content. It includes guidelines for creating and maintaining trust.txt files, which can be used to document the trustworthiness of digital assets. This helps in ensuring that users can verify the authenticity of the content they receive.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_chromium_reputation_provider_framework">2.5. Chromium Reputation Provider Framework</h3>
+<div class="sect3">
+<h4 id="_chromium_reputation_provider_framework">2.2.5. Chromium Reputation Provider Framework</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -678,21 +693,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <a href="https://docs.google.com/document/d/1wTFafdHa-o3OYCKmYzEJGROrpSoxXN6DNXPltzdiUzg/ed">Chromium Reputation Provider Framework</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This framework provides guidelines for reputation management in digital content. It includes methods for assessing and maintaining the reputation of digital assets, ensuring that users can trust the content they access. This is particularly important in contexts where reputation is a key factor in determining the value and reliability of digital media.</p>
+<p><strong>Status:</strong> Initiated</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This framework provides guidelines for reputation management in digital content. It includes methods for assessing and maintaining the reputation of digital assets, ensuring that users can trust the content they access. This is particularly important in contexts where reputation is a key factor in determining the value and reliability of digital media.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_asset_identifiers">3. Asset Identifiers</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_asset_identifiers">2.3. Asset Identifiers</h3>
 <div class="paragraph">
 <p>Asset identifiers are unique codes assigned to digital content to ensure proper management and tracking. These identifiers help in maintaining a clear and organized record of digital assets, making it easier to manage and distribute content. By using asset identifiers, organizations can ensure that their digital media is properly tracked and accounted for, reducing the risk of loss or unauthorized use.</p>
 </div>
-<div class="sect2">
-<h3 id="_international_standard_content_code_iscc">3.1. International Standard Content Code (ISCC)</h3>
+<div class="sect3">
+<h4 id="_international_standard_content_code_iscc">2.3.1. International Standard Content Code (ISCC)</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -702,13 +718,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://www.iso.org/standard/77899.html">ISO 24138</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This standard provides a unique identifier for digital content. It includes guidelines for creating and maintaining ISCC codes, which can be used to track and manage digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This standard provides a unique identifier for digital content. It includes guidelines for creating and maintaining ISCC codes, which can be used to track and manage digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_unique_media_identifier_umid">3.2. Unique Media Identifier (UMid)</h3>
+<div class="sect3">
+<h4 id="_unique_media_identifier_umid">2.3.2. Unique Media Identifier (UMid)</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -718,21 +737,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://www.din.de/en/din-and-our-partners/press/press-releases/iwa-44-unique-me">UMid</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This specification offers a unique identifier for media content. It includes methods for creating and maintaining UMid codes, which can be used to track and manage media assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This specification offers a unique identifier for media content. It includes methods for creating and maintaining UMid codes, which can be used to track and manage media assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_opt_out_mechanisms">4. Opt-Out Mechanisms</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_opt_out_mechanisms">2.4. Opt-Out Mechanisms</h3>
 <div class="paragraph">
 <p>Opt-out mechanisms allow users to exclude their content from certain processes, such as data mining or AI training. These mechanisms are essential for protecting the privacy and rights of content creators, ensuring that their digital assets are not used without their consent. By implementing opt-out mechanisms, organizations can provide users with greater control over their content and ensure that their rights are respected.</p>
 </div>
-<div class="sect2">
-<h3 id="_tdm_reservation_protocol">4.1. TDM Reservation Protocol</h3>
+<div class="sect3">
+<h4 id="_tdm_reservation_protocol">2.4.1. TDM Reservation Protocol</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -742,13 +762,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://www.w3.org/ns/tdmrep/">TDMRep</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This protocol provides guidelines for reserving content from text and data mining. It includes methods for creating and maintaining TDMRep files, which can be used to document the reservation of digital assets. This helps in ensuring that content is not used for data mining without the creator&#8217;s consent.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This protocol provides guidelines for reserving content from text and data mining. It includes methods for creating and maintaining TDMRep files, which can be used to document the reservation of digital assets. This helps in ensuring that content is not used for data mining without the creator&#8217;s consent.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_spawning_ai_txt">4.2. Spawning ai.txt</h3>
+<div class="sect3">
+<h4 id="_spawning_ai_txt">2.4.2. Spawning ai.txt</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -758,13 +781,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://spawning.ai/ai-txt">Spawning ai.txt</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This specification offers a method for opting out of AI training. It includes guidelines for creating and maintaining ai.txt files, which can be used to document the opt-out of digital assets. This helps in ensuring that content is not used for AI training without the creator&#8217;s consent.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This specification offers a method for opting out of AI training. It includes guidelines for creating and maintaining ai.txt files, which can be used to document the opt-out of digital assets. This helps in ensuring that content is not used for AI training without the creator&#8217;s consent.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_robots_txt">4.3. Robots.txt</h3>
+<div class="sect3">
+<h4 id="_robots_txt">2.4.3. Robots.txt</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -774,13 +800,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://datatracker.ietf.org/doc/html/rfc9309">RFC 9309</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This standard provides guidelines for excluding content from web crawlers. It includes methods for creating and maintaining robots.txt files, which can be used to document the exclusion of digital assets. This helps in ensuring that content is not accessed by web crawlers without the creator&#8217;s consent.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This standard provides guidelines for excluding content from web crawlers. It includes methods for creating and maintaining robots.txt files, which can be used to document the exclusion of digital assets. This helps in ensuring that content is not accessed by web crawlers without the creator&#8217;s consent.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_vocabulary_for_expressing_content_preferences_for_ai">4.4. Vocabulary for Expressing Content Preferences for AI</h3>
+<div class="sect3">
+<h4 id="_vocabulary_for_expressing_content_preferences_for_ai">2.4.4. Vocabulary for Expressing Content Preferences for AI</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -791,21 +820,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <a href="https://datatracker.ietf.org/doc/draft-vaughan-aipref-vocab/">draft-vaughan-aipref-vocab-00</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This draft offers a vocabulary for expressing content preferences for AI. It includes guidelines for creating and maintaining preference files, which can be used to document the preferences of digital assets. This helps in ensuring that content is used in accordance with the creator&#8217;s preferences.</p>
+<p><strong>Status:</strong> Withdrawn</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This draft offers a vocabulary for expressing content preferences for AI. It includes guidelines for creating and maintaining preference files, which can be used to document the preferences of digital assets. This helps in ensuring that content is used in accordance with the creator&#8217;s preferences.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_watermarking">5. Watermarking</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_watermarking">2.5. Watermarking</h3>
 <div class="paragraph">
 <p>Watermarking standards ensure that digital content is marked in a way that can be used to verify its authenticity and ownership. These standards are essential for protecting the rights of content creators and ensuring that their digital assets are not used without their consent. By implementing watermarking measures, organizations can provide users with greater control over their content and ensure that their rights are respected.</p>
 </div>
-<div class="sect2">
-<h3 id="_open_binding_of_content_identifiers_obid">5.1. Open Binding of Content Identifiers (OBID)</h3>
+<div class="sect3">
+<h4 id="_open_binding_of_content_identifiers_obid">2.5.1. Open Binding of Content Identifiers (OBID)</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -815,13 +845,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://pub.smpte.org/pub/st2112-10/st2112-10-2020.pdf">SMPTE ST 2112-10:2020</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This standard provides guidelines for binding content identifiers to digital media. It includes methods for creating and maintaining OBID files, which can be used to document the binding of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This standard provides guidelines for binding content identifiers to digital media. It includes methods for creating and maintaining OBID files, which can be used to document the binding of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_x_ig_dw_implementation_guidelines_for_digital_watermarking">5.2. X.ig-dw: Implementation Guidelines for Digital Watermarking</h3>
+<div class="sect3">
+<h4 id="_x_ig_dw_implementation_guidelines_for_digital_watermarking">2.5.2. X.ig-dw: Implementation Guidelines for Digital Watermarking</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -831,13 +864,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://www.itu.int/md/T22-SG17-240902-TD-PLEN-2413/en">2413-PLEN</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This guideline offers methods for implementing digital watermarking. It includes guidelines for creating and maintaining watermark files, which can be used to document the watermarking of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This guideline offers methods for implementing digital watermarking. It includes guidelines for creating and maintaining watermark files, which can be used to document the watermarking of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_specification_of_digital_rights_management_drm_technology_for_digital_publications">5.3. Specification of Digital Rights Management (DRM) Technology for Digital Publications</h3>
+<div class="sect3">
+<h4 id="_specification_of_digital_rights_management_drm_technology_for_digital_publications">2.5.3. Specification of Digital Rights Management (DRM) Technology for Digital Publications</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -847,13 +883,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://www.iso.org/standard/84956.html">ISO/IEC 23078-1:2024</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This standard provides an overview of DRM technologies for digital publications. It includes guidelines for creating and maintaining DRM files, which can be used to document the DRM of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This standard provides an overview of DRM technologies for digital publications. It includes guidelines for creating and maintaining DRM files, which can be used to document the DRM of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_a_review_of_medical_image_watermarking_requirements_for_teleradiology">5.4. A Review of Medical Image Watermarking Requirements for Teleradiology</h3>
+<div class="sect3">
+<h4 id="_a_review_of_medical_image_watermarking_requirements_for_teleradiology">2.5.4. A Review of Medical Image Watermarking Requirements for Teleradiology</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -863,13 +902,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3597963/">Medical Image Watermarking</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This review outlines the requirements for watermarking medical images for teleradiology. It includes guidelines for creating and maintaining watermark files, which can be used to document the watermarking of medical images. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This review outlines the requirements for watermarking medical images for teleradiology. It includes guidelines for creating and maintaining watermark files, which can be used to document the watermarking of medical images. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_evaluation_tools_for_persistent_association_technologies">5.5. Evaluation Tools for Persistent Association Technologies</h3>
+<div class="sect3">
+<h4 id="_evaluation_tools_for_persistent_association_technologies">2.5.5. Evaluation Tools for Persistent Association Technologies</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -879,13 +921,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://www.iso.org/obp/ui/es/#iso:std:iso-iec:tr:21000:-11:ed-1:v1:en">ISO/IEC TR 21000-11:2004</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This standard provides tools for evaluating persistent association technologies. It includes guidelines for creating and maintaining evaluation files, which can be used to document the evaluation of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
+<p><strong>Status:</strong> Published</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This standard provides tools for evaluating persistent association technologies. It includes guidelines for creating and maintaining evaluation files, which can be used to document the evaluation of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_ieee_draft_standard_for_evaluation_method_of_robustness_of_digital_watermarking_implementation_in_digital_contents">5.6. IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents</h3>
+<div class="sect3">
+<h4 id="_ieee_draft_standard_for_evaluation_method_of_robustness_of_digital_watermarking_implementation_in_digital_contents">2.5.6. IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -895,18 +940,28 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://standards.ieee.org/ieee/3361/11224/">IEEE P3361</a></p>
 </li>
 <li>
-<p><strong>Details:</strong> This draft standard offers methods for evaluating the robustness of digital watermarking. It includes guidelines for creating and maintaining evaluation files, which can be used to document the evaluation of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
+<p><strong>Status:</strong> In progress</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This draft standard offers methods for evaluating the robustness of digital watermarking. It includes guidelines for creating and maintaining evaluation files, which can be used to document the evaluation of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 </div>
+</div>
 <div class="sect1">
-<h2 id="_conclusion">6. Conclusion</h2>
+<h2 id="_standardization_map">3. Standardization Map</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion_and_next_steps">4. Conclusion and next steps</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The standards and specifications outlined in this report are essential for ensuring the integrity, authenticity, and proper management of digital content. By adhering to these guidelines, organizations can maintain the trustworthiness and provenance of their digital assets, ensuring that content remains authentic and traceable throughout its lifecycle. As digital media continues to evolve, the need for robust standards becomes increasingly critical to protect the interests of creators, consumers, and organizations.</p>
+<p>TBD</p>
 </div>
 </div>
 </div>
@@ -914,7 +969,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2025-03-28 00:24:00 UTC
+Last updated 2025-04-24 23:24:07 UTC
 </div>
 </div>
 </body>
