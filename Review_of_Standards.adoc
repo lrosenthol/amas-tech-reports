@@ -1,7 +1,7 @@
 = Technical Report on AI and Multimedia Authenticity Standards: Mapping the standardisation landscape
 :revnumber: 1.0
 :revdate: {docdate}
-:revremark: Draft 0.2
+:revremark: Draft 0.3
 // :author: Leonard Rosenthol <lrosenth@adobe.com>, Touradj Ebrahimi <touradj.ebrahimi@epfl.ch>
 :toc: macro
 :outlinelevels: 3 
