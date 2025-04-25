@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>Technical Report on AI and Multimedia Authenticity Standards</title>
+<subtitle>Mapping the standardisation landscape</subtitle>
+<date>2025-04-25</date>
+<revhistory>
+<revision>
+<revnumber>1.0</revnumber>
+<date>2025-04-25</date>
+<revremark>Draft 0.2</revremark>
+</revision>
+</revhistory>
+</info>
+<section xml:id="_executive_summary">
+<title>Executive Summary</title>
+<simpara>TBD</simpara>
+
+<simpara><?asciidoc-pagebreak?></simpara>
+</section>
+<section xml:id="_introduction">
+<title>Introduction</title>
+<simpara>This report provides a comprehensive overview of various standards and specifications related to digital media, focusing on content provenance, trust authenticity, asset identifiers, opt-out mechanisms, and watermarking. These standards are essential for ensuring the authenticity of both synthetic and non-synthetic digital content. As generative AI continues to evolve, the need for robust standards becomes increasingly critical to protect the interests of creators, consumers, and organizations.</simpara>
+<simpara>The standards discussed in this report are developed by various Standard Development Organizations (SDOs) and groups, each contributing to different aspects of AI and authenticity. By adhering to these guidelines, organizations can maintain the trustworthiness and provenance of their digital assets, ensuring that content remains authentic and traceable throughout its lifecycle.</simpara>
+<section xml:id="_about_the_amas_initiative">
+<title>About the AMAS initiative</title>
+<simpara>TBD</simpara>
+</section>
+<section xml:id="_methodology">
+<title>Methodology</title>
+<simpara>The approach taken in this report involves a thorough review of existing standards and specifications related to digital media. The focus is on identifying key areas where standards already exist, and from that, what are still are needed to ensure the authenticity and integrity of digital content. From that review, we have broken this report into the categories: content provenance, trust and authenticity, asset identifiers, opt-out mechanisms, and watermarking.</simpara>
+</section>
+</section>
+<section xml:id="_categories_of_standards">
+<title>Categories of Standards</title>
+<section xml:id="_content_provenance">
+<title>Content Provenance</title>
+<simpara>Content provenance refers to the documentation of the origin and history of digital content. It is crucial for verifying the authenticity and integrity of digital assets. Provenance information helps in tracking the creation, modification, and distribution of content, providing a transparent record that can be used to establish trust and accountability. This is particularly important in contexts where the authenticity of content is paramount, such as in journalism, scientific research, and digital art.</simpara>
+</section>
+<section xml:id="_trust_and_authenticity">
+<title>Trust and Authenticity</title>
+<simpara>Trust and authenticity standards ensure that digital content is genuine and has not been tampered with. These standards are essential for maintaining the integrity of digital media, especially in environments where content manipulation is a significant concern. By implementing trust and authenticity measures, organizations can protect their digital assets from unauthorized alterations and ensure that consumers can rely on the content they receive.</simpara>
+</section>
+<section xml:id="_asset_identifiers">
+<title>Asset Identifiers</title>
+<simpara>Asset identifiers are unique codes assigned to digital content to ensure proper management and tracking. These identifiers help in maintaining a clear and organized record of digital assets, making it easier to manage and distribute content. By using asset identifiers, organizations can ensure that their digital media is properly tracked and accounted for, reducing the risk of loss or unauthorized use.</simpara>
+</section>
+<section xml:id="_rights_declarations">
+<title>Rights Declarations</title>
+<section xml:id="_general_purpose">
+<title>General Purpose</title>
+<simpara>Rights declarations are formal statements that outline the rights and permissions associated with digital content. These declarations help in clarifying the ownership and usage rights of digital assets, providing a clear framework for how content can be used and shared. By establishing clear rights declarations, organizations can protect their intellectual property and ensure that their digital assets are used in accordance with their intended purpose.</simpara>
+</section>
+<section xml:id="_opt_out_mechanisms">
+<title>Opt-Out Mechanisms</title>
+<simpara>Opt-out mechanisms are a specialized category of rights declarations that allow users to exclude their content from certain processes, such as data mining or AI training. These mechanisms are essential for protecting the privacy and rights of content creators, ensuring that their digital assets are not used without their consent. By implementing opt-out mechanisms, organizations can provide users with greater control over their content and ensure that their rights are respected.</simpara>
+</section>
+</section>
+<section xml:id="_watermarking">
+<title>Watermarking</title>
+<simpara>Watermarking standards ensure that digital content is marked in a way that can be used to verify its authenticity and ownership. These standards are essential for protecting the rights of content creators and ensuring that their digital assets are not used without their consent. By implementing watermarking measures, organizations can provide users with greater control over their content and ensure that their rights are respected.</simpara>
+</section>
+<section xml:id="_overview_of_specifications">
+<title>Overview of Specifications</title>
+<section xml:id="_content_credentials_c2pa">
+<title>Content Credentials (C2PA)</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> C2PA</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html">C2PA Specification</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard provides guidelines for embedding content credentials in digital media to ensure provenance. It outlines methods for attaching metadata to digital assets, which can include information about the creator, creation date, and any modifications made to the content. This helps in maintaining a verifiable record of the content&#8217;s history.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_content_credentials_iso_22144">
+<title>Content Credentials (ISO 22144)</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO TC 171/SC 2</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.iso.org/standard/90726.html">ISO 22144</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> In progress</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This ISO standard outlines methods for documenting content credentials to maintain provenance. It specifies the types of metadata that should be included and the formats for storing this information. By following these guidelines, organizations can ensure that their digital content is traceable and its authenticity can be verified.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_jpeg_trust_part_1">
+<title>JPEG Trust Part 1</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 29/WG 1</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.iso.org/standard/86831.html">ISO 21617-1:2025</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard focuses on ensuring trust in JPEG images through provenance documentation. It provides a framework for embedding provenance information directly into JPEG files, allowing users to verify the authenticity and history of the images. This is particularly useful in contexts where image manipulation is common, such as in digital forensics and media.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_jpeg_trust_part_2">
+<title>JPEG Trust Part 2</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 29/WG 1</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> In Progress</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard introduces a series of Trust Profiles that can be used either as is or as starting points to establish profiles for use in specific workflows.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_jpeg_trust_part_3">
+<title>JPEG Trust Part 3</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 29/WG 1</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Initiated</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard will provide a review of image watermarking technologies.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_cawg_metadata">
+<title>CAWG Metadata</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> Creation Assertions Working Group, as part of DIF</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://cawg.io/metadata/1.1-draft/">CAWG Metadata</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published, with a new version in progress</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This specification provides a framework for expressing metadata that captures detailed information about the content, including ownership and authorship.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_originator_profile">
+<title>Originator Profile</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> Originator Profile</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://originator-profile.org/en-US/">Originator Profile</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published, In progress, Initiated</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This specification provides a framework for documenting the origin of digital content. It includes guidelines for creating and maintaining profiles that capture detailed information about the content&#8217;s creator and its creation process. This helps in establishing a clear and verifiable record of the content&#8217;s provenance.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_prov">
+<title>PROV</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> Open Provenance</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://openprovenance.org/">PROV</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard offers a model for representing provenance information in digital content. It defines a set of concepts and relationships that can be used to describe the history of a digital asset, including its creation, modification, and distribution. This model can be applied across various types of digital content, providing a flexible and comprehensive approach to provenance documentation.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_h_mmauth_framework_for_authentication_of_multimedia_content">
+<title>H.MMAUTH: Framework for Authentication of Multimedia Content</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ITU-T/SG-13 &amp; ISO/IEC JTC 1/SC29</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Initiated</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This framework provides guidelines for authenticating multimedia content. It includes methods for verifying the integrity of digital media files and ensuring that they have not been altered since their creation. This helps in maintaining the trustworthiness of multimedia content in various applications, such as broadcasting and digital archiving.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_overview_of_trustworthiness_in_artificial_intelligence">
+<title>Overview of trustworthiness in artificial intelligence</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 42</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.iso.org/standard/77608.html?browse=tc">ISO/IEC TR 24028:2020</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard offers an overview of trustworthiness in artificial intelligence. It provides guidelines for assessing the reliability and integrity of AI systems, ensuring that they produce trustworthy results. This is crucial in applications where AI is used to generate or manipulate digital content, as it helps in maintaining the authenticity of the output.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_framework_for_trust_based_media_services">
+<title>Framework for trust-based media services</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ITU-T</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://standards.globalspec.com/std/13059031/itu-t-y-3054">ITU-T Y.3054</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This framework provides guidelines for trust-based media services. It includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_trust_txt">
+<title>Trust.txt</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> JournalList</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://journallist.net/reference-document-for-trust-txt-specifications">Trust.txt</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Initiated</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This specification outlines methods for establishing trust in digital content. It includes guidelines for creating and maintaining trust.txt files, which can be used to document the trustworthiness of digital assets. This helps in ensuring that users can verify the authenticity of the content they receive.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_chromium_reputation_provider_framework">
+<title>Chromium Reputation Provider Framework</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> Google&#8217;s Chrome Team</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis>
+<link xl:href="https://docs.google.com/document/d/1wTFafdHa-o3OYCKmYzEJGROrpSoxXN6DNXPltzdiUzg/ed">Chromium Reputation Provider Framework</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Initiated</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This framework provides guidelines for reputation management in digital content. It includes methods for assessing and maintaining the reputation of digital assets, ensuring that users can trust the content they access. This is particularly important in contexts where reputation is a key factor in determining the value and reliability of digital media.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_international_standard_content_code_iscc">
+<title>International Standard Content Code (ISCC)</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/TC 46/SC 9</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.iso.org/standard/77899.html">ISO 24138</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard provides a unique identifier for digital content. It includes guidelines for creating and maintaining ISCC codes, which can be used to track and manage digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_unique_media_identifier_umid">
+<title>Unique Media Identifier (UMid)</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> IWA 44</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.din.de/en/din-and-our-partners/press/press-releases/iwa-44-unique-me">UMid</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This specification offers a unique identifier for media content. It includes methods for creating and maintaining UMid codes, which can be used to track and manage media assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_tdm_reservation_protocol">
+<title>TDM Reservation Protocol</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> W3C</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.w3.org/ns/tdmrep/">TDMRep</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This protocol provides guidelines for reserving content from text and data mining. It includes methods for creating and maintaining TDMRep files, which can be used to document the reservation of digital assets. This helps in ensuring that content is not used for data mining without the creator&#8217;s consent.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_spawning_ai_txt">
+<title>Spawning ai.txt</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> Spawning</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://spawning.ai/ai-txt">Spawning ai.txt</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This specification offers a method for opting out of AI training. It includes guidelines for creating and maintaining ai.txt files, which can be used to document the opt-out of digital assets. This helps in ensuring that content is not used for AI training without the creator&#8217;s consent.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_robots_txt">
+<title>Robots.txt</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> IETF</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://datatracker.ietf.org/doc/html/rfc9309">RFC 9309</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard provides guidelines for excluding content from web crawlers. It includes methods for creating and maintaining robots.txt files, which can be used to document the exclusion of digital assets. This helps in ensuring that content is not accessed by web crawlers without the creator&#8217;s consent.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_vocabulary_for_expressing_content_preferences_for_ai">
+<title>Vocabulary for Expressing Content Preferences for AI</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> IETF</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis>
+<link xl:href="https://datatracker.ietf.org/doc/draft-vaughan-aipref-vocab/">draft-vaughan-aipref-vocab-00</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Withdrawn</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This draft offers a vocabulary for expressing content preferences for AI. It includes guidelines for creating and maintaining preference files, which can be used to document the preferences of digital assets. This helps in ensuring that content is used in accordance with the creator&#8217;s preferences.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_open_binding_of_content_identifiers_obid">
+<title>Open Binding of Content Identifiers (OBID)</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> SMPTE</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://pub.smpte.org/pub/st2112-10/st2112-10-2020.pdf">SMPTE ST 2112-10:2020</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard provides guidelines for binding content identifiers to digital media. It includes methods for creating and maintaining OBID files, which can be used to document the binding of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_x_ig_dw_implementation_guidelines_for_digital_watermarking">
+<title>X.ig-dw: Implementation Guidelines for Digital Watermarking</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ITU-T SG17</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.itu.int/md/T22-SG17-240902-TD-PLEN-2413/en">2413-PLEN</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This guideline offers methods for implementing digital watermarking. It includes guidelines for creating and maintaining watermark files, which can be used to document the watermarking of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_specification_of_digital_rights_management_drm_technology_for_digital_publications">
+<title>Specification of Digital Rights Management (DRM) Technology for Digital Publications</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 34</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.iso.org/standard/84956.html">ISO/IEC 23078-1:2024</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard provides an overview of DRM technologies for digital publications. It includes guidelines for creating and maintaining DRM files, which can be used to document the DRM of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_a_review_of_medical_image_watermarking_requirements_for_teleradiology">
+<title>A Review of Medical Image Watermarking Requirements for Teleradiology</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> NIH</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3597963/">Medical Image Watermarking</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This review outlines the requirements for watermarking medical images for teleradiology. It includes guidelines for creating and maintaining watermark files, which can be used to document the watermarking of medical images. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_evaluation_tools_for_persistent_association_technologies">
+<title>Evaluation Tools for Persistent Association Technologies</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 29/WG 11</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.iso.org/obp/ui/es/#iso:std:iso-iec:tr:21000:-11:ed-1:v1:en">ISO/IEC TR 21000-11:2004</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard provides tools for evaluating persistent association technologies. It includes guidelines for creating and maintaining evaluation files, which can be used to document the evaluation of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_ieee_draft_standard_for_evaluation_method_of_robustness_of_digital_watermarking_implementation_in_digital_contents">
+<title>IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> IEEE</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://standards.ieee.org/ieee/3361/11224/">IEEE P3361</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> In progress</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This draft standard offers methods for evaluating the robustness of digital watermarking. It includes guidelines for creating and maintaining evaluation files, which can be used to document the evaluation of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+</section>
+<section xml:id="_standardization_map">
+<title>Standardization Map</title>
+<section xml:id="_overview">
+<title>Overview</title>
+<table frame="all" rowsep="1" colsep="1">
+<title>Table of Standard Categorization</title>
+<tgroup cols="6">
+<colspec colname="col_1" colwidth="16.6666*"/>
+<colspec colname="col_2" colwidth="16.6666*"/>
+<colspec colname="col_3" colwidth="16.6666*"/>
+<colspec colname="col_4" colwidth="16.6666*"/>
+<colspec colname="col_5" colwidth="16.6666*"/>
+<colspec colname="col_6" colwidth="16.667*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Specification</entry>
+<entry align="left" valign="top">Content Provenance</entry>
+<entry align="left" valign="top">Trust and Authenticity</entry>
+<entry align="left" valign="top">Asset Identifiers</entry>
+<entry align="left" valign="top">Rights Declarations</entry>
+<entry align="left" valign="top">Watermarking</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara>Content Credentials (C2PA)</simpara></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Content Credentials (ISO 22144)</simpara></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>JPEG Trust Part 1</simpara></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>JPEG Trust Part 2</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>JPEG Trust Part 3</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>CAWG Metadata</simpara></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Originator Profile</simpara></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>PROV</simpara></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>H.MMAUTH: Framework for Authentication of Multimedia Content</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Overview of trustworthiness in artificial intelligence</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Framework for trust-based media services</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Trust.txt</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Chromium Reputation Provider Framework</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>International Standard Content Code (ISCC)</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Unique Media Identifier (UMid)</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>TDM Reservation Protocol</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Spawning ai.txt</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Robots.txt</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Vocabulary for Expressing Content Preferences for AI</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Open Binding of Content Identifiers (OBID)</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>X.ig-dw: Implementation Guidelines for Digital Watermarking</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Specification of Digital Rights Management (DRM) Technology for Digital Publications</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>A Review of Medical Image Watermarking Requirements for Teleradiology</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Evaluation Tools for Persistent Association Technologies</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section xml:id="_graphical_representation">
+<title>Graphical Representation</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="Standards%20Categorization.png"/>
+</imageobject>
+<textobject><phrase>Standards Categorization</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+</section>
+<section xml:id="_conclusion_and_next_steps">
+<title>Conclusion and next steps</title>
+<simpara>TBD</simpara>
+</section>
+</article>
