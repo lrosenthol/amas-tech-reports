@@ -17,6 +17,7 @@
 <section xml:id="_executive_summary">
 <title>Executive Summary</title>
 <simpara>TBD</simpara>
+<simpara><?asciidoc-pagebreak?></simpara>
 
 <simpara><?asciidoc-pagebreak?></simpara>
 </section>
@@ -61,6 +62,7 @@
 <section xml:id="_watermarking">
 <title>Watermarking</title>
 <simpara>Watermarking standards ensure that digital content is marked in a way that can be used to verify its authenticity and ownership. These standards are essential for protecting the rights of content creators and ensuring that their digital assets are not used without their consent. By implementing watermarking measures, organizations can provide users with greater control over their content and ensure that their rights are respected.</simpara>
+</section>
 </section>
 <section xml:id="_overview_of_specifications">
 <title>Overview of Specifications</title>
@@ -481,7 +483,6 @@
 <simpara><emphasis role="strong">Summary:</emphasis> This draft standard offers methods for evaluating the robustness of digital watermarking. It includes guidelines for creating and maintaining evaluation files, which can be used to document the evaluation of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
 </listitem>
 </itemizedlist>
-</section>
 </section>
 </section>
 <section xml:id="_standardization_map">

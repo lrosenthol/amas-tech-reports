@@ -18,6 +18,9 @@
 
 TBD
 
+// page break
+<<<
+
 // table of contents goes here
 toc::[] 
 
@@ -65,9 +68,9 @@ Opt-out mechanisms are a specialized category of rights declarations that allow 
 
 Watermarking standards ensure that digital content is marked in a way that can be used to verify its authenticity and ownership. These standards are essential for protecting the rights of content creators and ensuring that their digital assets are not used without their consent. By implementing watermarking measures, organizations can provide users with greater control over their content and ensure that their rights are respected.
 
-=== Overview of Specifications
+== Overview of Specifications
 
-==== Content Credentials (C2PA)
+=== Content Credentials (C2PA)
 
 - *SDO/Group:* C2PA
 
@@ -77,7 +80,7 @@ Watermarking standards ensure that digital content is marked in a way that can b
 
 - *Summary:* This standard provides guidelines for embedding content credentials in digital media to ensure provenance. It outlines methods for attaching metadata to digital assets, which can include information about the creator, creation date, and any modifications made to the content. This helps in maintaining a verifiable record of the content's history.
 
-==== Content Credentials (ISO 22144)
+=== Content Credentials (ISO 22144)
 
 - *SDO/Group:* ISO TC 171/SC 2
 
@@ -87,7 +90,7 @@ Watermarking standards ensure that digital content is marked in a way that can b
 
 - *Summary:* This ISO standard outlines methods for documenting content credentials to maintain provenance. It specifies the types of metadata that should be included and the formats for storing this information. By following these guidelines, organizations can ensure that their digital content is traceable and its authenticity can be verified.
 
-==== JPEG Trust Part 1
+=== JPEG Trust Part 1
 
 - *SDO/Group:* ISO/IEC JTC 1/SC 29/WG 1
 
@@ -97,7 +100,7 @@ Watermarking standards ensure that digital content is marked in a way that can b
 
 - *Summary:* This standard focuses on ensuring trust in JPEG images through provenance documentation. It provides a framework for embedding provenance information directly into JPEG files, allowing users to verify the authenticity and history of the images. This is particularly useful in contexts where image manipulation is common, such as in digital forensics and media.
 
-==== JPEG Trust Part 2
+=== JPEG Trust Part 2
 
 - *SDO/Group:* ISO/IEC JTC 1/SC 29/WG 1
 
@@ -105,7 +108,7 @@ Watermarking standards ensure that digital content is marked in a way that can b
 
 - *Summary:* This standard introduces a series of Trust Profiles that can be used either as is or as starting points to establish profiles for use in specific workflows.
 
-==== JPEG Trust Part 3
+=== JPEG Trust Part 3
 
 - *SDO/Group:* ISO/IEC JTC 1/SC 29/WG 1
 
@@ -113,7 +116,7 @@ Watermarking standards ensure that digital content is marked in a way that can b
 
 - *Summary:* This standard will provide a review of image watermarking technologies.
 
-==== CAWG Metadata
+=== CAWG Metadata
 
 - *SDO/Group:* Creation Assertions Working Group, as part of DIF
 
@@ -123,7 +126,7 @@ Watermarking standards ensure that digital content is marked in a way that can b
 
 - *Summary:* This specification provides a framework for expressing metadata that captures detailed information about the content, including ownership and authorship. 
 
-==== Originator Profile
+=== Originator Profile
 
 - *SDO/Group:* Originator Profile
 
@@ -133,7 +136,7 @@ Watermarking standards ensure that digital content is marked in a way that can b
 
 - *Summary:* This specification provides a framework for documenting the origin of digital content. It includes guidelines for creating and maintaining profiles that capture detailed information about the content's creator and its creation process. This helps in establishing a clear and verifiable record of the content's provenance.
 
-==== PROV
+=== PROV
 
 - *SDO/Group:* Open Provenance
 
@@ -143,7 +146,7 @@ Watermarking standards ensure that digital content is marked in a way that can b
 
 - *Summary:* This standard offers a model for representing provenance information in digital content. It defines a set of concepts and relationships that can be used to describe the history of a digital asset, including its creation, modification, and distribution. This model can be applied across various types of digital content, providing a flexible and comprehensive approach to provenance documentation.
 
-==== H.MMAUTH: Framework for Authentication of Multimedia Content
+=== H.MMAUTH: Framework for Authentication of Multimedia Content
 
 - *SDO/Group:* ITU-T/SG-13 & ISO/IEC JTC 1/SC29
 
@@ -151,7 +154,7 @@ Watermarking standards ensure that digital content is marked in a way that can b
 
 - *Summary:* This framework provides guidelines for authenticating multimedia content. It includes methods for verifying the integrity of digital media files and ensuring that they have not been altered since their creation. This helps in maintaining the trustworthiness of multimedia content in various applications, such as broadcasting and digital archiving.
 
-==== Overview of trustworthiness in artificial intelligence
+=== Overview of trustworthiness in artificial intelligence
 
 - *SDO/Group:* ISO/IEC JTC 1/SC 42
 
@@ -161,7 +164,7 @@ Watermarking standards ensure that digital content is marked in a way that can b
 
 - *Summary:* This standard offers an overview of trustworthiness in artificial intelligence. It provides guidelines for assessing the reliability and integrity of AI systems, ensuring that they produce trustworthy results. This is crucial in applications where AI is used to generate or manipulate digital content, as it helps in maintaining the authenticity of the output.
 
-==== Framework for trust-based media services
+=== Framework for trust-based media services
 
 - *SDO/Group:* ITU-T
 
@@ -171,7 +174,7 @@ Watermarking standards ensure that digital content is marked in a way that can b
 
 - *Summary:* This framework provides guidelines for trust-based media services. It includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.
 
-==== Trust.txt
+=== Trust.txt
 
 - *SDO/Group:* JournalList
 
@@ -181,7 +184,7 @@ Watermarking standards ensure that digital content is marked in a way that can b
 
 - *Summary:* This specification outlines methods for establishing trust in digital content. It includes guidelines for creating and maintaining trust.txt files, which can be used to document the trustworthiness of digital assets. This helps in ensuring that users can verify the authenticity of the content they receive.
 
-==== Chromium Reputation Provider Framework
+=== Chromium Reputation Provider Framework
 
 - *SDO/Group:* Google's Chrome Team
 
@@ -192,7 +195,7 @@ https://docs.google.com/document/d/1wTFafdHa-o3OYCKmYzEJGROrpSoxXN6DNXPltzdiUzg/
 
 - *Summary:* This framework provides guidelines for reputation management in digital content. It includes methods for assessing and maintaining the reputation of digital assets, ensuring that users can trust the content they access. This is particularly important in contexts where reputation is a key factor in determining the value and reliability of digital media.
 
-==== International Standard Content Code (ISCC)
+=== International Standard Content Code (ISCC)
 
 - *SDO/Group:* ISO/TC 46/SC 9
 
@@ -202,7 +205,7 @@ https://docs.google.com/document/d/1wTFafdHa-o3OYCKmYzEJGROrpSoxXN6DNXPltzdiUzg/
 
 - *Summary:* This standard provides a unique identifier for digital content. It includes guidelines for creating and maintaining ISCC codes, which can be used to track and manage digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.
 
-==== Unique Media Identifier (UMid)
+=== Unique Media Identifier (UMid)
 
 - *SDO/Group:* IWA 44
 
@@ -213,7 +216,7 @@ https://docs.google.com/document/d/1wTFafdHa-o3OYCKmYzEJGROrpSoxXN6DNXPltzdiUzg/
 - *Summary:* This specification offers a unique identifier for media content. It includes methods for creating and maintaining UMid codes, which can be used to track and manage media assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.
 
 
-==== TDM Reservation Protocol
+=== TDM Reservation Protocol
 
 - *SDO/Group:* W3C
 
@@ -223,7 +226,7 @@ https://docs.google.com/document/d/1wTFafdHa-o3OYCKmYzEJGROrpSoxXN6DNXPltzdiUzg/
 
 - *Summary:* This protocol provides guidelines for reserving content from text and data mining. It includes methods for creating and maintaining TDMRep files, which can be used to document the reservation of digital assets. This helps in ensuring that content is not used for data mining without the creator's consent.
 
-==== Spawning ai.txt
+=== Spawning ai.txt
 
 - *SDO/Group:* Spawning
 
@@ -233,7 +236,7 @@ https://docs.google.com/document/d/1wTFafdHa-o3OYCKmYzEJGROrpSoxXN6DNXPltzdiUzg/
 
 - *Summary:* This specification offers a method for opting out of AI training. It includes guidelines for creating and maintaining ai.txt files, which can be used to document the opt-out of digital assets. This helps in ensuring that content is not used for AI training without the creator's consent.
 
-==== Robots.txt
+=== Robots.txt
 
 - *SDO/Group:* IETF
 
@@ -243,7 +246,7 @@ https://docs.google.com/document/d/1wTFafdHa-o3OYCKmYzEJGROrpSoxXN6DNXPltzdiUzg/
 
 - *Summary:* This standard provides guidelines for excluding content from web crawlers. It includes methods for creating and maintaining robots.txt files, which can be used to document the exclusion of digital assets. This helps in ensuring that content is not accessed by web crawlers without the creator's consent.
 
-==== Vocabulary for Expressing Content Preferences for AI
+=== Vocabulary for Expressing Content Preferences for AI
 
 - *SDO/Group:* IETF
 
@@ -254,7 +257,7 @@ https://datatracker.ietf.org/doc/draft-vaughan-aipref-vocab/[draft-vaughan-aipre
 
 - *Summary:* This draft offers a vocabulary for expressing content preferences for AI. It includes guidelines for creating and maintaining preference files, which can be used to document the preferences of digital assets. This helps in ensuring that content is used in accordance with the creator's preferences.
 
-==== Open Binding of Content Identifiers (OBID)
+=== Open Binding of Content Identifiers (OBID)
 
 - *SDO/Group:* SMPTE
 
@@ -264,7 +267,7 @@ https://datatracker.ietf.org/doc/draft-vaughan-aipref-vocab/[draft-vaughan-aipre
 
 - *Summary:* This standard provides guidelines for binding content identifiers to digital media. It includes methods for creating and maintaining OBID files, which can be used to document the binding of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.
 
-==== X.ig-dw: Implementation Guidelines for Digital Watermarking
+=== X.ig-dw: Implementation Guidelines for Digital Watermarking
 
 - *SDO/Group:* ITU-T SG17
 
@@ -274,7 +277,7 @@ https://datatracker.ietf.org/doc/draft-vaughan-aipref-vocab/[draft-vaughan-aipre
 
 - *Summary:* This guideline offers methods for implementing digital watermarking. It includes guidelines for creating and maintaining watermark files, which can be used to document the watermarking of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.
 
-==== Specification of Digital Rights Management (DRM) Technology for Digital Publications
+=== Specification of Digital Rights Management (DRM) Technology for Digital Publications
 
 - *SDO/Group:* ISO/IEC JTC 1/SC 34
 
@@ -284,7 +287,7 @@ https://datatracker.ietf.org/doc/draft-vaughan-aipref-vocab/[draft-vaughan-aipre
 
 - *Summary:* This standard provides an overview of DRM technologies for digital publications. It includes guidelines for creating and maintaining DRM files, which can be used to document the DRM of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.
 
-==== A Review of Medical Image Watermarking Requirements for Teleradiology
+=== A Review of Medical Image Watermarking Requirements for Teleradiology
 
 - *SDO/Group:* NIH
 
@@ -294,7 +297,7 @@ https://datatracker.ietf.org/doc/draft-vaughan-aipref-vocab/[draft-vaughan-aipre
 
 - *Summary:* This review outlines the requirements for watermarking medical images for teleradiology. It includes guidelines for creating and maintaining watermark files, which can be used to document the watermarking of medical images. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.
 
-==== Evaluation Tools for Persistent Association Technologies
+=== Evaluation Tools for Persistent Association Technologies
 
 - *SDO/Group:* ISO/IEC JTC 1/SC 29/WG 11
 
@@ -304,7 +307,7 @@ https://datatracker.ietf.org/doc/draft-vaughan-aipref-vocab/[draft-vaughan-aipre
 
 - *Summary:* This standard provides tools for evaluating persistent association technologies. It includes guidelines for creating and maintaining evaluation files, which can be used to document the evaluation of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.
 
-==== IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents
+=== IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents
 
 - *SDO/Group:* IEEE
 
