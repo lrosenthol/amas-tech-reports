@@ -45,6 +45,28 @@ The approach taken in this report involves a thorough review of existing standar
 
 Content provenance refers to the documentation of the origin and history of digital content. It is crucial for verifying the authenticity and integrity of digital assets. Provenance information helps in tracking the creation, modification, and distribution of content, providing a transparent record that can be used to establish trust and accountability. This is particularly important in contexts where the authenticity of content is paramount, such as in journalism, scientific research, and digital art.
 
+=== Trust and Authenticity
+
+Trust and authenticity standards ensure that digital content is genuine and has not been tampered with. These standards are essential for maintaining the integrity of digital media, especially in environments where content manipulation is a significant concern. By implementing trust and authenticity measures, organizations can protect their digital assets from unauthorized alterations and ensure that consumers can rely on the content they receive.
+
+=== Asset Identifiers
+
+Asset identifiers are unique codes assigned to digital content to ensure proper management and tracking. These identifiers help in maintaining a clear and organized record of digital assets, making it easier to manage and distribute content. By using asset identifiers, organizations can ensure that their digital media is properly tracked and accounted for, reducing the risk of loss or unauthorized use.
+
+=== Rights Declarations
+
+==== General Purpose
+Rights declarations are formal statements that outline the rights and permissions associated with digital content. These declarations help in clarifying the ownership and usage rights of digital assets, providing a clear framework for how content can be used and shared. By establishing clear rights declarations, organizations can protect their intellectual property and ensure that their digital assets are used in accordance with their intended purpose.
+
+==== Opt-Out Mechanisms
+Opt-out mechanisms are a specialized category of rights declarations that allow users to exclude their content from certain processes, such as data mining or AI training. These mechanisms are essential for protecting the privacy and rights of content creators, ensuring that their digital assets are not used without their consent. By implementing opt-out mechanisms, organizations can provide users with greater control over their content and ensure that their rights are respected.
+
+=== Watermarking
+
+Watermarking standards ensure that digital content is marked in a way that can be used to verify its authenticity and ownership. These standards are essential for protecting the rights of content creators and ensuring that their digital assets are not used without their consent. By implementing watermarking measures, organizations can provide users with greater control over their content and ensure that their rights are respected.
+
+=== Overview of Specifications
+
 ==== Content Credentials (C2PA)
 
 - *SDO/Group:* C2PA
@@ -65,7 +87,7 @@ Content provenance refers to the documentation of the origin and history of digi
 
 - *Summary:* This ISO standard outlines methods for documenting content credentials to maintain provenance. It specifies the types of metadata that should be included and the formats for storing this information. By following these guidelines, organizations can ensure that their digital content is traceable and its authenticity can be verified.
 
-==== JPEG Trust
+==== JPEG Trust Part 1
 
 - *SDO/Group:* ISO/IEC JTC 1/SC 29/WG 1
 
@@ -74,6 +96,32 @@ Content provenance refers to the documentation of the origin and history of digi
 - *Status:* Published
 
 - *Summary:* This standard focuses on ensuring trust in JPEG images through provenance documentation. It provides a framework for embedding provenance information directly into JPEG files, allowing users to verify the authenticity and history of the images. This is particularly useful in contexts where image manipulation is common, such as in digital forensics and media.
+
+==== JPEG Trust Part 2
+
+- *SDO/Group:* ISO/IEC JTC 1/SC 29/WG 1
+
+- *Status:* In Progress
+
+- *Summary:* This standard introduces a series of Trust Profiles that can be used either as is or as starting points to establish profiles for use in specific workflows.
+
+==== JPEG Trust Part 3
+
+- *SDO/Group:* ISO/IEC JTC 1/SC 29/WG 1
+
+- *Status:* Initiated
+
+- *Summary:* This standard will provide a review of image watermarking technologies.
+
+==== CAWG Metadata
+
+- *SDO/Group:* Creation Assertions Working Group, as part of DIF
+
+- *Link:* https://cawg.io/metadata/1.1-draft/[CAWG Metadata]
+
+- *Status:* Published, with a new version in progress
+
+- *Summary:* This specification provides a framework for expressing metadata that captures detailed information about the content, including ownership and authorship. 
 
 ==== Originator Profile
 
@@ -94,11 +142,6 @@ Content provenance refers to the documentation of the origin and history of digi
 - *Status:* Published
 
 - *Summary:* This standard offers a model for representing provenance information in digital content. It defines a set of concepts and relationships that can be used to describe the history of a digital asset, including its creation, modification, and distribution. This model can be applied across various types of digital content, providing a flexible and comprehensive approach to provenance documentation.
-
-
-=== Trust and Authenticity
-
-Trust and authenticity standards ensure that digital content is genuine and has not been tampered with. These standards are essential for maintaining the integrity of digital media, especially in environments where content manipulation is a significant concern. By implementing trust and authenticity measures, organizations can protect their digital assets from unauthorized alterations and ensure that consumers can rely on the content they receive.
 
 ==== H.MMAUTH: Framework for Authentication of Multimedia Content
 
@@ -149,11 +192,6 @@ https://docs.google.com/document/d/1wTFafdHa-o3OYCKmYzEJGROrpSoxXN6DNXPltzdiUzg/
 
 - *Summary:* This framework provides guidelines for reputation management in digital content. It includes methods for assessing and maintaining the reputation of digital assets, ensuring that users can trust the content they access. This is particularly important in contexts where reputation is a key factor in determining the value and reliability of digital media.
 
-
-=== Asset Identifiers
-
-Asset identifiers are unique codes assigned to digital content to ensure proper management and tracking. These identifiers help in maintaining a clear and organized record of digital assets, making it easier to manage and distribute content. By using asset identifiers, organizations can ensure that their digital media is properly tracked and accounted for, reducing the risk of loss or unauthorized use.
-
 ==== International Standard Content Code (ISCC)
 
 - *SDO/Group:* ISO/TC 46/SC 9
@@ -174,10 +212,6 @@ Asset identifiers are unique codes assigned to digital content to ensure proper 
 
 - *Summary:* This specification offers a unique identifier for media content. It includes methods for creating and maintaining UMid codes, which can be used to track and manage media assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.
 
-
-=== Opt-Out Mechanisms
-
-Opt-out mechanisms allow users to exclude their content from certain processes, such as data mining or AI training. These mechanisms are essential for protecting the privacy and rights of content creators, ensuring that their digital assets are not used without their consent. By implementing opt-out mechanisms, organizations can provide users with greater control over their content and ensure that their rights are respected.
 
 ==== TDM Reservation Protocol
 
@@ -219,11 +253,6 @@ https://datatracker.ietf.org/doc/draft-vaughan-aipref-vocab/[draft-vaughan-aipre
 - *Status:* Withdrawn
 
 - *Summary:* This draft offers a vocabulary for expressing content preferences for AI. It includes guidelines for creating and maintaining preference files, which can be used to document the preferences of digital assets. This helps in ensuring that content is used in accordance with the creator's preferences.
-
-
-=== Watermarking
-
-Watermarking standards ensure that digital content is marked in a way that can be used to verify its authenticity and ownership. These standards are essential for protecting the rights of content creators and ensuring that their digital assets are not used without their consent. By implementing watermarking measures, organizations can provide users with greater control over their content and ensure that their rights are respected.
 
 ==== Open Binding of Content Identifiers (OBID)
 
@@ -285,9 +314,242 @@ Watermarking standards ensure that digital content is marked in a way that can b
 
 - *Summary:* This draft standard offers methods for evaluating the robustness of digital watermarking. It includes guidelines for creating and maintaining evaluation files, which can be used to document the evaluation of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.
 
+
 == Standardization Map
 
-// can we do a pretty graphic here?   
+=== Overview
+[cols="1,1,1,1,1,1", options="header"]
+.Table of Standard Categorization
+|===
+| Specification | Content Provenance | Trust and Authenticity | Asset Identifiers | Rights Declarations | Watermarking
+
+| Content Credentials (C2PA)
+| x
+| x
+| 
+| 
+| x
+
+| Content Credentials (ISO 22144)
+| x
+| x
+| 
+| 
+| 
+
+| JPEG Trust Part 1
+| x
+| x
+| 
+| 
+| 
+
+| JPEG Trust Part 2
+| 
+| x
+| 
+| 
+| 
+
+| JPEG Trust Part 3
+| 
+| 
+| 
+| 
+| x
+
+| CAWG Metadata
+| x
+| x
+| 
+| x
+| 
+
+| Originator Profile
+| x
+| x
+| 
+| 
+| 
+
+| PROV
+| x
+| x
+| 
+| 
+| 
+
+| H.MMAUTH: Framework for Authentication of Multimedia Content
+| 
+| x
+| 
+| 
+| 
+
+| Overview of trustworthiness in artificial intelligence
+| 
+| x
+| 
+| 
+| 
+
+| Framework for trust-based media services
+| 
+| x
+| 
+| 
+| 
+
+| Trust.txt
+| 
+| x
+| 
+| x
+| 
+
+| Chromium Reputation Provider Framework
+| 
+| x
+| 
+| 
+| 
+
+| International Standard Content Code (ISCC)
+| 
+| 
+| x
+| 
+| 
+
+| Unique Media Identifier (UMid)
+| 
+| 
+| x
+| 
+| 
+
+| TDM Reservation Protocol
+| 
+| 
+| 
+| x
+| 
+
+| Spawning ai.txt
+| 
+| 
+| 
+| x
+| 
+
+| Robots.txt
+| 
+| 
+| 
+| x
+| 
+
+| Vocabulary for Expressing Content Preferences for AI
+| 
+| 
+| 
+| x
+| 
+
+| Open Binding of Content Identifiers (OBID)
+| 
+| 
+| x
+| 
+| 
+
+| X.ig-dw: Implementation Guidelines for Digital Watermarking
+| 
+| 
+| 
+| 
+| x
+
+| Specification of Digital Rights Management (DRM) Technology for Digital Publications
+| 
+| 
+| 
+| x
+| 
+
+| A Review of Medical Image Watermarking Requirements for Teleradiology
+| 
+| 
+| 
+| 
+| x
+
+| Evaluation Tools for Persistent Association Technologies
+| 
+| x
+| 
+| 
+| x
+
+| IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents
+| 
+| 
+| 
+| 
+| x
+|===
+
+=== Graphical Representation
+
+[plantuml, "Standards Categorization"]
+....
+@startmindmap
+* Standards Categorization
+** Content Provenance
+*** Content Credentials (C2PA)
+*** Content Credentials (ISO 22144)
+*** JPEG Trust Part 1
+*** CAWG Metadata
+*** Originator Profile
+*** PROV
+** Trust and Authenticity
+*** Content Credentials (C2PA)
+*** Content Credentials (ISO 22144)
+*** JPEG Trust Part 1
+*** JPEG Trust Part 2
+*** CAWG Metadata
+*** Originator Profile
+*** PROV
+*** H.MMAUTH: Framework for Authentication of Multimedia Content
+*** Overview of trustworthiness in artificial intelligence
+*** Framework for trust-based media services
+*** Trust.txt
+*** Chromium Reputation Provider Framework
+*** Evaluation Tools for Persistent Association Technologies
+
+left side
+
+** Asset Identifiers
+*** International Standard Content Code (ISCC)
+*** Unique Media Identifier (UMid)
+*** Open Binding of Content Identifiers (OBID)
+** Rights Declarations
+*** CAWG Metadata
+*** Trust.txt
+*** TDM Reservation Protocol
+*** Spawning ai.txt
+*** Robots.txt
+*** Vocabulary for Expressing Content Preferences for AI
+*** Specification of Digital Rights Management (DRM) Technology for Digital Publications
+** Watermarking
+*** Content Credentials (C2PA)
+*** JPEG Trust Part 3
+*** X.ig-dw: Implementation Guidelines for Digital Watermarking
+*** A Review of Medical Image Watermarking Requirements for Teleradiology
+*** Evaluation Tools for Persistent Association Technologies
+*** IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents
+@endmindmap
+....
 
 == Conclusion and next steps
 
