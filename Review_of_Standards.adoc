@@ -37,7 +37,7 @@ The standards discussed in this report are developed by various Standard Develop
 
 TBD
 
-=== Approach
+=== Methodology
 The approach taken in this report involves a thorough review of existing standards and specifications related to digital media. The focus is on identifying key areas where standards already exist, and from that, what are still are needed to ensure the authenticity and integrity of digital content. From that review, we have broken this report into the categories: content provenance, trust and authenticity, asset identifiers, opt-out mechanisms, and watermarking.
 
 == Categories of Standards

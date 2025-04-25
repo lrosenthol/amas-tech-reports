@@ -5,6 +5,7 @@ set -eu
 
 # define the docker container
 AD_DOCKER_IMG=asciidoctor/docker-asciidoctor
+PD_DOCKER_IMG=pandoc/core
 
 #detect platform that we're running on...
 unameOut="$(uname -s)"
@@ -66,6 +67,21 @@ convertOne() {
 			-a pdf-theme="${BASE_NAME}"-theme.yml \
 			-a pdf-fontsdir="fonts"  \
 			-o "${BASE_NAME}".pdf "${BASE_NAME}".adoc	
+
+	# Create the XML and Word versions
+	echo "Converting AsciiDoc to DocBook/XML"
+	docker run -u ${UID} \
+			--rm -v "${CURRENT_PATH}":"${CURRENT_PATH}" -w "${CURRENT_PATH}" "${AD_DOCKER_IMG}" \
+			asciidoctor -r asciidoctor-diagram \
+			-D ./output --backend=docbook5 \
+			-o "${BASE_NAME}".xml "${BASE_NAME}".adoc
+
+	echo "Converting DocBook to Word"
+	docker run -u ${UID} \
+			--rm -v "${CURRENT_PATH}":"${CURRENT_PATH}" -w "${CURRENT_PATH}"/output "${PD_DOCKER_IMG}" \
+			--resource-path=.:../docs/modules/specs/pages \
+			-f docbook -t docx \
+			"${BASE_NAME}".xml -o "${BASE_NAME}".docx
 }
 
 # process all the files	
