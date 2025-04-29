@@ -439,8 +439,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1>Technical Report on AI and Multimedia Authenticity Standards: Mapping the standardisation landscape</h1>
 <div class="details">
 <span id="revnumber">version 1.0,</span>
-<span id="revdate">2025-04-25</span>
-<br><span id="revremark">Draft 0.3</span>
+<span id="revdate">2025-04-28</span>
+<br><span id="revremark">Draft 0.4</span>
 </div>
 </div>
 <div id="content">
@@ -474,29 +474,28 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_content_credentials_c2pa">3.1. Content Credentials (C2PA)</a></li>
 <li><a href="#_content_credentials_iso_22144">3.2. Content Credentials (ISO 22144)</a></li>
-<li><a href="#_jpeg_trust_part_1">3.3. JPEG Trust Part 1</a></li>
-<li><a href="#_jpeg_trust_part_2">3.4. JPEG Trust Part 2</a></li>
-<li><a href="#_jpeg_trust_part_3">3.5. JPEG Trust Part 3</a></li>
+<li><a href="#_jpeg_trust_part_1_core_foundation">3.3. JPEG Trust Part 1: Core foundation</a></li>
+<li><a href="#_jpeg_trust_part_2_trust_profiles_catalogue">3.4. JPEG Trust Part 2: Trust profiles catalogue</a></li>
+<li><a href="#_jpeg_trust_part_3_media_asset_watermarking">3.5. JPEG Trust Part 3: Media asset watermarking</a></li>
 <li><a href="#_cawg_metadata">3.6. CAWG Metadata</a></li>
 <li><a href="#_originator_profile">3.7. Originator Profile</a></li>
 <li><a href="#_prov">3.8. PROV</a></li>
-<li><a href="#_h_mmauth_framework_for_authentication_of_multimedia_content">3.9. H.MMAUTH: Framework for Authentication of Multimedia Content</a></li>
-<li><a href="#_overview_of_trustworthiness_in_artificial_intelligence">3.10. Overview of trustworthiness in artificial intelligence</a></li>
-<li><a href="#_framework_for_trust_based_media_services">3.11. Framework for trust-based media services</a></li>
-<li><a href="#_trust_txt">3.12. Trust.txt</a></li>
-<li><a href="#_chromium_reputation_provider_framework">3.13. Chromium Reputation Provider Framework</a></li>
-<li><a href="#_international_standard_content_code_iscc">3.14. International Standard Content Code (ISCC)</a></li>
-<li><a href="#_unique_media_identifier_umid">3.15. Unique Media Identifier (UMid)</a></li>
-<li><a href="#_tdm_reservation_protocol">3.16. TDM Reservation Protocol</a></li>
-<li><a href="#_spawning_ai_txt">3.17. Spawning ai.txt</a></li>
-<li><a href="#_robots_txt">3.18. Robots.txt</a></li>
-<li><a href="#_vocabulary_for_expressing_content_preferences_for_ai">3.19. Vocabulary for Expressing Content Preferences for AI</a></li>
-<li><a href="#_open_binding_of_content_identifiers_obid">3.20. Open Binding of Content Identifiers (OBID)</a></li>
-<li><a href="#_x_ig_dw_implementation_guidelines_for_digital_watermarking">3.21. X.ig-dw: Implementation Guidelines for Digital Watermarking</a></li>
-<li><a href="#_specification_of_digital_rights_management_drm_technology_for_digital_publications">3.22. Specification of Digital Rights Management (DRM) Technology for Digital Publications</a></li>
-<li><a href="#_a_review_of_medical_image_watermarking_requirements_for_teleradiology">3.23. A Review of Medical Image Watermarking Requirements for Teleradiology</a></li>
-<li><a href="#_evaluation_tools_for_persistent_association_technologies">3.24. Evaluation Tools for Persistent Association Technologies</a></li>
-<li><a href="#_ieee_draft_standard_for_evaluation_method_of_robustness_of_digital_watermarking_implementation_in_digital_contents">3.25. IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents</a></li>
+<li><a href="#_overview_of_trustworthiness_in_artificial_intelligence">3.9. Overview of trustworthiness in artificial intelligence</a></li>
+<li><a href="#_framework_for_trust_based_media_services">3.10. Framework for trust-based media services</a></li>
+<li><a href="#_trust_txt">3.11. Trust.txt</a></li>
+<li><a href="#_chromium_reputation_provider_framework">3.12. Chromium Reputation Provider Framework</a></li>
+<li><a href="#_international_standard_content_code_iscc">3.13. International Standard Content Code (ISCC)</a></li>
+<li><a href="#_unique_media_identifier_umid">3.14. Unique Media Identifier (UMid)</a></li>
+<li><a href="#_tdm_reservation_protocol">3.15. TDM Reservation Protocol</a></li>
+<li><a href="#_spawning_ai_txt">3.16. Spawning ai.txt</a></li>
+<li><a href="#_robots_txt">3.17. Robots.txt</a></li>
+<li><a href="#_vocabulary_for_expressing_content_preferences_for_ai">3.18. Vocabulary for Expressing Content Preferences for AI</a></li>
+<li><a href="#_open_binding_of_content_identifiers_obid">3.19. Open Binding of Content Identifiers (OBID)</a></li>
+<li><a href="#_x_ig_dw_implementation_guidelines_for_digital_watermarking">3.20. X.ig-dw: Implementation Guidelines for Digital Watermarking</a></li>
+<li><a href="#_specification_of_digital_rights_management_drm_technology_for_digital_publications">3.21. Specification of Digital Rights Management (DRM) Technology for Digital Publications</a></li>
+<li><a href="#_a_review_of_medical_image_watermarking_requirements_for_teleradiology">3.22. A Review of Medical Image Watermarking Requirements for Teleradiology</a></li>
+<li><a href="#_evaluation_tools_for_persistent_association_technologies">3.23. Evaluation Tools for Persistent Association Technologies</a></li>
+<li><a href="#_ieee_draft_standard_for_evaluation_method_of_robustness_of_digital_watermarking_implementation_in_digital_contents">3.24. IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents</a></li>
 </ul>
 </li>
 <li><a href="#_standardization_map">4. Standardization Map</a>
@@ -515,7 +514,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_introduction">1. Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This report provides a comprehensive overview of various standards and specifications related to digital media, focusing on content provenance, trust authenticity, asset identifiers, opt-out mechanisms, and watermarking. These standards are essential for ensuring the authenticity of both synthetic and non-synthetic digital content. As generative AI continues to evolve, the need for robust standards becomes increasingly critical to protect the interests of creators, consumers, and organizations.</p>
+<p>This report provides a comprehensive overview of various standards and specifications related to digital media, focusing on content provenance, trust authenticity, asset identifiers, rights declarations, and watermarking. These standards are essential for ensuring the authenticity of both synthetic and non-synthetic digital content. As generative AI continues to evolve, the need for robust standards becomes increasingly critical to protect the interests of creators, consumers, and organizations.</p>
 </div>
 <div class="paragraph">
 <p>The standards discussed in this report are developed by various Standard Development Organizations (SDOs) and groups, each contributing to different aspects of AI and authenticity. By adhering to these guidelines, organizations can maintain the trustworthiness and provenance of their digital assets, ensuring that content remains authentic and traceable throughout its lifecycle.</p>
@@ -529,7 +528,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_methodology">1.2. Methodology</h3>
 <div class="paragraph">
-<p>The approach taken in this report involves a thorough review of existing standards and specifications related to digital media. The focus is on identifying key areas where standards already exist, and from that, what are still are needed to ensure the authenticity and integrity of digital content. From that review, we have broken this report into the categories: content provenance, trust and authenticity, asset identifiers, opt-out mechanisms, and watermarking.</p>
+<p>The approach taken in this report involves a thorough review of existing standards and specifications related to digital media. The focus is on identifying key areas where standards already exist, and from that, what are still are needed to ensure the authenticity and integrity of digital content. From that review, we have broken this report into the categories: content provenance, trust and authenticity, asset identifiers, rights declarations, and watermarking.</p>
 </div>
 </div>
 </div>
@@ -537,22 +536,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_categories_of_standards">2. Categories of Standards</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>In this white paper, we have clustered those standards and specifications in the scope of this analysis into five categories: content provenance, trust and authenticity, asset identifiers, rights declaration and watermarking. Rights declaration is in turn is defined in two inclinations: general purpose and opt-out mechanisms. The general purpose rights declaration addresses a broad scope while the opt-out mechanisms refer to a specific aspect of right declaration that is of relevance to the scope of this document.</p>
+</div>
 <div class="sect2">
 <h3 id="_content_provenance">2.1. Content Provenance</h3>
 <div class="paragraph">
-<p>Content provenance refers to the documentation of the origin and history of digital content. It is crucial for verifying the authenticity and integrity of digital assets. Provenance information helps in tracking the creation, modification, and distribution of content, providing a transparent record that can be used to establish trust and accountability. This is particularly important in contexts where the authenticity of content is paramount, such as in journalism, scientific research, and digital art.</p>
+<p>Content provenance refers to information on the origin and history of digital content. This is an important tool for the verification of authenticity and integrity of digital assets. Provenance information helps in tracking the creation, modification, and distribution of content, providing a transparent record that can be used to establish trust and accountability. This is particularly important use cases and applications where the authenticity of content is paramount, such as in journalism, scientific research, and digital art.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_trust_and_authenticity">2.2. Trust and Authenticity</h3>
 <div class="paragraph">
-<p>Trust and authenticity standards ensure that digital content is genuine and has not been tampered with. These standards are essential for maintaining the integrity of digital media, especially in environments where content manipulation is a significant concern. By implementing trust and authenticity measures, organizations can protect their digital assets from unauthorized alterations and ensure that consumers can rely on the content they receive.</p>
+<p>Trust and authenticity measures ensure that digital content is genuine and has not been tampered with. Such mechanisms are essential for maintaining the integrity of digital media, especially in environments where content manipulation is a significant concern. By implementing trust and authenticity measures, organizations can protect their digital assets from unauthorized alterations and ensure that consumers can rely on the content they receive.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_asset_identifiers">2.3. Asset Identifiers</h3>
 <div class="paragraph">
-<p>Asset identifiers are unique codes assigned to digital content to ensure proper management and tracking. These identifiers help in maintaining a clear and organized record of digital assets, making it easier to manage and distribute content. By using asset identifiers, organizations can ensure that their digital media is properly tracked and accounted for, reducing the risk of loss or unauthorized use.</p>
+<p>Asset identifiers are unique codes assigned to digital content to ensure their proper management and tracking. These identifiers help in maintaining a clear and organized record of digital assets, making it easier to organize, manage and distribute content. By using asset identifiers, organizations can ensure that their digital media is properly tracked and accounted for, reducing the risk of loss or unauthorized use.</p>
 </div>
 </div>
 <div class="sect2">
@@ -566,14 +568,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="_opt_out_mechanisms">2.4.2. Opt-Out Mechanisms</h4>
 <div class="paragraph">
-<p>Opt-out mechanisms are a specialized category of rights declarations that allow users to exclude their content from certain processes, such as data mining or AI training. These mechanisms are essential for protecting the privacy and rights of content creators, ensuring that their digital assets are not used without their consent. By implementing opt-out mechanisms, organizations can provide users with greater control over their content and ensure that their rights are respected.</p>
+<p>Opt-out mechanisms are a specialized approach to rights declarations that allow users to exclude their content from certain processes, such as data mining or AI training. These mechanisms are essential for protecting the privacy and rights of content creators, ensuring that their digital assets are not used without their consent. By implementing opt-out mechanisms, organizations can provide users with greater control over their content and ensure that their rights are respected.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_watermarking">2.5. Watermarking</h3>
 <div class="paragraph">
-<p>Watermarking standards ensure that digital content is marked in a way that can be used to verify its authenticity and ownership. These standards are essential for protecting the rights of content creators and ensuring that their digital assets are not used without their consent. By implementing watermarking measures, organizations can provide users with greater control over their content and ensure that their rights are respected.</p>
+<p>Watermarking ensures that digital content is marked in a way that can be used to verify its authenticity and ownership. Watermarking is increasingly used to facilitate the declaration of the rights of content creators and ensuring that their digital assets are not used without their consent. By implementing watermarking measures, organizations can provide users with greater control over their content and make sure that their rights are respected.</p>
 </div>
 </div>
 </div>
@@ -620,52 +622,52 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_jpeg_trust_part_1">3.3. JPEG Trust Part 1</h3>
+<h3 id="_jpeg_trust_part_1_core_foundation">3.3. JPEG Trust Part 1: Core foundation</h3>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>SDO/Group:</strong> ISO/IEC JTC 1/SC 29/WG 1</p>
+<p><strong>SDO/Group:</strong> ISO/IEC JTC 1/SC 29/WG 1 (JPEG)</p>
 </li>
 <li>
-<p><strong>Link:</strong> <a href="https://www.iso.org/standard/86831.html">ISO 21617-1:2025</a></p>
+<p><strong>Link:</strong> <a href="https://www.iso.org/standard/86831.html">ISO/IEC 21617-1:2025, second edition in progress</a></p>
 </li>
 <li>
 <p><strong>Status:</strong> Published</p>
 </li>
 <li>
-<p><strong>Summary:</strong> This standard focuses on ensuring trust in JPEG images through provenance documentation. It provides a framework for embedding provenance information directly into JPEG files, allowing users to verify the authenticity and history of the images. This is particularly useful in contexts where image manipulation is common, such as in digital forensics and media.</p>
+<p><strong>Summary:</strong> This standard focuses on ensuring trust in JPEG images through provenance, detection and fact-checking. It provides a framework for embedding metadata in the form of trust indicators directly into JPEG files, allowing users to decide the degree of trust they can put on a digital asset, based on provenance, authenticity, and intellectual property, as a function of their trust profiles. This is particularly useful in contexts where image manipulation is common, such as in social media applications.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_jpeg_trust_part_2">3.4. JPEG Trust Part 2</h3>
+<h3 id="_jpeg_trust_part_2_trust_profiles_catalogue">3.4. JPEG Trust Part 2: Trust profiles catalogue</h3>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>SDO/Group:</strong> ISO/IEC JTC 1/SC 29/WG 1</p>
+<p><strong>SDO/Group:</strong> ISO/IEC JTC 1/SC 29/WG 1 (JPEG)</p>
 </li>
 <li>
 <p><strong>Status:</strong> In Progress</p>
 </li>
 <li>
-<p><strong>Summary:</strong> This standard introduces a series of Trust Profiles that can be used either as is or as starting points to establish profiles for use in specific workflows.</p>
+<p><strong>Summary:</strong> This standard introduces a series of Trust Profiles that can be used either as is or as starting points to establish profiles for use in specific workflows, use cases and applications such as broadcasting, digital cameras, AI-powered content generation services, etc.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_jpeg_trust_part_3">3.5. JPEG Trust Part 3</h3>
+<h3 id="_jpeg_trust_part_3_media_asset_watermarking">3.5. JPEG Trust Part 3: Media asset watermarking</h3>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>SDO/Group:</strong> ISO/IEC JTC 1/SC 29/WG 1</p>
+<p><strong>SDO/Group:</strong> ISO/IEC JTC 1/SC 29/WG 1 (JPEG)</p>
 </li>
 <li>
 <p><strong>Status:</strong> Initiated</p>
 </li>
 <li>
-<p><strong>Summary:</strong> This standard will provide a review of image watermarking technologies.</p>
+<p><strong>Summary:</strong> This standard is planned to provide an overview of mechanisms used for watermarking of media assets.</p>
 </li>
 </ul>
 </div>
@@ -681,7 +683,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://cawg.io/metadata/1.1-draft/">CAWG Metadata</a></p>
 </li>
 <li>
-<p><strong>Status:</strong> Published, with a new version in progress</p>
+<p><strong>Status:</strong> Published (new version in progress)</p>
 </li>
 <li>
 <p><strong>Summary:</strong> This specification provides a framework for expressing metadata that captures detailed information about the content, including ownership and authorship.</p>
@@ -700,7 +702,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Link:</strong> <a href="https://originator-profile.org/en-US/">Originator Profile</a></p>
 </li>
 <li>
-<p><strong>Status:</strong> Published, In progress, Initiated</p>
+<p><strong>Status:</strong> In progress</p>
 </li>
 <li>
 <p><strong>Summary:</strong> This specification provides a framework for documenting the origin of digital content. It includes guidelines for creating and maintaining profiles that capture detailed information about the content&#8217;s creator and its creation process. This helps in establishing a clear and verifiable record of the content&#8217;s provenance.</p>
@@ -728,23 +730,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_h_mmauth_framework_for_authentication_of_multimedia_content">3.9. H.MMAUTH: Framework for Authentication of Multimedia Content</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>SDO/Group:</strong> ITU-T/SG-13 &amp; ISO/IEC JTC 1/SC29</p>
-</li>
-<li>
-<p><strong>Status:</strong> Initiated</p>
-</li>
-<li>
-<p><strong>Summary:</strong> This framework provides guidelines for authenticating multimedia content. It includes methods for verifying the integrity of digital media files and ensuring that they have not been altered since their creation. This helps in maintaining the trustworthiness of multimedia content in various applications, such as broadcasting and digital archiving.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_overview_of_trustworthiness_in_artificial_intelligence">3.10. Overview of trustworthiness in artificial intelligence</h3>
+<h3 id="_overview_of_trustworthiness_in_artificial_intelligence">3.9. Overview of trustworthiness in artificial intelligence</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -763,7 +749,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_framework_for_trust_based_media_services">3.11. Framework for trust-based media services</h3>
+<h3 id="_framework_for_trust_based_media_services">3.10. Framework for trust-based media services</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -782,7 +768,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_trust_txt">3.12. Trust.txt</h3>
+<h3 id="_trust_txt">3.11. Trust.txt</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -801,7 +787,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_chromium_reputation_provider_framework">3.13. Chromium Reputation Provider Framework</h3>
+<h3 id="_chromium_reputation_provider_framework">3.12. Chromium Reputation Provider Framework</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -821,7 +807,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_international_standard_content_code_iscc">3.14. International Standard Content Code (ISCC)</h3>
+<h3 id="_international_standard_content_code_iscc">3.13. International Standard Content Code (ISCC)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -840,7 +826,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_unique_media_identifier_umid">3.15. Unique Media Identifier (UMid)</h3>
+<h3 id="_unique_media_identifier_umid">3.14. Unique Media Identifier (UMid)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -859,7 +845,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_tdm_reservation_protocol">3.16. TDM Reservation Protocol</h3>
+<h3 id="_tdm_reservation_protocol">3.15. TDM Reservation Protocol</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -878,7 +864,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_spawning_ai_txt">3.17. Spawning ai.txt</h3>
+<h3 id="_spawning_ai_txt">3.16. Spawning ai.txt</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -897,7 +883,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_robots_txt">3.18. Robots.txt</h3>
+<h3 id="_robots_txt">3.17. Robots.txt</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -916,7 +902,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_vocabulary_for_expressing_content_preferences_for_ai">3.19. Vocabulary for Expressing Content Preferences for AI</h3>
+<h3 id="_vocabulary_for_expressing_content_preferences_for_ai">3.18. Vocabulary for Expressing Content Preferences for AI</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -936,7 +922,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_open_binding_of_content_identifiers_obid">3.20. Open Binding of Content Identifiers (OBID)</h3>
+<h3 id="_open_binding_of_content_identifiers_obid">3.19. Open Binding of Content Identifiers (OBID)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -955,7 +941,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_x_ig_dw_implementation_guidelines_for_digital_watermarking">3.21. X.ig-dw: Implementation Guidelines for Digital Watermarking</h3>
+<h3 id="_x_ig_dw_implementation_guidelines_for_digital_watermarking">3.20. X.ig-dw: Implementation Guidelines for Digital Watermarking</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -974,7 +960,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_specification_of_digital_rights_management_drm_technology_for_digital_publications">3.22. Specification of Digital Rights Management (DRM) Technology for Digital Publications</h3>
+<h3 id="_specification_of_digital_rights_management_drm_technology_for_digital_publications">3.21. Specification of Digital Rights Management (DRM) Technology for Digital Publications</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -993,7 +979,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_a_review_of_medical_image_watermarking_requirements_for_teleradiology">3.23. A Review of Medical Image Watermarking Requirements for Teleradiology</h3>
+<h3 id="_a_review_of_medical_image_watermarking_requirements_for_teleradiology">3.22. A Review of Medical Image Watermarking Requirements for Teleradiology</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1012,11 +998,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_evaluation_tools_for_persistent_association_technologies">3.24. Evaluation Tools for Persistent Association Technologies</h3>
+<h3 id="_evaluation_tools_for_persistent_association_technologies">3.23. Evaluation Tools for Persistent Association Technologies</h3>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>SDO/Group:</strong> ISO/IEC JTC 1/SC 29/WG 11</p>
+<p><strong>SDO/Group:</strong> ISO/IEC JTC 1/SC 29/WG 11 (MPEG)</p>
 </li>
 <li>
 <p><strong>Link:</strong> <a href="https://www.iso.org/obp/ui/es/#iso:std:iso-iec:tr:21000:-11:ed-1:v1:en">ISO/IEC TR 21000-11:2004</a></p>
@@ -1031,7 +1017,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ieee_draft_standard_for_evaluation_method_of_robustness_of_digital_watermarking_implementation_in_digital_contents">3.25. IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents</h3>
+<h3 id="_ieee_draft_standard_for_evaluation_method_of_robustness_of_digital_watermarking_implementation_in_digital_contents">3.24. IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1097,8 +1083,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">JPEG Trust Part 1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -1347,7 +1333,7 @@ left side
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2025-04-25 14:06:12 UTC
+Last updated 2025-04-28 19:35:14 UTC
 </div>
 </div>
 </body>

@@ -5,12 +5,12 @@
 <info>
 <title>Technical Report on AI and Multimedia Authenticity Standards</title>
 <subtitle>Mapping the standardisation landscape</subtitle>
-<date>2025-04-25</date>
+<date>2025-04-28</date>
 <revhistory>
 <revision>
 <revnumber>1.0</revnumber>
-<date>2025-04-25</date>
-<revremark>Draft 0.3</revremark>
+<date>2025-04-28</date>
+<revremark>Draft 0.4</revremark>
 </revision>
 </revhistory>
 </info>
@@ -23,7 +23,7 @@
 </section>
 <section xml:id="_introduction">
 <title>Introduction</title>
-<simpara>This report provides a comprehensive overview of various standards and specifications related to digital media, focusing on content provenance, trust authenticity, asset identifiers, opt-out mechanisms, and watermarking. These standards are essential for ensuring the authenticity of both synthetic and non-synthetic digital content. As generative AI continues to evolve, the need for robust standards becomes increasingly critical to protect the interests of creators, consumers, and organizations.</simpara>
+<simpara>This report provides a comprehensive overview of various standards and specifications related to digital media, focusing on content provenance, trust authenticity, asset identifiers, rights declarations, and watermarking. These standards are essential for ensuring the authenticity of both synthetic and non-synthetic digital content. As generative AI continues to evolve, the need for robust standards becomes increasingly critical to protect the interests of creators, consumers, and organizations.</simpara>
 <simpara>The standards discussed in this report are developed by various Standard Development Organizations (SDOs) and groups, each contributing to different aspects of AI and authenticity. By adhering to these guidelines, organizations can maintain the trustworthiness and provenance of their digital assets, ensuring that content remains authentic and traceable throughout its lifecycle.</simpara>
 <section xml:id="_about_the_amas_initiative">
 <title>About the AMAS initiative</title>
@@ -31,22 +31,23 @@
 </section>
 <section xml:id="_methodology">
 <title>Methodology</title>
-<simpara>The approach taken in this report involves a thorough review of existing standards and specifications related to digital media. The focus is on identifying key areas where standards already exist, and from that, what are still are needed to ensure the authenticity and integrity of digital content. From that review, we have broken this report into the categories: content provenance, trust and authenticity, asset identifiers, opt-out mechanisms, and watermarking.</simpara>
+<simpara>The approach taken in this report involves a thorough review of existing standards and specifications related to digital media. The focus is on identifying key areas where standards already exist, and from that, what are still are needed to ensure the authenticity and integrity of digital content. From that review, we have broken this report into the categories: content provenance, trust and authenticity, asset identifiers, rights declarations, and watermarking.</simpara>
 </section>
 </section>
 <section xml:id="_categories_of_standards">
 <title>Categories of Standards</title>
+<simpara>In this white paper, we have clustered those standards and specifications in the scope of this analysis into five categories: content provenance, trust and authenticity, asset identifiers, rights declaration and watermarking. Rights declaration is in turn is defined in two inclinations: general purpose and opt-out mechanisms. The general purpose rights declaration addresses a broad scope while the opt-out mechanisms refer to a specific aspect of right declaration that is of relevance to the scope of this document.</simpara>
 <section xml:id="_content_provenance">
 <title>Content Provenance</title>
-<simpara>Content provenance refers to the documentation of the origin and history of digital content. It is crucial for verifying the authenticity and integrity of digital assets. Provenance information helps in tracking the creation, modification, and distribution of content, providing a transparent record that can be used to establish trust and accountability. This is particularly important in contexts where the authenticity of content is paramount, such as in journalism, scientific research, and digital art.</simpara>
+<simpara>Content provenance refers to information on the origin and history of digital content. This is an important tool for the verification of authenticity and integrity of digital assets. Provenance information helps in tracking the creation, modification, and distribution of content, providing a transparent record that can be used to establish trust and accountability. This is particularly important use cases and applications where the authenticity of content is paramount, such as in journalism, scientific research, and digital art.</simpara>
 </section>
 <section xml:id="_trust_and_authenticity">
 <title>Trust and Authenticity</title>
-<simpara>Trust and authenticity standards ensure that digital content is genuine and has not been tampered with. These standards are essential for maintaining the integrity of digital media, especially in environments where content manipulation is a significant concern. By implementing trust and authenticity measures, organizations can protect their digital assets from unauthorized alterations and ensure that consumers can rely on the content they receive.</simpara>
+<simpara>Trust and authenticity measures ensure that digital content is genuine and has not been tampered with. Such mechanisms are essential for maintaining the integrity of digital media, especially in environments where content manipulation is a significant concern. By implementing trust and authenticity measures, organizations can protect their digital assets from unauthorized alterations and ensure that consumers can rely on the content they receive.</simpara>
 </section>
 <section xml:id="_asset_identifiers">
 <title>Asset Identifiers</title>
-<simpara>Asset identifiers are unique codes assigned to digital content to ensure proper management and tracking. These identifiers help in maintaining a clear and organized record of digital assets, making it easier to manage and distribute content. By using asset identifiers, organizations can ensure that their digital media is properly tracked and accounted for, reducing the risk of loss or unauthorized use.</simpara>
+<simpara>Asset identifiers are unique codes assigned to digital content to ensure their proper management and tracking. These identifiers help in maintaining a clear and organized record of digital assets, making it easier to organize, manage and distribute content. By using asset identifiers, organizations can ensure that their digital media is properly tracked and accounted for, reducing the risk of loss or unauthorized use.</simpara>
 </section>
 <section xml:id="_rights_declarations">
 <title>Rights Declarations</title>
@@ -56,12 +57,12 @@
 </section>
 <section xml:id="_opt_out_mechanisms">
 <title>Opt-Out Mechanisms</title>
-<simpara>Opt-out mechanisms are a specialized category of rights declarations that allow users to exclude their content from certain processes, such as data mining or AI training. These mechanisms are essential for protecting the privacy and rights of content creators, ensuring that their digital assets are not used without their consent. By implementing opt-out mechanisms, organizations can provide users with greater control over their content and ensure that their rights are respected.</simpara>
+<simpara>Opt-out mechanisms are a specialized approach to rights declarations that allow users to exclude their content from certain processes, such as data mining or AI training. These mechanisms are essential for protecting the privacy and rights of content creators, ensuring that their digital assets are not used without their consent. By implementing opt-out mechanisms, organizations can provide users with greater control over their content and ensure that their rights are respected.</simpara>
 </section>
 </section>
 <section xml:id="_watermarking">
 <title>Watermarking</title>
-<simpara>Watermarking standards ensure that digital content is marked in a way that can be used to verify its authenticity and ownership. These standards are essential for protecting the rights of content creators and ensuring that their digital assets are not used without their consent. By implementing watermarking measures, organizations can provide users with greater control over their content and ensure that their rights are respected.</simpara>
+<simpara>Watermarking ensures that digital content is marked in a way that can be used to verify its authenticity and ownership. Watermarking is increasingly used to facilitate the declaration of the rights of content creators and ensuring that their digital assets are not used without their consent. By implementing watermarking measures, organizations can provide users with greater control over their content and make sure that their rights are respected.</simpara>
 </section>
 </section>
 <section xml:id="_overview_of_specifications">
@@ -100,48 +101,48 @@
 </listitem>
 </itemizedlist>
 </section>
-<section xml:id="_jpeg_trust_part_1">
-<title>JPEG Trust Part 1</title>
+<section xml:id="_jpeg_trust_part_1_core_foundation">
+<title>JPEG Trust Part 1: Core foundation</title>
 <itemizedlist>
 <listitem>
-<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 29/WG 1</simpara>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 29/WG 1 (JPEG)</simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.iso.org/standard/86831.html">ISO 21617-1:2025</link></simpara>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.iso.org/standard/86831.html">ISO/IEC 21617-1:2025, second edition in progress</link></simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Summary:</emphasis> This standard focuses on ensuring trust in JPEG images through provenance documentation. It provides a framework for embedding provenance information directly into JPEG files, allowing users to verify the authenticity and history of the images. This is particularly useful in contexts where image manipulation is common, such as in digital forensics and media.</simpara>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard focuses on ensuring trust in JPEG images through provenance, detection and fact-checking. It provides a framework for embedding metadata in the form of trust indicators directly into JPEG files, allowing users to decide the degree of trust they can put on a digital asset, based on provenance, authenticity, and intellectual property, as a function of their trust profiles. This is particularly useful in contexts where image manipulation is common, such as in social media applications.</simpara>
 </listitem>
 </itemizedlist>
 </section>
-<section xml:id="_jpeg_trust_part_2">
-<title>JPEG Trust Part 2</title>
+<section xml:id="_jpeg_trust_part_2_trust_profiles_catalogue">
+<title>JPEG Trust Part 2: Trust profiles catalogue</title>
 <itemizedlist>
 <listitem>
-<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 29/WG 1</simpara>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 29/WG 1 (JPEG)</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Status:</emphasis> In Progress</simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Summary:</emphasis> This standard introduces a series of Trust Profiles that can be used either as is or as starting points to establish profiles for use in specific workflows.</simpara>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard introduces a series of Trust Profiles that can be used either as is or as starting points to establish profiles for use in specific workflows, use cases and applications such as broadcasting, digital cameras, AI-powered content generation services, etc.</simpara>
 </listitem>
 </itemizedlist>
 </section>
-<section xml:id="_jpeg_trust_part_3">
-<title>JPEG Trust Part 3</title>
+<section xml:id="_jpeg_trust_part_3_media_asset_watermarking">
+<title>JPEG Trust Part 3: Media asset watermarking</title>
 <itemizedlist>
 <listitem>
-<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 29/WG 1</simpara>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 29/WG 1 (JPEG)</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Status:</emphasis> Initiated</simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Summary:</emphasis> This standard will provide a review of image watermarking technologies.</simpara>
+<simpara><emphasis role="strong">Summary:</emphasis> This standard is planned to provide an overview of mechanisms used for watermarking of media assets.</simpara>
 </listitem>
 </itemizedlist>
 </section>
@@ -155,7 +156,7 @@
 <simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://cawg.io/metadata/1.1-draft/">CAWG Metadata</link></simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Status:</emphasis> Published, with a new version in progress</simpara>
+<simpara><emphasis role="strong">Status:</emphasis> Published (new version in progress)</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This specification provides a framework for expressing metadata that captures detailed information about the content, including ownership and authorship.</simpara>
@@ -172,7 +173,7 @@
 <simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://originator-profile.org/en-US/">Originator Profile</link></simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Status:</emphasis> Published, In progress, Initiated</simpara>
+<simpara><emphasis role="strong">Status:</emphasis> In progress</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This specification provides a framework for documenting the origin of digital content. It includes guidelines for creating and maintaining profiles that capture detailed information about the content&#8217;s creator and its creation process. This helps in establishing a clear and verifiable record of the content&#8217;s provenance.</simpara>
@@ -193,20 +194,6 @@
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This standard offers a model for representing provenance information in digital content. It defines a set of concepts and relationships that can be used to describe the history of a digital asset, including its creation, modification, and distribution. This model can be applied across various types of digital content, providing a flexible and comprehensive approach to provenance documentation.</simpara>
-</listitem>
-</itemizedlist>
-</section>
-<section xml:id="_h_mmauth_framework_for_authentication_of_multimedia_content">
-<title>H.MMAUTH: Framework for Authentication of Multimedia Content</title>
-<itemizedlist>
-<listitem>
-<simpara><emphasis role="strong">SDO/Group:</emphasis> ITU-T/SG-13 &amp; ISO/IEC JTC 1/SC29</simpara>
-</listitem>
-<listitem>
-<simpara><emphasis role="strong">Status:</emphasis> Initiated</simpara>
-</listitem>
-<listitem>
-<simpara><emphasis role="strong">Summary:</emphasis> This framework provides guidelines for authenticating multimedia content. It includes methods for verifying the integrity of digital media files and ensuring that they have not been altered since their creation. This helps in maintaining the trustworthiness of multimedia content in various applications, such as broadcasting and digital archiving.</simpara>
 </listitem>
 </itemizedlist>
 </section>
@@ -454,7 +441,7 @@
 <title>Evaluation Tools for Persistent Association Technologies</title>
 <itemizedlist>
 <listitem>
-<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 29/WG 11</simpara>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ISO/IEC JTC 1/SC 29/WG 11 (MPEG)</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.iso.org/obp/ui/es/#iso:std:iso-iec:tr:21000:-11:ed-1:v1:en">ISO/IEC TR 21000-11:2004</link></simpara>
@@ -529,8 +516,8 @@
 <entry align="left" valign="top"><simpara>JPEG Trust Part 1</simpara></entry>
 <entry align="left" valign="top"><simpara>x</simpara></entry>
 <entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
 <entry align="left" valign="top"></entry>
 </row>
 <row>
