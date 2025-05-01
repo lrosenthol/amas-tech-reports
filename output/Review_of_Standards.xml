@@ -5,18 +5,19 @@
 <info>
 <title>Technical Report on AI and Multimedia Authenticity Standards</title>
 <subtitle>Mapping the standardisation landscape</subtitle>
-<date>2025-04-28</date>
+<date>2025-05-01</date>
 <revhistory>
 <revision>
 <revnumber>1.0</revnumber>
-<date>2025-04-28</date>
-<revremark>Draft 0.4</revremark>
+<date>2025-05-01</date>
+<revremark>Draft 1</revremark>
 </revision>
 </revhistory>
 </info>
 <section xml:id="_executive_summary">
 <title>Executive Summary</title>
-<simpara>TBD</simpara>
+<simpara>This technical report provides a comprehensive overview of the current landscape of standards and specifications related to digital media authenticity and artificial intelligence. It categorizes these standards into five key areas: content provenance, trust and authenticity, asset identifiers, rights declarations, and watermarking. The report highlights the importance of these standards in ensuring the integrity, traceability, and trustworthiness of digital content, particularly in the context of generative AI and its implications for content creation and distribution.</simpara>
+<simpara>By mapping the contributions of various Standard Development Organizations (SDOs) and groups, this report identifies existing gaps and opportunities for further standardization. It serves as a valuable resource for stakeholders seeking to navigate the complex ecosystem of digital media standards and implement best practices to safeguard the authenticity and rights of digital assets. The findings underscore the critical role of robust standards in fostering trust and accountability in the evolving digital landscape.</simpara>
 <simpara><?asciidoc-pagebreak?></simpara>
 
 <simpara><?asciidoc-pagebreak?></simpara>
@@ -80,6 +81,9 @@
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
 </listitem>
 <listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Any</simpara>
+</listitem>
+<listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This standard provides guidelines for embedding content credentials in digital media to ensure provenance. It outlines methods for attaching metadata to digital assets, which can include information about the creator, creation date, and any modifications made to the content. This helps in maintaining a verifiable record of the content&#8217;s history.</simpara>
 </listitem>
 </itemizedlist>
@@ -95,6 +99,9 @@
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Status:</emphasis> In progress</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Any</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This ISO standard outlines methods for documenting content credentials to maintain provenance. It specifies the types of metadata that should be included and the formats for storing this information. By following these guidelines, organizations can ensure that their digital content is traceable and its authenticity can be verified.</simpara>
@@ -114,6 +121,9 @@
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
 </listitem>
 <listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Any, but focused on images</simpara>
+</listitem>
+<listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This standard focuses on ensuring trust in JPEG images through provenance, detection and fact-checking. It provides a framework for embedding metadata in the form of trust indicators directly into JPEG files, allowing users to decide the degree of trust they can put on a digital asset, based on provenance, authenticity, and intellectual property, as a function of their trust profiles. This is particularly useful in contexts where image manipulation is common, such as in social media applications.</simpara>
 </listitem>
 </itemizedlist>
@@ -128,6 +138,9 @@
 <simpara><emphasis role="strong">Status:</emphasis> In Progress</simpara>
 </listitem>
 <listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Any, but focused on images</simpara>
+</listitem>
+<listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This standard introduces a series of Trust Profiles that can be used either as is or as starting points to establish profiles for use in specific workflows, use cases and applications such as broadcasting, digital cameras, AI-powered content generation services, etc.</simpara>
 </listitem>
 </itemizedlist>
@@ -140,6 +153,9 @@
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Status:</emphasis> Initiated</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Images</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This standard is planned to provide an overview of mechanisms used for watermarking of media assets.</simpara>
@@ -159,6 +175,9 @@
 <simpara><emphasis role="strong">Status:</emphasis> Published (new version in progress)</simpara>
 </listitem>
 <listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Any</simpara>
+</listitem>
+<listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This specification provides a framework for expressing metadata that captures detailed information about the content, including ownership and authorship.</simpara>
 </listitem>
 </itemizedlist>
@@ -174,6 +193,9 @@
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Status:</emphasis> In progress</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Web pages</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This specification provides a framework for documenting the origin of digital content. It includes guidelines for creating and maintaining profiles that capture detailed information about the content&#8217;s creator and its creation process. This helps in establishing a clear and verifiable record of the content&#8217;s provenance.</simpara>
@@ -193,6 +215,9 @@
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
 </listitem>
 <listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Any</simpara>
+</listitem>
+<listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This standard offers a model for representing provenance information in digital content. It defines a set of concepts and relationships that can be used to describe the history of a digital asset, including its creation, modification, and distribution. This model can be applied across various types of digital content, providing a flexible and comprehensive approach to provenance documentation.</simpara>
 </listitem>
 </itemizedlist>
@@ -208,6 +233,9 @@
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> n/a</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This standard offers an overview of trustworthiness in artificial intelligence. It provides guidelines for assessing the reliability and integrity of AI systems, ensuring that they produce trustworthy results. This is crucial in applications where AI is used to generate or manipulate digital content, as it helps in maintaining the authenticity of the output.</simpara>
@@ -227,7 +255,8 @@
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Summary:</emphasis> This framework provides guidelines for trust-based media services. It includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.</simpara>
+<simpara><emphasis role="strong">Media Types:</emphasis> n/a</simpara>
+<literallayout class="monospaced">*Summary:* This framework provides guidelines for trust-based media services. It includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.</literallayout>
 </listitem>
 </itemizedlist>
 </section>
@@ -242,6 +271,9 @@
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Status:</emphasis> Initiated</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Web pages</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This specification outlines methods for establishing trust in digital content. It includes guidelines for creating and maintaining trust.txt files, which can be used to document the trustworthiness of digital assets. This helps in ensuring that users can verify the authenticity of the content they receive.</simpara>
@@ -262,6 +294,9 @@
 <simpara><emphasis role="strong">Status:</emphasis> Initiated</simpara>
 </listitem>
 <listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Web pages</simpara>
+</listitem>
+<listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This framework provides guidelines for reputation management in digital content. It includes methods for assessing and maintaining the reputation of digital assets, ensuring that users can trust the content they access. This is particularly important in contexts where reputation is a key factor in determining the value and reliability of digital media.</simpara>
 </listitem>
 </itemizedlist>
@@ -277,6 +312,9 @@
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Any</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This standard provides a unique identifier for digital content. It includes guidelines for creating and maintaining ISCC codes, which can be used to track and manage digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
@@ -296,6 +334,9 @@
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
 </listitem>
 <listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Any</simpara>
+</listitem>
+<listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This specification offers a unique identifier for media content. It includes methods for creating and maintaining UMid codes, which can be used to track and manage media assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
 </listitem>
 </itemizedlist>
@@ -311,6 +352,9 @@
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Web pages, EPub and PDF</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This protocol provides guidelines for reserving content from text and data mining. It includes methods for creating and maintaining TDMRep files, which can be used to document the reservation of digital assets. This helps in ensuring that content is not used for data mining without the creator&#8217;s consent.</simpara>
@@ -330,6 +374,9 @@
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
 </listitem>
 <listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Any</simpara>
+</listitem>
+<listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This specification offers a method for opting out of AI training. It includes guidelines for creating and maintaining ai.txt files, which can be used to document the opt-out of digital assets. This helps in ensuring that content is not used for AI training without the creator&#8217;s consent.</simpara>
 </listitem>
 </itemizedlist>
@@ -347,6 +394,9 @@
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
 </listitem>
 <listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Any</simpara>
+</listitem>
+<listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This standard provides guidelines for excluding content from web crawlers. It includes methods for creating and maintaining robots.txt files, which can be used to document the exclusion of digital assets. This helps in ensuring that content is not accessed by web crawlers without the creator&#8217;s consent.</simpara>
 </listitem>
 </itemizedlist>
@@ -359,13 +409,16 @@
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Link:</emphasis>
-<link xl:href="https://datatracker.ietf.org/doc/draft-vaughan-aipref-vocab/">draft-vaughan-aipref-vocab-00</link></simpara>
+<link xl:href="https://www.ietf.org/archive/id/draft-ietf-aipref-vocab-00.html">ietf-aipref-vocab-00</link></simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Status:</emphasis> Withdrawn</simpara>
+<simpara><emphasis role="strong">Status:</emphasis> In Progress</simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Summary:</emphasis> This draft offers a vocabulary for expressing content preferences for AI. It includes guidelines for creating and maintaining preference files, which can be used to document the preferences of digital assets. This helps in ensuring that content is used in accordance with the creator&#8217;s preferences.</simpara>
+<simpara><emphasis role="strong">Media Types:</emphasis> Any</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This document proposes a standardized vocabulary of use cases that can be targeted when expressing machine-readable opt-outs related to Text and Data Mining (TDM) and AI training. The vocabulary is agnostic to specific opt-out mechanisms and enables declaring parties to communicate restrictions or permissions regarding the use of their digital assets in a structured and interoperable manner.</simpara>
 </listitem>
 </itemizedlist>
 </section>
@@ -382,6 +435,9 @@
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
 </listitem>
 <listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Audio</simpara>
+</listitem>
+<listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This standard provides guidelines for binding content identifiers to digital media. It includes methods for creating and maintaining OBID files, which can be used to document the binding of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
 </listitem>
 </itemizedlist>
@@ -396,7 +452,10 @@
 <simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.itu.int/md/T22-SG17-240902-TD-PLEN-2413/en">2413-PLEN</link></simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+<simpara><emphasis role="strong">Status:</emphasis> Published, but temporary</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Images, video</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This guideline offers methods for implementing digital watermarking. It includes guidelines for creating and maintaining watermark files, which can be used to document the watermarking of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
@@ -416,6 +475,9 @@
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
 </listitem>
 <listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> EPub and PDF</simpara>
+</listitem>
+<listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This standard provides an overview of DRM technologies for digital publications. It includes guidelines for creating and maintaining DRM files, which can be used to document the DRM of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
 </listitem>
 </itemizedlist>
@@ -431,6 +493,9 @@
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Images</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This review outlines the requirements for watermarking medical images for teleradiology. It includes guidelines for creating and maintaining watermark files, which can be used to document the watermarking of medical images. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
@@ -450,6 +515,9 @@
 <simpara><emphasis role="strong">Status:</emphasis> Published</simpara>
 </listitem>
 <listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Video</simpara>
+</listitem>
+<listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This standard provides tools for evaluating persistent association technologies. It includes guidelines for creating and maintaining evaluation files, which can be used to document the evaluation of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
 </listitem>
 </itemizedlist>
@@ -465,6 +533,9 @@
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Status:</emphasis> In progress</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Any</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Summary:</emphasis> This draft standard offers methods for evaluating the robustness of digital watermarking. It includes guidelines for creating and maintaining evaluation files, which can be used to document the evaluation of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.</simpara>
@@ -700,8 +771,10 @@
 </tgroup>
 </table>
 </section>
-<section xml:id="_graphical_representation">
-<title>Graphical Representation</title>
+<section xml:id="_graphical_representations">
+<title>Graphical Representations</title>
+<section xml:id="_a_mind_map_of_the_standards_categorization">
+<title>A mind map of the Standards Categorization</title>
 <informalfigure>
 <mediaobject>
 <imageobject>
@@ -711,9 +784,27 @@
 </mediaobject>
 </informalfigure>
 </section>
+<section xml:id="_a_visualization_of_the_standards_categorization">
+<title>A visualization of the Standards Categorization</title>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/radarmap-1.png"/>
+</imageobject>
+<textobject><phrase>Visual map of the Standards Categorization</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</section>
+</section>
+</section>
+<section xml:id="_identified_gaps_and_opportunities">
+<title>Identified Gaps and Opportunities</title>
+<simpara>TBD</simpara>
 </section>
 <section xml:id="_conclusion_and_next_steps">
 <title>Conclusion and next steps</title>
-<simpara>TBD</simpara>
+<simpara>Through the categorization of these existing standards into key areas, we have highlighted their critical role in fostering trust, accountability, and integrity in the digital ecosystem. The findings underscore the importance of continued collaboration among Standard Development Organizations (SDOs), industry stakeholders, and researchers to address existing gaps and emerging challenges.</simpara>
+<simpara>As next steps, it is essential to focus on the harmonization of overlapping standards and the development of interoperable frameworks that can be widely adopted across industries. Emerging areas of work, such as the integration of decentralized technologies for enhanced provenance management and the exploration of new watermarking techniques for synthetic media, present exciting opportunities for innovation. Additionally, fostering awareness and adoption of these standards through education, advocacy, and pilot implementations will be crucial in ensuring their effectiveness and impact.</simpara>
+<simpara>The evolving nature of digital media and AI technologies necessitates a proactive approach to standardization. By staying ahead of technological advancements and fostering a collaborative ecosystem, we can build a robust foundation for the authenticity and trustworthiness of digital content in the years to come.</simpara>
 </section>
 </article>
