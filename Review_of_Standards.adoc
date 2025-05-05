@@ -1,7 +1,7 @@
 = Technical Report on AI and Multimedia Authenticity Standards: Mapping the standardisation landscape
 :revnumber: 1.0
 :revdate: {docdate}
-:revremark: Draft 1
+:revremark: Final Draft
 // :author: Leonard Rosenthol <lrosenth@adobe.com>, Touradj Ebrahimi <touradj.ebrahimi@epfl.ch>
 :toc: macro
 :outlinelevels: 3 
@@ -16,7 +16,7 @@
 
 == Executive Summary
 
-This technical report provides a comprehensive overview of the current landscape of standards and specifications related to digital media authenticity and artificial intelligence. It categorizes these standards into five key areas: content provenance, trust and authenticity, asset identifiers, rights declarations, and watermarking. The report highlights the importance of these standards in ensuring the integrity, traceability, and trustworthiness of digital content, particularly in the context of generative AI and its implications for content creation and distribution.
+This technical report provides a comprehensive overview of the current landscape of standards and specifications related to digital media authenticity and artificial intelligence. It categorizes these standards into five key clusters: content provenance, trust and authenticity, asset identifiers, rights declarations, and watermarking. The report highlights the importance of these standards in ensuring the integrity, traceability, and trustworthiness of digital content, particularly in the context of generative AI and its implications for content creation and distribution.
 
 By mapping the contributions of various Standard Development Organizations (SDOs) and groups, this report identifies existing gaps and opportunities for further standardization. It serves as a valuable resource for stakeholders seeking to navigate the complex ecosystem of digital media standards and implement best practices to safeguard the authenticity and rights of digital assets. The findings underscore the critical role of robust standards in fostering trust and accountability in the evolving digital landscape.
 
@@ -43,15 +43,15 @@ The standards discussed in this report are developed by various Standard Develop
 TBD
 
 === Methodology
-The approach taken in this report involves a thorough review of existing standards and specifications related to digital media. The focus is on identifying key areas where standards already exist, and from that, what are still are needed to ensure the authenticity and integrity of digital content. From that review, we have broken this report into the categories: content provenance, trust and authenticity, asset identifiers, rights declarations, and watermarking.
+The approach taken in this report involves a thorough review of existing standards and specifications related to digital media. The focus is on identifying key areas where standards already exist, and from that, what is still needed to ensure the authenticity and integrity of digital content. From that review, we have broken this report into the categories: content provenance, trust and authenticity, asset identifiers, rights declarations, and watermarking.
 
 == Categories of Standards
 
-In this white paper, we have clustered those standards and specifications in the scope of this analysis into five categories: content provenance, trust and authenticity, asset identifiers, rights declaration and watermarking. Rights declaration is in turn is defined in two inclinations: general purpose and opt-out mechanisms. The general purpose rights declaration addresses a broad scope while the opt-out mechanisms refer to a specific aspect of right declaration that is of relevance to the scope of this document.  
+In this white paper, we have clustered those standards and specifications in the scope of this analysis into five categories: content provenance, trust and authenticity, asset identifiers, rights declaration and watermarking. Rights declaration, in turn, is defined in two inclinations: general purpose and opt-out mechanisms. The general purpose rights declaration addresses a broad scope while the opt-out mechanisms refer to a specific aspect of rights declaration that is of relevance to the scope of this document.  
 
 === Content Provenance
 
-Content provenance refers to information on the origin and history of digital content. This is an important tool for the verification of authenticity and integrity of digital assets. Provenance information helps in tracking the creation, modification, and distribution of content, providing a transparent record that can be used to establish trust and accountability. This is particularly important use cases and applications where the authenticity of content is paramount, such as in journalism, scientific research, and digital art.
+Content provenance refers to information on the origin and history of digital content. This is an important tool for the verification of the authenticity and integrity of digital assets. Provenance information helps in tracking the creation, modification, and distribution of content, providing a transparent record that can be used to establish trust and accountability. This is particularly important in use cases and applications where the authenticity of content is paramount, such as in journalism, scientific research, and digital art.
 
 === Trust and Authenticity
 
@@ -59,7 +59,7 @@ Trust and authenticity measures ensure that digital content is genuine and has n
 
 === Asset Identifiers
 
-Asset identifiers are unique codes assigned to digital content to ensure their proper management and tracking. These identifiers help in maintaining a clear and organized record of digital assets, making it easier to organize, manage and distribute content. By using asset identifiers, organizations can ensure that their digital media is properly tracked and accounted for, reducing the risk of loss or unauthorized use.
+Asset identifiers are unique codes assigned to digital content to ensure proper management and tracking. These identifiers help in maintaining a clear and organized record of digital assets, making it easier to organize, manage and distribute content. By using asset identifiers, organizations can ensure that their digital media is properly tracked and accounted for, reducing the risk of loss or unauthorized use.
 
 === Rights Declarations
 
@@ -197,7 +197,7 @@ Watermarking ensures that digital content is marked in a way that can be used to
 
 - *Media Types:* n/a
 
- *Summary:* This framework provides guidelines for trust-based media services. It includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.
+ *Summary:* This framework provides guidelines for trust-based media services. In particular, it includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.
 
 === Trust.txt
 
@@ -558,60 +558,62 @@ https://www.ietf.org/archive/id/draft-ietf-aipref-vocab-00.html[ietf-aipref-voca
 
 === Graphical Representations
 
-==== A mind map of the Standards Categorization
-[plantuml, "Standards Categorization"]
-....
-@startmindmap
-* Standards Categorization
-** Content Provenance
-*** Content Credentials (C2PA)
-*** Content Credentials (ISO 22144)
-*** JPEG Trust Part 1
-*** CAWG Metadata
-*** Originator Profile
-*** PROV
-** Trust and Authenticity
-*** Content Credentials (C2PA)
-*** Content Credentials (ISO 22144)
-*** JPEG Trust Part 1
-*** JPEG Trust Part 2
-*** CAWG Metadata
-*** Originator Profile
-*** PROV
-*** H.MMAUTH: Framework for Authentication of Multimedia Content
-*** Overview of trustworthiness in artificial intelligence
-*** Framework for trust-based media services
-*** Trust.txt
-*** Chromium Reputation Provider Framework
-*** Evaluation Tools for Persistent Association Technologies
+// ==== A mind map of the Standards Categorization
+// [plantuml, "Standards Categorization"]
+// ....
+// @startmindmap
+// * Standards Categorization
+// ** Content Provenance
+// *** Content Credentials (C2PA)
+// *** Content Credentials (ISO 22144)
+// *** JPEG Trust Part 1
+// *** CAWG Metadata
+// *** Originator Profile
+// *** PROV
+// ** Trust and Authenticity
+// *** Content Credentials (C2PA)
+// *** Content Credentials (ISO 22144)
+// *** JPEG Trust Part 1
+// *** JPEG Trust Part 2
+// *** CAWG Metadata
+// *** Originator Profile
+// *** PROV
+// *** H.MMAUTH: Framework for Authentication of Multimedia Content
+// *** Overview of trustworthiness in artificial intelligence
+// *** Framework for trust-based media services
+// *** Trust.txt
+// *** Chromium Reputation Provider Framework
+// *** Evaluation Tools for Persistent Association Technologies
 
-left side
+// left side
 
-** Asset Identifiers
-*** International Standard Content Code (ISCC)
-*** Unique Media Identifier (UMid)
-*** Open Binding of Content Identifiers (OBID)
-** Rights Declarations
-*** CAWG Metadata
-*** Trust.txt
-*** TDM Reservation Protocol
-*** Spawning ai.txt
-*** Robots.txt
-*** Vocabulary for Expressing Content Preferences for AI
-*** Specification of Digital Rights Management (DRM) Technology
-** Watermarking
-*** Content Credentials (C2PA)
-*** JPEG Trust Part 3
-*** X.ig-dw: Implementation Guidelines for Digital Watermarking
-*** A Review of Medical Image Watermarking Requirements
-*** Evaluation Tools for Persistent Association Technologies
-*** IEEE Draft Standard for Evaluation Method of Robustness
-@endmindmap
-....
+// ** Asset Identifiers
+// *** International Standard Content Code (ISCC)
+// *** Unique Media Identifier (UMid)
+// *** Open Binding of Content Identifiers (OBID)
+// ** Rights Declarations
+// *** CAWG Metadata
+// *** Trust.txt
+// *** TDM Reservation Protocol
+// *** Spawning ai.txt
+// *** Robots.txt
+// *** Vocabulary for Expressing Content Preferences for AI
+// *** Specification of Digital Rights Management (DRM) Technology
+// ** Watermarking
+// *** Content Credentials (C2PA)
+// *** JPEG Trust Part 3
+// *** X.ig-dw: Implementation Guidelines for Digital Watermarking
+// *** A Review of Medical Image Watermarking Requirements
+// *** Evaluation Tools for Persistent Association Technologies
+// *** IEEE Draft Standard for Evaluation Method of Robustness
+// @endmindmap
+// ....
 
 ==== A visualization of the Standards Categorization
 
-image::images/radarmap-1.png[Visual map of the Standards Categorization]
+image::images/radarmap-1.png[Visual map of the Standards Categorization, Part 1]
+
+image::images/radarmap-2.png[Visual map of the Standards Categorization, Part 2]
 
 == Identified Gaps and Opportunities
 

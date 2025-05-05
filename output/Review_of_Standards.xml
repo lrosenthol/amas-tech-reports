@@ -5,18 +5,18 @@
 <info>
 <title>Technical Report on AI and Multimedia Authenticity Standards</title>
 <subtitle>Mapping the standardisation landscape</subtitle>
-<date>2025-05-01</date>
+<date>2025-05-05</date>
 <revhistory>
 <revision>
 <revnumber>1.0</revnumber>
-<date>2025-05-01</date>
-<revremark>Draft 1</revremark>
+<date>2025-05-05</date>
+<revremark>Final Draft</revremark>
 </revision>
 </revhistory>
 </info>
 <section xml:id="_executive_summary">
 <title>Executive Summary</title>
-<simpara>This technical report provides a comprehensive overview of the current landscape of standards and specifications related to digital media authenticity and artificial intelligence. It categorizes these standards into five key areas: content provenance, trust and authenticity, asset identifiers, rights declarations, and watermarking. The report highlights the importance of these standards in ensuring the integrity, traceability, and trustworthiness of digital content, particularly in the context of generative AI and its implications for content creation and distribution.</simpara>
+<simpara>This technical report provides a comprehensive overview of the current landscape of standards and specifications related to digital media authenticity and artificial intelligence. It categorizes these standards into five key clusters: content provenance, trust and authenticity, asset identifiers, rights declarations, and watermarking. The report highlights the importance of these standards in ensuring the integrity, traceability, and trustworthiness of digital content, particularly in the context of generative AI and its implications for content creation and distribution.</simpara>
 <simpara>By mapping the contributions of various Standard Development Organizations (SDOs) and groups, this report identifies existing gaps and opportunities for further standardization. It serves as a valuable resource for stakeholders seeking to navigate the complex ecosystem of digital media standards and implement best practices to safeguard the authenticity and rights of digital assets. The findings underscore the critical role of robust standards in fostering trust and accountability in the evolving digital landscape.</simpara>
 <simpara><?asciidoc-pagebreak?></simpara>
 
@@ -32,15 +32,15 @@
 </section>
 <section xml:id="_methodology">
 <title>Methodology</title>
-<simpara>The approach taken in this report involves a thorough review of existing standards and specifications related to digital media. The focus is on identifying key areas where standards already exist, and from that, what are still are needed to ensure the authenticity and integrity of digital content. From that review, we have broken this report into the categories: content provenance, trust and authenticity, asset identifiers, rights declarations, and watermarking.</simpara>
+<simpara>The approach taken in this report involves a thorough review of existing standards and specifications related to digital media. The focus is on identifying key areas where standards already exist, and from that, what is still needed to ensure the authenticity and integrity of digital content. From that review, we have broken this report into the categories: content provenance, trust and authenticity, asset identifiers, rights declarations, and watermarking.</simpara>
 </section>
 </section>
 <section xml:id="_categories_of_standards">
 <title>Categories of Standards</title>
-<simpara>In this white paper, we have clustered those standards and specifications in the scope of this analysis into five categories: content provenance, trust and authenticity, asset identifiers, rights declaration and watermarking. Rights declaration is in turn is defined in two inclinations: general purpose and opt-out mechanisms. The general purpose rights declaration addresses a broad scope while the opt-out mechanisms refer to a specific aspect of right declaration that is of relevance to the scope of this document.</simpara>
+<simpara>In this white paper, we have clustered those standards and specifications in the scope of this analysis into five categories: content provenance, trust and authenticity, asset identifiers, rights declaration and watermarking. Rights declaration, in turn, is defined in two inclinations: general purpose and opt-out mechanisms. The general purpose rights declaration addresses a broad scope while the opt-out mechanisms refer to a specific aspect of rights declaration that is of relevance to the scope of this document.</simpara>
 <section xml:id="_content_provenance">
 <title>Content Provenance</title>
-<simpara>Content provenance refers to information on the origin and history of digital content. This is an important tool for the verification of authenticity and integrity of digital assets. Provenance information helps in tracking the creation, modification, and distribution of content, providing a transparent record that can be used to establish trust and accountability. This is particularly important use cases and applications where the authenticity of content is paramount, such as in journalism, scientific research, and digital art.</simpara>
+<simpara>Content provenance refers to information on the origin and history of digital content. This is an important tool for the verification of the authenticity and integrity of digital assets. Provenance information helps in tracking the creation, modification, and distribution of content, providing a transparent record that can be used to establish trust and accountability. This is particularly important in use cases and applications where the authenticity of content is paramount, such as in journalism, scientific research, and digital art.</simpara>
 </section>
 <section xml:id="_trust_and_authenticity">
 <title>Trust and Authenticity</title>
@@ -48,7 +48,7 @@
 </section>
 <section xml:id="_asset_identifiers">
 <title>Asset Identifiers</title>
-<simpara>Asset identifiers are unique codes assigned to digital content to ensure their proper management and tracking. These identifiers help in maintaining a clear and organized record of digital assets, making it easier to organize, manage and distribute content. By using asset identifiers, organizations can ensure that their digital media is properly tracked and accounted for, reducing the risk of loss or unauthorized use.</simpara>
+<simpara>Asset identifiers are unique codes assigned to digital content to ensure proper management and tracking. These identifiers help in maintaining a clear and organized record of digital assets, making it easier to organize, manage and distribute content. By using asset identifiers, organizations can ensure that their digital media is properly tracked and accounted for, reducing the risk of loss or unauthorized use.</simpara>
 </section>
 <section xml:id="_rights_declarations">
 <title>Rights Declarations</title>
@@ -256,7 +256,7 @@
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Media Types:</emphasis> n/a</simpara>
-<literallayout class="monospaced">*Summary:* This framework provides guidelines for trust-based media services. It includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.</literallayout>
+<literallayout class="monospaced">*Summary:* This framework provides guidelines for trust-based media services. In particular, it includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.</literallayout>
 </listitem>
 </itemizedlist>
 </section>
@@ -773,23 +773,20 @@
 </section>
 <section xml:id="_graphical_representations">
 <title>Graphical Representations</title>
-<section xml:id="_a_mind_map_of_the_standards_categorization">
-<title>A mind map of the Standards Categorization</title>
-<informalfigure>
-<mediaobject>
-<imageobject>
-<imagedata fileref="Standards%20Categorization.png"/>
-</imageobject>
-<textobject><phrase>Standards Categorization</phrase></textobject>
-</mediaobject>
-</informalfigure>
-</section>
 <section xml:id="_a_visualization_of_the_standards_categorization">
 <title>A visualization of the Standards Categorization</title>
 <informalfigure>
 <mediaobject>
 <imageobject>
-<imagedata fileref="images/radarmap-1.png"/>
+<imagedata fileref="images/radarmap-1.png" contentwidth="Part 1"/>
+</imageobject>
+<textobject><phrase>Visual map of the Standards Categorization</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/radarmap-2.png" contentwidth="Part 2"/>
 </imageobject>
 <textobject><phrase>Visual map of the Standards Categorization</phrase></textobject>
 </mediaobject>
