@@ -5,11 +5,11 @@
 <info>
 <title>Technical Report on AI and Multimedia Authenticity Standards</title>
 <subtitle>Mapping the standardisation landscape</subtitle>
-<date>2025-05-05</date>
+<date>2025-05-06</date>
 <revhistory>
 <revision>
 <revnumber>1.0</revnumber>
-<date>2025-05-05</date>
+<date>2025-05-06</date>
 <revremark>Final Draft</revremark>
 </revision>
 </revhistory>
@@ -256,7 +256,9 @@
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Media Types:</emphasis> n/a</simpara>
-<literallayout class="monospaced">*Summary:* This framework provides guidelines for trust-based media services. In particular, it includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.</literallayout>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This framework provides guidelines for trust-based media services. In particular, it includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.</simpara>
 </listitem>
 </itemizedlist>
 </section>
@@ -542,6 +544,66 @@
 </listitem>
 </itemizedlist>
 </section>
+<section xml:id="_h_mmauth_framework_for_authentication_of_multimedia_content">
+<title>H.MMAUTH: Framework for authentication of multimedia content</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ITU-T SG21/Q9</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.itu.int/itu-t/workprog/wp_item.aspx?isn=21141">H.MMAUTH</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> In progress</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Video</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This draft recommendation specifies a technical solution for the verification of multimedia content&#8217;s integrity, enabling users to confirm the authenticity of the content by its creators, such as governments, companies, or news organizations. The solution is based on the digital signing of data streams. The content creator (encoder) uses a private key to sign the content, while the recipient (decoder) uses a corresponding public key to verify the authenticity. The public key, necessary for verification, is not derived directly from the data stream but is obtained through a trusted, independent method, such as a third-party trust center.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_h_274v4_versatile_supplemental_enhancement_information_messages_for_coded_video_bitstreams">
+<title>H.274(V4): Versatile supplemental enhancement information messages for coded video bitstreams</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> JVET (ITU-T SG21 &amp; ISO/IEC JTC 1/SC 29/ WG5)</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.itu.int/itu-t/workprog/wp_item.aspx?isn=21058">H.274(V4)</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> In progress</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Video</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This specification contains the draft text for changes to the versatile supplemental enhancement information messages for coded video bitstreams (VSEI) standard (Rec. ITU-T H.274 | ISO/IEC 23002-7), to specify additional SEI messages, including encoder optimization information, source picture timing information , object mask information, modality information, text description information, generative face video, generative face video enhancement, digitally signed content initialization, digitally signed content selection, and digitally signed content verification SEI messages and updates to the neural-network post-filter characteristics SEI message.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_h_vads_assessment_criteria_for_video_authenticity_detection_services">
+<title>H.VADS: Assessment criteria for video authenticity detection services</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">SDO/Group:</emphasis> ITU-T SG21/Q7</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Link:</emphasis> <link xl:href="https://www.itu.int/ITU-T/workprog/wp_item.aspx?isn=22161">H.VADS</link></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Status:</emphasis> In progress</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Media Types:</emphasis> Video</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Summary:</emphasis> This draft recommendation provides a comprehensive assessment framework for video authenticity detection services. It specifies the requirements, assessment categories, key metrics, and methods to evaluate the capabilities of video authenticity detection services. Assessment categories cover the detection of various forms of intra-frame and inter-frame manipulation, as well as the overall performance of authenticity detection services. By establishing a structured, criteria-based approach, this draft recommendation would guide the development, evaluation, and selection of reliable and effective video authenticity detection services.</simpara>
+</listitem>
+</itemizedlist>
+</section>
 </section>
 <section xml:id="_standardization_map">
 <title>Standardization Map</title>
@@ -626,14 +688,6 @@
 <row>
 <entry align="left" valign="top"><simpara>PROV</simpara></entry>
 <entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-</row>
-<row>
-<entry align="left" valign="top"><simpara>H.MMAUTH: Framework for Authentication of Multimedia Content</simpara></entry>
-<entry align="left" valign="top"></entry>
 <entry align="left" valign="top"><simpara>x</simpara></entry>
 <entry align="left" valign="top"></entry>
 <entry align="left" valign="top"></entry>
@@ -766,6 +820,30 @@
 <entry align="left" valign="top"></entry>
 <entry align="left" valign="top"></entry>
 <entry align="left" valign="top"><simpara>x</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>H.MMAUTH: Framework for Authentication of Multimedia Content</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>H.274(V4): Versatile supplemental enhancement information messages for coded video bitstreams</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>H.VADS: Assessment criteria for video authenticity detection services</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"></entry>
 </row>
 </tbody>
 </tgroup>

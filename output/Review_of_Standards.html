@@ -439,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1>Technical Report on AI and Multimedia Authenticity Standards: Mapping the standardisation landscape</h1>
 <div class="details">
 <span id="revnumber">version 1.0,</span>
-<span id="revdate">2025-05-05</span>
+<span id="revdate">2025-05-06</span>
 <br><span id="revremark">Final Draft</span>
 </div>
 </div>
@@ -499,6 +499,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_a_review_of_medical_image_watermarking_requirements_for_teleradiology">3.22. A Review of Medical Image Watermarking Requirements for Teleradiology</a></li>
 <li><a href="#_evaluation_tools_for_persistent_association_technologies">3.23. Evaluation Tools for Persistent Association Technologies</a></li>
 <li><a href="#_ieee_draft_standard_for_evaluation_method_of_robustness_of_digital_watermarking_implementation_in_digital_contents">3.24. IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents</a></li>
+<li><a href="#_h_mmauth_framework_for_authentication_of_multimedia_content">3.25. H.MMAUTH: Framework for authentication of multimedia content</a></li>
+<li><a href="#_h_274v4_versatile_supplemental_enhancement_information_messages_for_coded_video_bitstreams">3.26. H.274(V4): Versatile supplemental enhancement information messages for coded video bitstreams</a></li>
+<li><a href="#_h_vads_assessment_criteria_for_video_authenticity_detection_services">3.27. H.VADS: Assessment criteria for video authenticity detection services</a></li>
 </ul>
 </li>
 <li><a href="#_standardization_map">4. Standardization Map</a>
@@ -794,11 +797,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li>
 <p><strong>Media Types:</strong> n/a</p>
-<div class="literalblock">
-<div class="content">
-<pre>*Summary:* This framework provides guidelines for trust-based media services. In particular, it includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.</pre>
-</div>
-</div>
+</li>
+<li>
+<p><strong>Summary:</strong> This framework provides guidelines for trust-based media services. In particular, it includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.</p>
 </li>
 </ul>
 </div>
@@ -1113,6 +1114,72 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_h_mmauth_framework_for_authentication_of_multimedia_content">3.25. H.MMAUTH: Framework for authentication of multimedia content</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>SDO/Group:</strong> ITU-T SG21/Q9</p>
+</li>
+<li>
+<p><strong>Link:</strong> <a href="https://www.itu.int/itu-t/workprog/wp_item.aspx?isn=21141">H.MMAUTH</a></p>
+</li>
+<li>
+<p><strong>Status:</strong> In progress</p>
+</li>
+<li>
+<p><strong>Media Types:</strong> Video</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This draft recommendation specifies a technical solution for the verification of multimedia content&#8217;s integrity, enabling users to confirm the authenticity of the content by its creators, such as governments, companies, or news organizations. The solution is based on the digital signing of data streams. The content creator (encoder) uses a private key to sign the content, while the recipient (decoder) uses a corresponding public key to verify the authenticity. The public key, necessary for verification, is not derived directly from the data stream but is obtained through a trusted, independent method, such as a third-party trust center.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_h_274v4_versatile_supplemental_enhancement_information_messages_for_coded_video_bitstreams">3.26. H.274(V4): Versatile supplemental enhancement information messages for coded video bitstreams</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>SDO/Group:</strong> JVET (ITU-T SG21 &amp; ISO/IEC JTC 1/SC 29/ WG5)</p>
+</li>
+<li>
+<p><strong>Link:</strong> <a href="https://www.itu.int/itu-t/workprog/wp_item.aspx?isn=21058">H.274(V4)</a></p>
+</li>
+<li>
+<p><strong>Status:</strong> In progress</p>
+</li>
+<li>
+<p><strong>Media Types:</strong> Video</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This specification contains the draft text for changes to the versatile supplemental enhancement information messages for coded video bitstreams (VSEI) standard (Rec. ITU-T H.274 | ISO/IEC 23002-7), to specify additional SEI messages, including encoder optimization information, source picture timing information , object mask information, modality information, text description information, generative face video, generative face video enhancement, digitally signed content initialization, digitally signed content selection, and digitally signed content verification SEI messages and updates to the neural-network post-filter characteristics SEI message.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_h_vads_assessment_criteria_for_video_authenticity_detection_services">3.27. H.VADS: Assessment criteria for video authenticity detection services</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>SDO/Group:</strong> ITU-T SG21/Q7</p>
+</li>
+<li>
+<p><strong>Link:</strong> <a href="https://www.itu.int/ITU-T/workprog/wp_item.aspx?isn=22161">H.VADS</a></p>
+</li>
+<li>
+<p><strong>Status:</strong> In progress</p>
+</li>
+<li>
+<p><strong>Media Types:</strong> Video</p>
+</li>
+<li>
+<p><strong>Summary:</strong> This draft recommendation provides a comprehensive assessment framework for video authenticity detection services. It specifies the requirements, assessment categories, key metrics, and methods to evaluate the capabilities of video authenticity detection services. Assessment categories cover the detection of various forms of intra-frame and inter-frame manipulation, as well as the overall performance of authenticity detection services. By establishing a structured, criteria-based approach, this draft recommendation would guide the development, evaluation, and selection of reliable and effective video authenticity detection services.</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1200,14 +1267,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PROV</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H.MMAUTH: Framework for Authentication of Multimedia Content</p></td>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -1341,6 +1400,30 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H.MMAUTH: Framework for Authentication of Multimedia Content</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H.274(V4): Versatile supplemental enhancement information messages for coded video bitstreams</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H.VADS: Assessment criteria for video authenticity detection services</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1388,7 +1471,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2025-05-05 13:08:09 UTC
+Last updated 2025-05-06 11:28:19 UTC
 </div>
 </div>
 </body>

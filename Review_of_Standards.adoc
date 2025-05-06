@@ -167,14 +167,6 @@ Watermarking ensures that digital content is marked in a way that can be used to
 
 - *Summary:* This standard offers a model for representing provenance information in digital content. It defines a set of concepts and relationships that can be used to describe the history of a digital asset, including its creation, modification, and distribution. This model can be applied across various types of digital content, providing a flexible and comprehensive approach to provenance documentation.
 
-// === H.MMAUTH: Framework for Authentication of Multimedia Content
-
-// - *SDO/Group:* ITU-T/SG-13 & ISO/IEC JTC 1/SC29
-
-// - *Status:* Initiated
-
-// - *Summary:* This framework provides guidelines for authenticating multimedia content. It includes methods for verifying the integrity of digital media files and ensuring that they have not been altered since their creation. This helps in maintaining the trustworthiness of multimedia content in various applications, such as broadcasting and digital archiving.
-
 === Overview of trustworthiness in artificial intelligence
 
 - *SDO/Group:* ISO/IEC JTC 1/SC 42
@@ -197,7 +189,7 @@ Watermarking ensures that digital content is marked in a way that can be used to
 
 - *Media Types:* n/a
 
- *Summary:* This framework provides guidelines for trust-based media services. In particular, it includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.
+- *Summary:* This framework provides guidelines for trust-based media services. In particular, it includes methods for establishing and maintaining trust in digital media platforms, ensuring that users can rely on the content they access. This is particularly important in contexts where media services are used to distribute sensitive or high-value content.
 
 === Trust.txt
 
@@ -371,6 +363,42 @@ https://www.ietf.org/archive/id/draft-ietf-aipref-vocab-00.html[ietf-aipref-voca
 - *Summary:* This draft standard offers methods for evaluating the robustness of digital watermarking. It includes guidelines for creating and maintaining evaluation files, which can be used to document the evaluation of digital assets. This helps in ensuring that content is properly accounted for and can be easily identified and retrieved.
 
 
+=== H.MMAUTH: Framework for authentication of multimedia content
+
+- *SDO/Group:* ITU-T SG21/Q9
+
+- *Link:* https://www.itu.int/itu-t/workprog/wp_item.aspx?isn=21141[H.MMAUTH]
+
+- *Status:* In progress
+
+- *Media Types:* Video
+
+- *Summary:* This draft recommendation specifies a technical solution for the verification of multimedia content's integrity, enabling users to confirm the authenticity of the content by its creators, such as governments, companies, or news organizations. The solution is based on the digital signing of data streams. The content creator (encoder) uses a private key to sign the content, while the recipient (decoder) uses a corresponding public key to verify the authenticity. The public key, necessary for verification, is not derived directly from the data stream but is obtained through a trusted, independent method, such as a third-party trust center.
+
+=== H.274(V4): Versatile supplemental enhancement information messages for coded video bitstreams
+
+- *SDO/Group:* JVET (ITU-T SG21 & ISO/IEC JTC 1/SC 29/ WG5)
+
+- *Link:* https://www.itu.int/itu-t/workprog/wp_item.aspx?isn=21058[H.274(V4)]
+
+- *Status:* In progress
+
+- *Media Types:* Video
+
+- *Summary:* This specification contains the draft text for changes to the versatile supplemental enhancement information messages for coded video bitstreams (VSEI) standard (Rec. ITU-T H.274 | ISO/IEC 23002-7), to specify additional SEI messages, including encoder optimization information, source picture timing information , object mask information, modality information, text description information, generative face video, generative face video enhancement, digitally signed content initialization, digitally signed content selection, and digitally signed content verification SEI messages and updates to the neural-network post-filter characteristics SEI message.
+
+=== H.VADS: Assessment criteria for video authenticity detection services
+
+- *SDO/Group:* ITU-T SG21/Q7
+
+- *Link:* https://www.itu.int/ITU-T/workprog/wp_item.aspx?isn=22161[H.VADS]
+
+- *Status:* In progress
+
+- *Media Types:* Video
+
+- *Summary:* This draft recommendation provides a comprehensive assessment framework for video authenticity detection services. It specifies the requirements, assessment categories, key metrics, and methods to evaluate the capabilities of video authenticity detection services. Assessment categories cover the detection of various forms of intra-frame and inter-frame manipulation, as well as the overall performance of authenticity detection services. By establishing a structured, criteria-based approach, this draft recommendation would guide the development, evaluation, and selection of reliable and effective video authenticity detection services.
+
 
 == Standardization Map
 
@@ -431,13 +459,6 @@ https://www.ietf.org/archive/id/draft-ietf-aipref-vocab-00.html[ietf-aipref-voca
 
 | PROV
 | x
-| x
-| 
-| 
-| 
-
-| H.MMAUTH: Framework for Authentication of Multimedia Content
-| 
 | x
 | 
 | 
@@ -554,6 +575,29 @@ https://www.ietf.org/archive/id/draft-ietf-aipref-vocab-00.html[ietf-aipref-voca
 | 
 | 
 | x
+
+| H.MMAUTH: Framework for Authentication of Multimedia Content
+| 
+| x
+| 
+| 
+| 
+
+| H.274(V4): Versatile supplemental enhancement information messages for coded video bitstreams
+| 
+| x
+| 
+| 
+| 
+
+| H.VADS: Assessment criteria for video authenticity detection services
+| 
+| x
+| 
+| 
+| 
+
+
 |===
 
 === Graphical Representations

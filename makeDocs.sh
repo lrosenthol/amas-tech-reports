@@ -79,7 +79,7 @@ convertOne() {
 	echo "Converting DocBook to Word"
 	docker run -u ${UID} \
 			--rm -v "${CURRENT_PATH}":"${CURRENT_PATH}" -w "${CURRENT_PATH}"/output "${PD_DOCKER_IMG}" \
-			--resource-path=.:../docs/modules/specs/pages \
+			--resource-path="${CURRENT_PATH}":"${CURRENT_PATH}"/images \
 			-f docbook -t docx \
 			"${BASE_NAME}".xml -o "${BASE_NAME}".docx
 }
