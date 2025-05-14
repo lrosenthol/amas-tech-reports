@@ -373,7 +373,7 @@ https://www.ietf.org/archive/id/draft-ietf-aipref-vocab-00.html[ietf-aipref-voca
 
 - *Media Types:* Video
 
-- *Summary:* This draft recommendation specifies a technical solution for the verification of multimedia content's integrity, enabling users to confirm the authenticity of the content by its creators, such as governments, companies, or news organizations. The solution is based on the digital signing of data streams. The content creator (encoder) uses a private key to sign the content, while the recipient (decoder) uses a corresponding public key to verify the authenticity. The public key, necessary for verification, is not derived directly from the data stream but is obtained through a trusted, independent method, such as a third-party trust center.
+- *Summary:* This Draft Recommendation specifies a technical solution for the verification of multimedia content integrity, enabling users to confirm the authenticity of the content by its creators, such as governments, companies, or news organizations. The solution is based on the digital signing of data streams. The content creator (encoder) uses a private key to sign the content, while the recipient (decoder) uses a corresponding public key to verify the authenticity. The public key, necessary for verification, is not derived directly from the data stream but is obtained through a trusted, independent method, such as a third-party trust center.
 
 === H.274(V4): Versatile supplemental enhancement information messages for coded video bitstreams
 
@@ -397,41 +397,41 @@ https://www.ietf.org/archive/id/draft-ietf-aipref-vocab-00.html[ietf-aipref-voca
 
 - *Media Types:* Video
 
-- *Summary:* This draft recommendation provides a comprehensive assessment framework for video authenticity detection services. It specifies the requirements, assessment categories, key metrics, and methods to evaluate the capabilities of video authenticity detection services. Assessment categories cover the detection of various forms of intra-frame and inter-frame manipulation, as well as the overall performance of authenticity detection services. By establishing a structured, criteria-based approach, this draft recommendation would guide the development, evaluation, and selection of reliable and effective video authenticity detection services.
+- *Summary:* This Draft Recommendation provides a comprehensive assessment framework for video authenticity detection services. It specifies the requirements, assessment categories, key metrics, and methods to evaluate the capabilities of video authenticity detection services. Assessment categories cover the detection of various forms of intra-frame and inter-frame manipulation, as well as the overall performance of authenticity detection services. By establishing a structured, criteria-based approach, this Draft Recommendation would guide the development, evaluation, and selection of reliable and effective video authenticity detection services.
 
 
 == Standardization Map
 
 === Overview
-[cols="1,1,1,1,1,1", options="header"]
+[cols="1,^.^1,^.^1,^.^1,^.^1,^.^1", options="header"]
 .Table of Standard Categorization
 |===
 | Specification | Content Provenance | Trust and Authenticity | Asset Identifiers | Rights Declarations | Watermarking
 
 | Content Credentials (C2PA)
-| x
-| x
+| X
+| X
 | 
 | 
-| x
+| X
 
 | Content Credentials (ISO 22144)
-| x
-| x
+| X
+| X
 | 
 | 
 | 
 
 | JPEG Trust Part 1
-| x
-| x
-| x
-| x
+| X
+| X
+| X
+| X
 | 
 
 | JPEG Trust Part 2
 | 
-| x
+| X
 | 
 | 
 | 
@@ -441,53 +441,53 @@ https://www.ietf.org/archive/id/draft-ietf-aipref-vocab-00.html[ietf-aipref-voca
 | 
 | 
 | 
-| x
+| X
 
 | CAWG Metadata
-| x
-| x
+| X
+| X
 | 
-| x
+| X
 | 
 
 | Originator Profile
-| x
-| x
+| X
+| X
 | 
 | 
 | 
 
 | PROV
-| x
-| x
+| X
+| X
 | 
 | 
 | 
 
 | Overview of trustworthiness in artificial intelligence
 | 
-| x
+| X
 | 
 | 
 | 
 
 | Framework for trust-based media services
 | 
-| x
+| X
 | 
 | 
 | 
 
 | Trust.txt
 | 
-| x
+| X
 | 
-| x
+| X
 | 
 
 | Chromium Reputation Provider Framework
 | 
-| x
+| X
 | 
 | 
 | 
@@ -495,14 +495,14 @@ https://www.ietf.org/archive/id/draft-ietf-aipref-vocab-00.html[ietf-aipref-voca
 | International Standard Content Code (ISCC)
 | 
 | 
-| x
+| X
 | 
 | 
 
 | Unique Media Identifier (UMid)
 | 
 | 
-| x
+| X
 | 
 | 
 
@@ -510,34 +510,34 @@ https://www.ietf.org/archive/id/draft-ietf-aipref-vocab-00.html[ietf-aipref-voca
 | 
 | 
 | 
-| x
+| X
 | 
 
 | Spawning ai.txt
 | 
 | 
 | 
-| x
+| X
 | 
 
 | Robots.txt
 | 
 | 
 | 
-| x
+| X
 | 
 
 | Vocabulary for Expressing Content Preferences for AI
 | 
 | 
 | 
-| x
+| X
 | 
 
 | Open Binding of Content Identifiers (OBID)
 | 
 | 
-| x
+| X
 | 
 | 
 
@@ -546,13 +546,13 @@ https://www.ietf.org/archive/id/draft-ietf-aipref-vocab-00.html[ietf-aipref-voca
 | 
 | 
 | 
-| x
+| X
 
 | Specification of Digital Rights Management (DRM) Technology for Digital Publications
 | 
 | 
 | 
-| x
+| X
 | 
 
 | A Review of Medical Image Watermarking Requirements for Teleradiology
@@ -560,39 +560,39 @@ https://www.ietf.org/archive/id/draft-ietf-aipref-vocab-00.html[ietf-aipref-voca
 | 
 | 
 | 
-| x
+| X
 
 | Evaluation Tools for Persistent Association Technologies
 | 
-| x
+| X
 | 
 | 
-| x
+| X
 
 | IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents
 | 
 | 
 | 
 | 
-| x
+| X
 
 | H.MMAUTH: Framework for Authentication of Multimedia Content
 | 
-| x
+| X
 | 
 | 
 | 
 
 | H.274(V4): Versatile supplemental enhancement information messages for coded video bitstreams
 | 
-| x
+| X
 | 
 | 
 | 
 
 | H.VADS: Assessment criteria for video authenticity detection services
 | 
-| x
+| X
 | 
 | 
 | 
@@ -653,7 +653,7 @@ https://www.ietf.org/archive/id/draft-ietf-aipref-vocab-00.html[ietf-aipref-voca
 // @endmindmap
 // ....
 
-==== A visualization of the Standards Categorization
+// ==== A visualization of the Standards Categorization
 
 image::images/radarmap-1.png[Visual map of the Standards Categorization, Part 1]
 

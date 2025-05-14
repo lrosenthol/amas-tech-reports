@@ -560,7 +560,7 @@
 <simpara><emphasis role="strong">Media Types:</emphasis> Video</simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Summary:</emphasis> This draft recommendation specifies a technical solution for the verification of multimedia content&#8217;s integrity, enabling users to confirm the authenticity of the content by its creators, such as governments, companies, or news organizations. The solution is based on the digital signing of data streams. The content creator (encoder) uses a private key to sign the content, while the recipient (decoder) uses a corresponding public key to verify the authenticity. The public key, necessary for verification, is not derived directly from the data stream but is obtained through a trusted, independent method, such as a third-party trust center.</simpara>
+<simpara><emphasis role="strong">Summary:</emphasis> This Draft Recommendation specifies a technical solution for the verification of multimedia content integrity, enabling users to confirm the authenticity of the content by its creators, such as governments, companies, or news organizations. The solution is based on the digital signing of data streams. The content creator (encoder) uses a private key to sign the content, while the recipient (decoder) uses a corresponding public key to verify the authenticity. The public key, necessary for verification, is not derived directly from the data stream but is obtained through a trusted, independent method, such as a third-party trust center.</simpara>
 </listitem>
 </itemizedlist>
 </section>
@@ -600,7 +600,7 @@
 <simpara><emphasis role="strong">Media Types:</emphasis> Video</simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Summary:</emphasis> This draft recommendation provides a comprehensive assessment framework for video authenticity detection services. It specifies the requirements, assessment categories, key metrics, and methods to evaluate the capabilities of video authenticity detection services. Assessment categories cover the detection of various forms of intra-frame and inter-frame manipulation, as well as the overall performance of authenticity detection services. By establishing a structured, criteria-based approach, this draft recommendation would guide the development, evaluation, and selection of reliable and effective video authenticity detection services.</simpara>
+<simpara><emphasis role="strong">Summary:</emphasis> This Draft Recommendation provides a comprehensive assessment framework for video authenticity detection services. It specifies the requirements, assessment categories, key metrics, and methods to evaluate the capabilities of video authenticity detection services. Assessment categories cover the detection of various forms of intra-frame and inter-frame manipulation, as well as the overall performance of authenticity detection services. By establishing a structured, criteria-based approach, this Draft Recommendation would guide the development, evaluation, and selection of reliable and effective video authenticity detection services.</simpara>
 </listitem>
 </itemizedlist>
 </section>
@@ -621,229 +621,229 @@
 <thead>
 <row>
 <entry align="left" valign="top">Specification</entry>
-<entry align="left" valign="top">Content Provenance</entry>
-<entry align="left" valign="top">Trust and Authenticity</entry>
-<entry align="left" valign="top">Asset Identifiers</entry>
-<entry align="left" valign="top">Rights Declarations</entry>
-<entry align="left" valign="top">Watermarking</entry>
+<entry align="center" valign="middle">Content Provenance</entry>
+<entry align="center" valign="middle">Trust and Authenticity</entry>
+<entry align="center" valign="middle">Asset Identifiers</entry>
+<entry align="center" valign="middle">Rights Declarations</entry>
+<entry align="center" valign="middle">Watermarking</entry>
 </row>
 </thead>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>Content Credentials (C2PA)</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>Content Credentials (ISO 22144)</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>JPEG Trust Part 1</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>JPEG Trust Part 2</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>JPEG Trust Part 3</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>CAWG Metadata</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>Originator Profile</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>PROV</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>Overview of trustworthiness in artificial intelligence</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>Framework for trust-based media services</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>Trust.txt</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>Chromium Reputation Provider Framework</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>International Standard Content Code (ISCC)</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>Unique Media Identifier (UMid)</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>TDM Reservation Protocol</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>Spawning ai.txt</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>Robots.txt</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>Vocabulary for Expressing Content Preferences for AI</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>Open Binding of Content Identifiers (OBID)</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>X.ig-dw: Implementation Guidelines for Digital Watermarking</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>Specification of Digital Rights Management (DRM) Technology for Digital Publications</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>A Review of Medical Image Watermarking Requirements for Teleradiology</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>Evaluation Tools for Persistent Association Technologies</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>IEEE Draft Standard for Evaluation Method of Robustness of Digital Watermarking Implementation in Digital Contents</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>H.MMAUTH: Framework for Authentication of Multimedia Content</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>H.274(V4): Versatile supplemental enhancement information messages for coded video bitstreams</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>H.VADS: Assessment criteria for video authenticity detection services</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"><simpara>x</simpara></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
-<entry align="left" valign="top"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"><simpara>X</simpara></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
+<entry align="center" valign="middle"></entry>
 </row>
 </tbody>
 </tgroup>
@@ -851,8 +851,6 @@
 </section>
 <section xml:id="_graphical_representations">
 <title>Graphical Representations</title>
-<section xml:id="_a_visualization_of_the_standards_categorization">
-<title>A visualization of the Standards Categorization</title>
 <informalfigure>
 <mediaobject>
 <imageobject>
@@ -869,7 +867,6 @@
 <textobject><phrase>Visual map of the Standards Categorization</phrase></textobject>
 </mediaobject>
 </informalfigure>
-</section>
 </section>
 </section>
 <section xml:id="_identified_gaps_and_opportunities">
