@@ -1,0 +1,25 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Launch Program",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${file}"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Debug excel-to-markdown",
+			"program": "${workspaceFolder}/excel-to-markdown/src/xls2md.js",
+			"args": ["${workspaceFolder}/excel-to-markdown/tests/SimpleTest.xlsx", 
+					 "${workspaceFolder}/excel-to-markdown/output/Overview.docx"]
+		}
+	]
+}
