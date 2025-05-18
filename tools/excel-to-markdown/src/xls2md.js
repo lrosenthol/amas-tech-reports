@@ -19,11 +19,16 @@ function main() {
             // console.log(rows);
 
             const overviewOutput = convertToOverview(rows);
-            console.log(overviewOutput);
+            // console.log(overviewOutput);
             writeMarkdownAsWord(overviewOutput, outputPath);
 
-            // const markdownOutput = convertToMarkdownTable(rows);
-            // console.log(markdownOutput);
+            const tableOutput = convertToStandardsTable(rows);
+            console.log(tableOutput);
+
+            // Create a new output path with '-table' before the extension
+            const parsedPath = path.parse(outputPath);
+            const tableOutputPath = path.join(parsedPath.dir, parsedPath.name + '-table' + parsedPath.ext);
+            writeMarkdownAsWord(tableOutput, tableOutputPath);
         });
     } catch (error) {
         console.error('Error reading Excel file:', error);
@@ -51,6 +56,8 @@ const FIELD_TITLES = Object.freeze([
     "- **Media:**",
     "- **Summary:**"
 ]);
+
+
 function convertToOverview(data) {
     function outputOneField(row, field) {
         if ( field === FIELDS.LINK && row[field] !== null ) {  // special case for link
@@ -89,14 +96,43 @@ function writeMarkdownAsWord(markdown, outputPath) {
     pandoc(markdown, args, callback);
 }
 
-function convertToMarkdownTable(data) {
+// Create a numbered enum for the column names
+const TABLE_FIELDS = Object.freeze({
+    SPECIFICATION: 0,
+    CONTENT_PROVENANCE: 1,
+    TRUST_AND_AUTHENTICITY: 2,
+    ASSET_IDENTIFIERS: 3,
+    RIGHTS_DECLARATIONS: 4,
+    WATERMARKING: 5,
+    OTHER: 6
+});
+
+// Create a second enum with the string values
+const TABLE_FIELD_TITLES = Object.freeze([
+    "Specification",
+    "Content Provenance",
+    "Trust and Authenticity",
+    "Asset Identifiers",
+    "Rights Declarations",
+    "Watermarking",
+    "Other"
+]);
+
+// this creates a markdown pipe table, with each column centered (to make the X's look better!)
+function convertToStandardsTable(data) {
     let markdown = '';
     data.forEach((row, index) => {
         if (index === 0) {
-            markdown += '| ' + row.join(' | ') + ' |\n';
-            markdown += '|' + '---|'.repeat(row.length) + '\n';
+            markdown += '| ' + TABLE_FIELD_TITLES.join(' | ') + ' |\n';
+            markdown += '|' + ':-----:|'.repeat(TABLE_FIELD_TITLES.length) + '\n';
         } else {
-            markdown += '| ' + row.join(' | ') + ' |\n';
+            markdown += '| ' + row[FIELDS.NAME] + ' |';
+            for (let i = 1; i < TABLE_FIELD_TITLES.length; i++) {
+                const colTitle = TABLE_FIELD_TITLES[i];
+                const categories = (row[FIELDS.CATEGORIES] || '').split('\n').map(s => s.trim());
+                markdown += (categories.includes(colTitle) ? ' X |' : '  |');
+            }
+            markdown += '\n';
         }
     });
     return markdown;
