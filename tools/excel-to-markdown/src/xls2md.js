@@ -41,20 +41,35 @@ const FIELDS = Object.freeze({
     SUMMARY: 7
 });
 
+const FIELD_TITLES = Object.freeze([
+    "##",
+    "Categories",
+    "- **SDO/Group:**",
+    "Standard",
+    "- **Link:**",
+    "- **Status:**",
+    "- **Media:**",
+    "- **Summary:**"
+]);
 function convertToOverview(data) {
+    function outputOneField(row, field) {
+        if ( field === FIELDS.LINK && row[field] !== null ) {  // special case for link
+            return ('- **Link:** [' + row[FIELDS.STD] + '](' + row[FIELDS.LINK] + ')\n\n');
+        } else if ( row[field] !== null ) {
+            return (FIELD_TITLES[field] + ' ' + row[field] + '\n\n');
+        }
+        return '';
+    }
+
     let markdown = '';
     data.forEach((row, index) => {
-        if ( index > 0 ) {  // skip header row
-            markdown += '## ' + row[FIELDS.NAME] + '\n\n';
-            markdown += '- **SDO/Group:** ' + row[FIELDS.GROUP] + '\n\n';
-            if ( row[FIELDS.LINK] !== null ) {
-                markdown += '- **Link:** [' + row[FIELDS.STD] + '](' + row[FIELDS.LINK] + ')\n\n';
-            }
-            markdown += '- **Status:** ' + row[FIELDS.STATUS] + '\n\n';
-            markdown += '- **Media:** ' + row[FIELDS.MEDIA] + '\n\n';
-            if ( row[FIELDS.SUMMARY] !== null ) {
-                markdown += '- **Summary:** ' + row[FIELDS.SUMMARY] + '\n\n';
-            }
+        if ( index > 0 && row[FIELDS.NAME] !== null) {  // skip header row & any empty rows
+            markdown += outputOneField(row, FIELDS.NAME);
+            markdown += outputOneField(row, FIELDS.GROUP);
+            markdown += outputOneField(row, FIELDS.LINK);
+            markdown += outputOneField(row, FIELDS.STATUS);
+            markdown += outputOneField(row, FIELDS.MEDIA);
+            markdown += outputOneField(row, FIELDS.SUMMARY);
         }
     });
     return markdown;

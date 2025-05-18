@@ -16,10 +16,18 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "Debug excel-to-markdown",
+			"name": "SimpleTest",
 			"program": "${workspaceFolder}/excel-to-markdown/src/xls2md.js",
 			"args": ["${workspaceFolder}/excel-to-markdown/tests/SimpleTest.xlsx", 
 					 "${workspaceFolder}/excel-to-markdown/output/Overview.docx"]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "FullList",
+			"program": "${workspaceFolder}/excel-to-markdown/src/xls2md.js",
+			"args": ["${workspaceFolder}/../AMAS Standards List Data.xlsx", 
+					 "${workspaceFolder}/../output/StandardsList.docx"]
 		}
 	]
 }
