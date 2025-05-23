@@ -8,6 +8,8 @@
     "start": "node src/index.js"
   },
   "dependencies": {
+    "chart.js": "^4.4.9",
+    "chartjs-node-canvas": "^5.0.0",
     "d3": "^7.9.0",
     "d3-node": "^4.0.1",
     "jsdom": "^26.1.0",
