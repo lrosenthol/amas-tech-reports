@@ -1,7 +1,7 @@
 import path from 'path';
 import readXlsxFile from 'read-excel-file/node';
 import pandoc from 'node-pandoc';
-import { createSunburstSVG } from './sunburst.js';
+import { createSunburstSVG, createSunburstPNG, createBubbleChartSVG, createBubbleChartPNG, createBubbleChart2 } from './sunburst.js';
 
 const inputPath = process.argv[2];
 const outputPath = process.argv[3];
@@ -32,8 +32,20 @@ function main() {
 
             // create a sunburst chart using the data
             const sunburstData = rowsToSunburstData(rows);
-            const chartOutputPath = path.join(parsedPath.dir, parsedPath.name + '-chart.svg');
-            createSunburstSVG(sunburstData, chartOutputPath);
+            const chartSVGOutputPath = path.join(parsedPath.dir, parsedPath.name + '-chart.svg');
+            createSunburstSVG(sunburstData, chartSVGOutputPath);
+
+            const chartBubbleOutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubble.svg');
+            createBubbleChartSVG(sunburstData, chartBubbleOutputPath);
+
+            const chartPNGOutputPath = path.join(parsedPath.dir, parsedPath.name + '-chart.png');
+            createSunburstPNG(sunburstData, chartPNGOutputPath);
+
+            const chartBubblePNGOutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubble.png');
+            createBubbleChartPNG(sunburstData, chartBubblePNGOutputPath);
+
+            const chartBubble2OutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubble2.png');
+            createBubbleChart2(sunburstData, chartBubble2OutputPath);
         });
     } catch (error) {
         console.error('Error reading Excel file:', error);
