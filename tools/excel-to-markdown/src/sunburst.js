@@ -1,12 +1,19 @@
-const fs = require('fs');
-const D3Node = require('d3-node');
-const d3 = require('d3');
+import fs from 'fs';
+import * as d3 from 'd3';
+import jsdom from 'jsdom';
+const { JSDOM } = jsdom;
+import xmlserializer from 'xmlserializer';
+import { ChartJSNodeCanvas } from 'chartjs-node-canvas';
+
 
 // Sunburst chart generation using D3 and d3-node
 export function createSunburstSVG(data, outputPath) {
     const width = 800;
     const radius = width / 2;
-    const d3n = new D3Node();
+    const height = width;
+
+    const dom = new JSDOM('<!DOCTYPE html><body></body>');
+    const body = d3.select(dom.window.document.querySelector('body'));
 
     // Custom colors for categories
     const categoryColors = {
@@ -34,9 +41,14 @@ export function createSunburstSVG(data, outputPath) {
         .outerRadius(d => d.y1);
 
     // SVG root
-    const svg = d3n.createSVG(width, width)
-        .append('g')
-        .attr('transform', `translate(${width / 2},${width / 2})`);
+    // const svg = d3n.createSVG(width, width)
+    //     .append('g')
+    //     .attr('transform', `translate(${width / 2},${width / 2})`);
+    const svg = body.append("svg")
+                  .attr("width", width)
+                  .attr("height", height);
+    svg.append('g');
+        // .attr('transform', `translate(${width / 2},${width / 2})`);
 
     // Draw arcs
     svg.selectAll('path')
@@ -90,5 +102,112 @@ export function createSunburstSVG(data, outputPath) {
         .text('AI & Multimedia\nAuthenticity\nStandardization Map');
 
     // Write SVG to file
-    fs.writeFileSync(outputPath, d3n.svgString());
+    const svgString = xmlserializer.serializeToString(svg.node());
+    fs.writeFileSync(outputPath, svgString /*d3n.svgString()*/);
+
+    console.log(`Sunburst chart saved to ${outputPath}`);
+}
+
+// Helper to flatten hierarchical data for Chart.js
+function flattenSunburstData(data, parent = null, depth = 0, arr = []) {
+    arr.push({
+        name: data.name,
+        value: data.value || 1,
+        parent,
+        depth
+    });
+    if (data.children) {
+        data.children.forEach(child =>
+            flattenSunburstData(child, data.name, depth + 1, arr)
+        );
+    }
+    return arr;
+}
+
+// Generate a sunburst-like doughnut chart using Chart.js and output PNG
+export async function createSunburstPNG(data, outputPath) {
+    const width = 800;
+    const height = 800;
+
+    // Flatten data for Chart.js
+    const flatData = flattenSunburstData(data);
+    const categories = flatData.filter(d => d.depth === 1);
+    const standards = flatData.filter(d => d.depth === 2);
+
+    // Category colors
+    const categoryColors = {
+        "Content Provenance": "#FFD966",
+        "Trust and Authenticity": "#B4A7D6",
+        "Asset Identifiers": "#EA9999",
+        "Rights Declarations": "#93C47D",
+        "Watermarking": "#EAD1DC",
+        "Other": "#CCCCCC",
+        "Specification": "#F3F3F3"
+    };
+
+    // Prepare datasets for concentric rings
+    const datasets = [
+        {
+            label: 'Categories',
+            data: categories.map(d => d.value),
+            backgroundColor: categories.map(d => categoryColors[d.name] || '#eee'),
+            borderWidth: 2,
+            borderColor: '#fff',
+            circumference: 360,
+            rotation: -90,
+            cutout: '60%',
+            radius: '100%'
+        },
+        {
+            label: 'Standards',
+            data: standards.map(d => d.value),
+            backgroundColor: standards.map(d => categoryColors[categories.find(c => c.name === d.parent)?.name] || '#fff'),
+            borderWidth: 1,
+            borderColor: '#fff',
+            circumference: 360,
+            rotation: -90,
+            cutout: '80%',
+            radius: '60%'
+        }
+    ];
+
+    // Labels for outer ring
+    const labels = categories.map(d => d.name);
+
+    // ChartJSNodeCanvas instance
+    const chartJSNodeCanvas = new ChartJSNodeCanvas({ width, height, backgroundColour: 'white' });
+
+    // Chart.js config
+    const configuration = {
+        type: 'doughnut',
+        data: {
+            labels,
+            datasets
+        },
+        options: {
+            plugins: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: 'AI & Multimedia\nAuthenticity\nStandardization Map',
+                    font: { size: 24, weight: 'bold' },
+                    padding: { top: 20, bottom: 20 }
+                },
+                datalabels: {
+                    display: true,
+                    color: '#333',
+                    font: { weight: 'bold' }
+                }
+            },
+            cutout: '40%',
+            responsive: false,
+            animation: false
+        },
+        plugins: []
+    };
+
+    // Render and save PNG
+    const buffer = await chartJSNodeCanvas.renderToBuffer(configuration);
+    fs.writeFileSync(outputPath, buffer);
+    console.log(`Sunburst-like chart PNG saved to ${outputPath}`);
 }
