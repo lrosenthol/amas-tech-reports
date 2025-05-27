@@ -2,7 +2,7 @@ import path from 'path';
 import readXlsxFile from 'read-excel-file/node';
 import pandoc from 'node-pandoc';
 // import { createSunburstSVG, createSunburstPNG, createBubbleChartSVG, createBubbleChartPNG } from './sunburst.js';
-import { createBubbleChartPNG } from './bubbles.js';
+import { createBubbleChartPNG, createBubbleChartPNGByMediaType } from './bubbles.js';
 
 const inputPath = process.argv[2];
 const outputPath = process.argv[3];
@@ -33,6 +33,12 @@ function main() {
             writeMarkdownAsWord(tableOutput, tableOutputPath);
             console.log('Standards table written to:', tableOutputPath);
 
+            // Create the media table '-media-table' before the extension
+            const mediaTableOutput = convertToMediaTable(rows);
+            const mediaTableOutputPath = path.join(parsedPath.dir, parsedPath.name + '-media-table' + parsedPath.ext);
+            writeMarkdownAsWord(mediaTableOutput, mediaTableOutputPath);
+            console.log('Media table written to:', mediaTableOutputPath);
+
             // // create a sunburst chart using the data
             const chartData = rowsToChartData(rows);
 
@@ -50,6 +56,9 @@ function main() {
 
             const chartBubbleOutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubbleChart.png');
             createBubbleChartPNG(chartData, chartBubbleOutputPath);
+
+            const chartBubbleMediaOutputPath = path.join(parsedPath.dir, parsedPath.name + '-mediaTypes-bubbleChart.png');
+            createBubbleChartPNG(chartData, chartBubbleMediaOutputPath);
         });
     } catch (error) {
         console.error('Error reading Excel file:', error);
@@ -63,8 +72,9 @@ const FIELDS = Object.freeze({
     STD: 3,
     LINK: 4,
     STATUS: 5,
-    MEDIA: 6,
-    SUMMARY: 7
+    DATE: 6,
+    MEDIA: 7,
+    SUMMARY: 8
 });
 
 const FIELD_TITLES = Object.freeze([
@@ -74,6 +84,7 @@ const FIELD_TITLES = Object.freeze([
     "Standard",
     "- **Link:**",
     "- **Status:**",
+    "- **Publication Date:**",
     "- **Media:**",
     "- **Summary:**"
 ]);
@@ -83,8 +94,12 @@ function convertToOverview(data) {
     function outputOneField(row, field) {
         if ( field === FIELDS.LINK && row[field] !== null ) {  // special case for link
             return ('- **Link:** [' + row[FIELDS.STD] + '](' + row[FIELDS.LINK] + ')\n\n');
+        } else if ( field === FIELDS.MEDIA && row[field] !== null ) {  // special case for media
+        return ('- **Media:** ' + row[field].toString().split('\n').join(', ') + '\n\n');
         } else if ( row[field] !== null ) {
-            return (FIELD_TITLES[field] + ' ' + row[field] + '\n\n');
+            // remove any newlines in the field value
+            // and return the formatted markdown string
+            return (FIELD_TITLES[field] + ' ' + row[field].toString().replace(/\n/g, ' ') + '\n\n');
         }
         return '';
     }
@@ -96,6 +111,7 @@ function convertToOverview(data) {
             markdown += outputOneField(row, FIELDS.GROUP);
             markdown += outputOneField(row, FIELDS.LINK);
             markdown += outputOneField(row, FIELDS.STATUS);
+            markdown += outputOneField(row, FIELDS.DATE);
             markdown += outputOneField(row, FIELDS.MEDIA);
             markdown += outputOneField(row, FIELDS.SUMMARY);
         }
@@ -156,6 +172,44 @@ function convertToStandardsTable(data) {
             markdown += '\n';
         }
     });
+    return markdown;
+}
+
+function convertToMediaTable(data) {
+    // Collect all unique media types
+    const mediaSet = new Set();
+    data.slice(1).forEach(row => {
+        if (row[FIELDS.MEDIA]) {
+            row[FIELDS.MEDIA].toString().split('\n').map(s => s.trim()).forEach(media => {
+                if (media) mediaSet.add(media);
+            });
+        }
+    });
+
+    // Sort media types and filter out any that start with "Any"
+    let mediaTypes = Array.from(mediaSet).sort();
+    mediaTypes = mediaTypes.filter(type => !type.startsWith("Any"));
+ 
+    // Add special "Other" media type TO THE END OF THE LIST
+    mediaTypes.push("Others");
+
+    // Build header
+    let markdown = '| Standard | ' + mediaTypes.join(' | ') + ' |\n';
+    markdown += '|:---------|' + mediaTypes.map(() => ':---:').join('|') + '|\n';
+
+    // Build rows
+    data.slice(1).forEach(row => {
+        if (!row[FIELDS.NAME]) return;
+        const rowMedia = (row[FIELDS.MEDIA] || '').toString().split('\n').map(s => s.trim());
+        markdown += '| ' + row[FIELDS.NAME] + ' |';
+        mediaTypes.forEach(media => {
+            // put a checkmark (X) if the media type is present in the row
+            // or if the row has 'Any' media type
+            markdown += rowMedia.includes(media) || rowMedia.some(item => item.includes("Any")) ? ' X |' : '  |';
+        });
+        markdown += '\n';
+    });
+
     return markdown;
 }
 
