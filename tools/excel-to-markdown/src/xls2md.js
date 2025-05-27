@@ -1,7 +1,8 @@
 import path from 'path';
 import readXlsxFile from 'read-excel-file/node';
 import pandoc from 'node-pandoc';
-import { createSunburstSVG, createSunburstPNG, createBubbleChartSVG, createBubbleChartPNG, createBubbleChart2 } from './sunburst.js';
+// import { createSunburstSVG, createSunburstPNG, createBubbleChartSVG, createBubbleChartPNG } from './sunburst.js';
+import { createBubbleChartPNG } from './bubbles.js';
 
 const inputPath = process.argv[2];
 const outputPath = process.argv[3];
@@ -21,31 +22,34 @@ function main() {
             const overviewOutput = convertToOverview(rows);
             // console.log(overviewOutput);
             writeMarkdownAsWord(overviewOutput, outputPath);
+            console.log('Overview written to:', outputPath);
 
             const tableOutput = convertToStandardsTable(rows);
-            console.log(tableOutput);
+            // console.log(tableOutput);
 
             // Create a new output path with '-table' before the extension
             const parsedPath = path.parse(outputPath);
             const tableOutputPath = path.join(parsedPath.dir, parsedPath.name + '-table' + parsedPath.ext);
             writeMarkdownAsWord(tableOutput, tableOutputPath);
+            console.log('Standards table written to:', tableOutputPath);
 
-            // create a sunburst chart using the data
-            const sunburstData = rowsToSunburstData(rows);
-            const chartSVGOutputPath = path.join(parsedPath.dir, parsedPath.name + '-chart.svg');
-            createSunburstSVG(sunburstData, chartSVGOutputPath);
+            // // create a sunburst chart using the data
+            const chartData = rowsToChartData(rows);
 
-            const chartBubbleOutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubble.svg');
-            createBubbleChartSVG(sunburstData, chartBubbleOutputPath);
+            // const chartSVGOutputPath = path.join(parsedPath.dir, parsedPath.name + '-chart.svg');
+            // createSunburstSVG(ChartData, chartSVGOutputPath);
 
-            const chartPNGOutputPath = path.join(parsedPath.dir, parsedPath.name + '-chart.png');
-            createSunburstPNG(sunburstData, chartPNGOutputPath);
+            // const chartBubbleOutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubble.svg');
+            // createBubbleChartSVG(ChartData, chartBubbleOutputPath);
 
-            const chartBubblePNGOutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubble.png');
-            createBubbleChartPNG(sunburstData, chartBubblePNGOutputPath);
+            // const chartPNGOutputPath = path.join(parsedPath.dir, parsedPath.name + '-chart.png');
+            // createSunburstPNG(ChartData, chartPNGOutputPath);
 
-            const chartBubble2OutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubble2.png');
-            createBubbleChart2(sunburstData, chartBubble2OutputPath);
+            // const chartBubblePNGOutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubble.png');
+            // createBubbleChartPNG(ChartData, chartBubblePNGOutputPath);
+
+            const chartBubbleOutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubbleChart.png');
+            createBubbleChartPNG(chartData, chartBubbleOutputPath);
         });
     } catch (error) {
         console.error('Error reading Excel file:', error);
@@ -155,8 +159,8 @@ function convertToStandardsTable(data) {
     return markdown;
 }
 
-// Example: Convert rows to sunburst hierarchy by Category -> Standard Name
-function rowsToSunburstData(rows) {
+// Example: Convert rows to chart hierarchy by Category -> Standard Name
+function rowsToChartData(rows) {
     // Skip header row
     const children = {};
     rows.slice(1).forEach(row => {
