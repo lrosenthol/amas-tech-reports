@@ -35,7 +35,7 @@ export async function createBubbleChartPNG(data, outputPath) {
 				return 'rgba(75,192,192,1)'
 	};
 
-	
+
 	// Extract unique categories (x) and standards (y) from the data hierarchy
 	function extractCategoriesAndStandards(node, categories = new Set(), standards = new Set()) {
 		if (node.children && node.children.length) {
@@ -53,7 +53,8 @@ export async function createBubbleChartPNG(data, outputPath) {
 		if (node.children && node.children.length) {
 			node.children.forEach(child => getLeavesWithParent(child, node.name, arr));
 		} else {
-			arr.push({ x: parentName, y: node.name, r: 10 });
+			// r is the radius for the bubble, defaulting to 7
+			arr.push({ x: parentName, y: node.name, r: 7 });
 		}
 		return arr;
 	}
@@ -73,7 +74,11 @@ export async function createBubbleChartPNG(data, outputPath) {
 			borderDash: [],
 			borderDashOffset: 0.0,
 			borderJoinStyle: 'miter',
-			pointBorderColor: pointBorderColor(),
+			pointBorderColor:  (context) => {
+				const index = context.dataIndex; // Get data point index
+				const xValue = context.dataset.data[index].x; // Get X-value
+				return pointColor(xValue); // Return color based on X-value
+			},
 			pointBackgroundColor: (context) => {
 				const index = context.dataIndex; // Get data point index
 				const xValue = context.dataset.data[index].x; // Get X-value
@@ -85,14 +90,15 @@ export async function createBubbleChartPNG(data, outputPath) {
 			pointHoverBorderColor: "rgba(153, 102, 155, 1)",
 			pointHoverBorderWidth: 2,
 			pointRadius: 1,
-			pointHitRadius: 10,
+			pointHitRadius: 5,
 			data: bubbleDataPoints
 		}]
 	};
 
 
-	const width = 800;
-	const height = 800;
+	// 8.5 x 11 inches in pixels at 72 DPI is 612 x 792 pixels
+	const width = 612; // Width of the chart
+	const height = 792; // Height of the chart
 
 	const chartJSNodeCanvas = new ChartJSNodeCanvas({ width, height, backgroundColour: 'white' });
 	const configuration = {
@@ -106,15 +112,31 @@ export async function createBubbleChartPNG(data, outputPath) {
 			legend: {
 				display: false
 			},
+			font: {
+				family: 'OpenSans, sans-serif'
+			},
 			plugins: {
 				legend: {
 					display: false
 				},
 			},
+			elements: {
+				point: {
+					radius: (context) => {
+						// Set bubble size based on data.r (default is 5 in getLeavesWithParent)
+						const index = context.dataIndex;
+						const value = context.dataset.data[index];
+						return value && value.r ? value.r : 5;
+					}
+				}
+			},
 			scales: {
 				y: {
 					// will this create y-axis with days of week?
 					type: 'category',
+					ticks: {
+						padding: 20 // Add padding to the right of y-axis labels
+					}
 				},
 				x: {
 					type: 'category',
@@ -125,7 +147,10 @@ export async function createBubbleChartPNG(data, outputPath) {
 						"Rights Declarations",
 						"Watermarking",
 						"Other"
-					]
+					],
+					grid: {
+						display: false // Turn off vertical grid lines
+					}
 				}
 			}
 		}
