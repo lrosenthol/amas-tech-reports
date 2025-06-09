@@ -10,7 +10,7 @@ export async function createBubbleChartPNG(data, outputPath) {
 				return 'rgba(255, 206, 86, 1)'
 	};
 
-	const pointColors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+	const pointColors = ['red', 'orange', 'green', 'blue', 'purple', `pink`];
 	function pointColor(xValue) {
 		switch (xValue) {
 			case "Content Provenance":
@@ -193,7 +193,9 @@ export async function createBubbleChartPNGByMediaType(data, outputPath) {
 	}
 
 	const { mediaTypes, standards } = extractMediaTypesAndStandards(data);
+	// console.log(`Media Types: ${mediaTypes.join(', ')}`);
 	const bubbleDataPoints = getLeavesWithMediaType(data);
+	// console.log(`Bubble Data Points: ${JSON.stringify(bubbleDataPoints)}`);
 
 	const bubbleChartData = {
 		animation: { duration: 10 },
@@ -273,10 +275,17 @@ export async function createBubbleChartPNGByMediaType(data, outputPath) {
 				},
 				x: {
 					type: 'category',
-					labels: mediaTypes,
-					grid: {
-						display: false
-					}
+					labels: [
+						"Any",
+						"Any (image focused)",
+						"Images",
+						"Video",
+						"Audio",
+						"Web pages",
+						"PDF",
+						"EPUB",
+						"Data"
+					]
 				}
 			}
 		}

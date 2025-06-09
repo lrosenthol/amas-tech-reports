@@ -39,26 +39,18 @@ function main() {
             writeMarkdownAsWord(mediaTableOutput, mediaTableOutputPath);
             console.log('Media table written to:', mediaTableOutputPath);
 
-            // // create a sunburst chart using the data
+            // // create a bubble chart, by category using the data
             const chartData = rowsToChartData(rows);
-
-            // const chartSVGOutputPath = path.join(parsedPath.dir, parsedPath.name + '-chart.svg');
-            // createSunburstSVG(ChartData, chartSVGOutputPath);
-
-            // const chartBubbleOutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubble.svg');
-            // createBubbleChartSVG(ChartData, chartBubbleOutputPath);
-
-            // const chartPNGOutputPath = path.join(parsedPath.dir, parsedPath.name + '-chart.png');
-            // createSunburstPNG(ChartData, chartPNGOutputPath);
-
-            // const chartBubblePNGOutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubble.png');
-            // createBubbleChartPNG(ChartData, chartBubblePNGOutputPath);
-
             const chartBubbleOutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubbleChart.png');
             createBubbleChartPNG(chartData, chartBubbleOutputPath);
+            console.log('Bubble chart written to:', mediaTableOutputPath);
 
+            // create a bubble chart, by media type using the data
+            const chartDataByMediaType = rowsToChartDataByMediaType(rows);
+            // console.log('Chart data by media type:', chartDataByMediaType);
             const chartBubbleMediaOutputPath = path.join(parsedPath.dir, parsedPath.name + '-mediaTypes-bubbleChart.png');
-            createBubbleChartPNG(chartData, chartBubbleMediaOutputPath);
+            createBubbleChartPNGByMediaType(chartDataByMediaType, chartBubbleMediaOutputPath);
+            console.log('Media bubble chart written to:', mediaTableOutputPath);
         });
     } catch (error) {
         console.error('Error reading Excel file:', error);
@@ -233,6 +225,32 @@ function rowsToChartData(rows) {
         name: "root",
         children: Object.entries(children).map(([cat, items]) => ({
             name: cat,
+            children: items
+        }))
+    };
+}
+
+// Similar function but splits on the mediaType field
+function rowsToChartDataByMediaType(rows) {
+    // Skip header row
+    const children = {};
+    rows.slice(1).forEach(row => {
+        if (!row[FIELDS.NAME] || !row[FIELDS.MEDIA]) return;
+        // Each row may have multiple media types (split by newline)
+        row[FIELDS.MEDIA].toString().split('\n').map(s => s.trim()).forEach(mediaType => {
+            if (!mediaType) return;
+            if (!children[mediaType]) children[mediaType] = [];
+            children[mediaType].push({
+                name: row[FIELDS.NAME],
+                mediaType: mediaType, // Store the media type for reference
+                value: 1 // or use another field for value
+            });
+        });
+    });
+    return {
+        name: "root",
+        children: Object.entries(children).map(([media, items]) => ({
+            name: media,
             children: items
         }))
     };
