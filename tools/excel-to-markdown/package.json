@@ -1,0 +1,22 @@
+{
+  "name": "excel-to-markdown",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A Node.js application that reads Excel files and outputs the data in Markdown format.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.9",
+    "chartjs-node-canvas": "^5.0.0",
+    "d3": "^7.9.0",
+    "d3-node": "^4.0.1",
+    "jsdom": "^26.1.0",
+    "node-pandoc": "^0.3.0",
+    "read-excel-file": "^5.8.8",
+    "xmlserializer": "^0.6.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
