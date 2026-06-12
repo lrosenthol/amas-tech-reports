@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11in" viewBox="0 0 816 1056">
+<rect width="816" height="1056" fill="white"/>
+<text x="48" y="68" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#222">Standards &amp; Specification Map (cont'd)</text>
+<line x1="48" y1="74" x2="768" y2="74" stroke="#ccc" stroke-width="0.5"/>
+<line x1="48" y1="138" x2="308" y2="138" stroke="#999" stroke-width="1.5"/>
+<line x1="48" y1="174" x2="308" y2="174" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="210" x2="308" y2="210" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="246" x2="308" y2="246" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="282" x2="308" y2="282" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="318" x2="308" y2="318" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="354" x2="308" y2="354" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="390" x2="308" y2="390" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="426" x2="308" y2="426" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="462" x2="308" y2="462" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="498" x2="308" y2="498" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="534" x2="308" y2="534" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="570" x2="308" y2="570" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="308" y1="78" x2="308" y2="570" stroke="#bbb" stroke-width="1"/>
+<line x1="346.3333333333333" y1="138" x2="346.3333333333333" y2="570" stroke="#ccc" stroke-width="0.5"/>
+<line x1="423" y1="138" x2="423" y2="570" stroke="#ccc" stroke-width="0.5"/>
+<line x1="499.6666666666667" y1="138" x2="499.6666666666667" y2="570" stroke="#ccc" stroke-width="0.5"/>
+<line x1="576.3333333333334" y1="138" x2="576.3333333333334" y2="570" stroke="#ccc" stroke-width="0.5"/>
+<line x1="653" y1="138" x2="653" y2="570" stroke="#ccc" stroke-width="0.5"/>
+<line x1="729.6666666666667" y1="138" x2="729.6666666666667" y2="570" stroke="#ccc" stroke-width="0.5"/>
+<rect x="48" y="78" width="720" height="492" fill="none" stroke="#bbb" stroke-width="1"/>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#C2185B"><tspan x="346.3333333333333" y="106.5">Content</tspan><tspan x="346.3333333333333" dy="13">Provenance</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1565C0"><tspan x="423" y="106.5">Trust and</tspan><tspan x="423" dy="13">Authenticity</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1A1A1A"><tspan x="499.6666666666667" y="106.5">Asset</tspan><tspan x="499.6666666666667" dy="13">Identifiers</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#F48FB1"><tspan x="576.3333333333334" y="106.5">Rights</tspan><tspan x="576.3333333333334" dy="13">Declarations</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#90CAF9"><tspan x="653" y="113">Watermarking</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#B0BEC5"><tspan x="729.6666666666667" y="113">Other</tspan></text>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="160.75">Data Provenance Standards</tspan></text>
+<circle cx="729.6666666666667" cy="156" r="7" fill="#B0BEC5"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="190.75">IEEE Standard for Transparent Human and Machine</tspan><tspan x="54" dy="12">Agency Identification</tspan></text>
+<circle cx="653" cy="192" r="7" fill="#90CAF9"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="232.75">IPTC Photo Metadata Standard</tspan></text>
+<circle cx="346.3333333333333" cy="228" r="7" fill="#C2185B"/>
+<circle cx="423" cy="228" r="7" fill="#1565C0"/>
+<circle cx="576.3333333333334" cy="228" r="7" fill="#F48FB1"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="262.75">DASH - Part 4: Segment Encryption and</tspan><tspan x="54" dy="12">Authentication</tspan></text>
+<circle cx="423" cy="264" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="298.75">Recommended Practices for  Levels of Artificial</tspan><tspan x="54" dy="12">Intelligence Generated Content Technologies</tspan></text>
+<circle cx="423" cy="300" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="340.75">CAWG Identity Assertion Specification</tspan></text>
+<circle cx="346.3333333333333" cy="336" r="7" fill="#C2185B"/>
+<circle cx="423" cy="336" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="376.75">W3C Verifiable Credentials Data Model v2.0</tspan></text>
+<circle cx="423" cy="372" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="406.75">NIST AI 100-4: Reducing Risks Posed by Synthetic</tspan><tspan x="54" dy="12">Content</tspan></text>
+<circle cx="423" cy="408" r="7" fill="#1565C0"/>
+<circle cx="653" cy="408" r="7" fill="#90CAF9"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="448.75">MPEG-21 Part 3: Digital Item Identification</tspan></text>
+<circle cx="499.6666666666667" cy="444" r="7" fill="#1A1A1A"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="478.75">Cybersecurity technology—Labeling method for</tspan><tspan x="54" dy="12">content generated by artificial intelligence</tspan></text>
+<circle cx="346.3333333333333" cy="480" r="7" fill="#C2185B"/>
+<circle cx="423" cy="480" r="7" fill="#1565C0"/>
+<circle cx="653" cy="480" r="7" fill="#90CAF9"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="520.75">ITU-T X.2210</tspan></text>
+<circle cx="653" cy="516" r="7" fill="#90CAF9"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="550.75">HSTP-MMAuth:
+Multimedia authentication framework,</tspan><tspan x="54" dy="12">workflows and procedures</tspan></text>
+<circle cx="423" cy="552" r="7" fill="#1565C0"/>
+<text x="408" y="1036" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#aaa">Page 2 of 2</text>
+</svg>

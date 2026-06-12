@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11in" viewBox="0 0 816 1056">
+<rect width="816" height="1056" fill="white"/>
+<text x="48" y="68" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#222">Standards &amp; Specification Map</text>
+<line x1="48" y1="74" x2="768" y2="74" stroke="#ccc" stroke-width="0.5"/>
+<line x1="48" y1="138" x2="308" y2="138" stroke="#999" stroke-width="1.5"/>
+<line x1="48" y1="174" x2="308" y2="174" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="210" x2="308" y2="210" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="246" x2="308" y2="246" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="282" x2="308" y2="282" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="318" x2="308" y2="318" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="354" x2="308" y2="354" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="390" x2="308" y2="390" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="426" x2="308" y2="426" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="462" x2="308" y2="462" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="498" x2="308" y2="498" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="534" x2="308" y2="534" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="570" x2="308" y2="570" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="606" x2="308" y2="606" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="642" x2="308" y2="642" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="678" x2="308" y2="678" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="714" x2="308" y2="714" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="750" x2="308" y2="750" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="786" x2="308" y2="786" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="822" x2="308" y2="822" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="858" x2="308" y2="858" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="894" x2="308" y2="894" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="930" x2="308" y2="930" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="966" x2="308" y2="966" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="1002" x2="308" y2="1002" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="308" y1="78" x2="308" y2="1002" stroke="#bbb" stroke-width="1"/>
+<line x1="346.3333333333333" y1="138" x2="346.3333333333333" y2="1002" stroke="#ccc" stroke-width="0.5"/>
+<line x1="423" y1="138" x2="423" y2="1002" stroke="#ccc" stroke-width="0.5"/>
+<line x1="499.6666666666667" y1="138" x2="499.6666666666667" y2="1002" stroke="#ccc" stroke-width="0.5"/>
+<line x1="576.3333333333334" y1="138" x2="576.3333333333334" y2="1002" stroke="#ccc" stroke-width="0.5"/>
+<line x1="653" y1="138" x2="653" y2="1002" stroke="#ccc" stroke-width="0.5"/>
+<line x1="729.6666666666667" y1="138" x2="729.6666666666667" y2="1002" stroke="#ccc" stroke-width="0.5"/>
+<rect x="48" y="78" width="720" height="924" fill="none" stroke="#bbb" stroke-width="1"/>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#C2185B"><tspan x="346.3333333333333" y="106.5">Content</tspan><tspan x="346.3333333333333" dy="13">Provenance</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1565C0"><tspan x="423" y="106.5">Trust and</tspan><tspan x="423" dy="13">Authenticity</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1A1A1A"><tspan x="499.6666666666667" y="106.5">Asset</tspan><tspan x="499.6666666666667" dy="13">Identifiers</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#F48FB1"><tspan x="576.3333333333334" y="106.5">Rights</tspan><tspan x="576.3333333333334" dy="13">Declarations</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#90CAF9"><tspan x="653" y="113">Watermarking</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#B0BEC5"><tspan x="729.6666666666667" y="113">Other</tspan></text>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="160.75">Content Credentials (C2PA)</tspan></text>
+<circle cx="346.3333333333333" cy="156" r="7" fill="#C2185B"/>
+<circle cx="423" cy="156" r="7" fill="#1565C0"/>
+<circle cx="653" cy="156" r="7" fill="#90CAF9"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="196.75">JPEG Trust Part 1: Core foundation</tspan></text>
+<circle cx="346.3333333333333" cy="192" r="7" fill="#C2185B"/>
+<circle cx="423" cy="192" r="7" fill="#1565C0"/>
+<circle cx="499.6666666666667" cy="192" r="7" fill="#1A1A1A"/>
+<circle cx="576.3333333333334" cy="192" r="7" fill="#F48FB1"/>
+<circle cx="653" cy="192" r="7" fill="#90CAF9"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="232.75">JPEG Trust Part 2: Trust profiles catalog</tspan></text>
+<circle cx="423" cy="228" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="268.75">JPEG Trust Part 3: Media asset watermarking</tspan></text>
+<circle cx="653" cy="264" r="7" fill="#90CAF9"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="304.75">CAWG Metadata</tspan></text>
+<circle cx="346.3333333333333" cy="300" r="7" fill="#C2185B"/>
+<circle cx="423" cy="300" r="7" fill="#1565C0"/>
+<circle cx="576.3333333333334" cy="300" r="7" fill="#F48FB1"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="340.75">Originator Profile</tspan></text>
+<circle cx="346.3333333333333" cy="336" r="7" fill="#C2185B"/>
+<circle cx="423" cy="336" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="370.75">Overview of trustworthiness in artificial</tspan><tspan x="54" dy="12">intelligence</tspan></text>
+<circle cx="423" cy="372" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="412.75">Framework for trust-based media services</tspan></text>
+<circle cx="423" cy="408" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="448.75">Trust.txt</tspan></text>
+<circle cx="423" cy="444" r="7" fill="#1565C0"/>
+<circle cx="576.3333333333334" cy="444" r="7" fill="#F48FB1"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="484.75">Chromium Reputation Provider Framework</tspan></text>
+<circle cx="423" cy="480" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="520.75">ISCC: International Standard Content Code (ISCC)</tspan></text>
+<circle cx="499.6666666666667" cy="516" r="7" fill="#1A1A1A"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="556.75">Global Media Identifier (GMI)</tspan></text>
+<circle cx="499.6666666666667" cy="552" r="7" fill="#1A1A1A"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="592.75">TDM Reservation Protocol</tspan></text>
+<circle cx="576.3333333333334" cy="588" r="7" fill="#F48FB1"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="628.75">Robots Exclusion Protocol</tspan></text>
+<circle cx="576.3333333333334" cy="624" r="7" fill="#F48FB1"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="664.75">Vocabulary for expressing AI usage preferences</tspan></text>
+<circle cx="576.3333333333334" cy="660" r="7" fill="#F48FB1"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="700.75">Open Binding of Content Identifiers (OBID)</tspan></text>
+<circle cx="499.6666666666667" cy="696" r="7" fill="#1A1A1A"/>
+<circle cx="653" cy="696" r="7" fill="#90CAF9"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="730.75">X.ig-dw: Implementation guidelines for digital</tspan><tspan x="54" dy="12">watermarking</tspan></text>
+<circle cx="653" cy="732" r="7" fill="#90CAF9"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="766.75">DRM technology for digital publications
+Part 1:</tspan><tspan x="54" dy="12">Overview of copyright protection technologies in …</tspan></text>
+<circle cx="576.3333333333334" cy="768" r="7" fill="#F48FB1"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="802.75">IEEE Draft Standard for Evaluation Method</tspan><tspan x="54" dy="12">of
+Robustness of Digital Watermarking Implementat…</tspan></text>
+<circle cx="653" cy="804" r="7" fill="#90CAF9"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="838.75">H.MMAUTH: 
+Framework for authentication of</tspan><tspan x="54" dy="12">multimedia content</tspan></text>
+<circle cx="423" cy="840" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="874.75">H.274(V4): 
+Versatile supplemental enhancement</tspan><tspan x="54" dy="12">information messages for coded video bitstreams</tspan></text>
+<circle cx="423" cy="876" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="910.75">H.VADS: 
+Assessment criteria for video</tspan><tspan x="54" dy="12">authenticity detection services</tspan></text>
+<circle cx="423" cy="912" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="952.75">Credible Web</tspan></text>
+<circle cx="729.6666666666667" cy="948" r="7" fill="#B0BEC5"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="982.75">Technical and Governance Guidelines for</tspan><tspan x="54" dy="12">Responsible Data Collection</tspan></text>
+<circle cx="729.6666666666667" cy="984" r="7" fill="#B0BEC5"/>
+<text x="408" y="1036" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#aaa">Page 1 of 2</text>
+</svg>

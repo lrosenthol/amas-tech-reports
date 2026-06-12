@@ -1,297 +1,214 @@
 import fs from 'fs';
-import { ChartJSNodeCanvas } from 'chartjs-node-canvas';
 
+// US Letter at 96 DPI internal coordinate system; SVG width/height in inches
+const PAGE_W = 816;
+const PAGE_H = 1056;
+const ML = 48, MR = 48, MT = 48, MB = 48;
+const TITLE_H = 30;
+const ROW_H = 36;
+const DOT_R = 7;
 
-export async function createBubbleChartPNG(data, outputPath) {
-	var bubbleBackgroundColor = function() {
-				return 'rgba(255, 206, 86, 0.2)'
-	};
-	var bubbleBorderColor = function() {
-				return 'rgba(255, 206, 86, 1)'
-	};
+const CATEGORIES = [
+    "Content Provenance",
+    "Trust and Authenticity",
+    "Asset Identifiers",
+    "Rights Declarations",
+    "Watermarking",
+    "Other"
+];
 
-	const pointColors = ['red', 'orange', 'green', 'blue', 'purple', `pink`];
-	function pointColor(xValue) {
-		switch (xValue) {
-			case "Content Provenance":
-				return pointColors[0];
-			case "Trust and Authenticity":
-				return pointColors[1];
-			case "Asset Identifiers":
-				return pointColors[2];
-			case "Rights Declarations":
-				return pointColors[3];
-			case "Watermarking":
-				return pointColors[4];
-			case "Other":
-				return pointColors[5];
-			default:
-				// Default color if no match
-				return 'rgba(75,192,192,1)';
-		}
-	}
+const CATEGORY_COLORS = {
+    "Content Provenance":     "#C2185B",
+    "Trust and Authenticity": "#1565C0",
+    "Asset Identifiers":      "#1A1A1A",
+    "Rights Declarations":    "#F48FB1",
+    "Watermarking":           "#90CAF9",
+    "Other":                  "#B0BEC5"
+};
 
-	var pointBorderColor = function() {
-				return 'rgba(75,192,192,1)'
-	};
+const MEDIA_TYPES = [
+    "Any", "Any (image focused)", "Images", "Video",
+    "Audio", "Web pages", "PDF", "EPUB", "Data"
+];
 
+const MEDIA_COLORS = {
+    "Any":                 "#1565C0",
+    "Any (image focused)": "#1976D2",
+    "Images":              "#388E3C",
+    "Video":               "#F57C00",
+    "Audio":               "#7B1FA2",
+    "Web pages":           "#0097A7",
+    "PDF":                 "#C62828",
+    "EPUB":                "#558B2F",
+    "Data":                "#795548"
+};
 
-	// Extract unique categories (x) and standards (y) from the data hierarchy
-	function extractCategoriesAndStandards(node, categories = new Set(), standards = new Set()) {
-		if (node.children && node.children.length) {
-			if (node.depth === 1 || (!node.depth && node.name)) categories.add(node.name);
-			node.children.forEach(child => extractCategoriesAndStandards(child, categories, standards));
-		} else {
-			standards.add(node.name);
-			if (node.parent) categories.add(node.parent.name);
-		}
-		return { categories: Array.from(categories), standards: Array.from(standards) };
-	}
-
-	// Flatten data to get all leaf nodes (standards) with their parent (category)
-	function getLeavesWithParent(node, parentName = null, arr = []) {
-		if (node.children && node.children.length) {
-			node.children.forEach(child => getLeavesWithParent(child, node.name, arr));
-		} else {
-			// r is the radius for the bubble, defaulting to 7
-			arr.push({ x: parentName, y: node.name, r: 7 });
-		}
-		return arr;
-	}
-
-	// Build bubble chart data from hierarchy
-	const { categories, standards } = extractCategoriesAndStandards(data);
-	const bubbleDataPoints = getLeavesWithParent(data);
-
-	var bubbleChartData = {
-		animation: { duration: 10 },
-		datasets: [{
-			fill: false,
-			lineTension: 0.1,
-			backgroundColor: bubbleBackgroundColor(),
-			borderColor: bubbleBorderColor(),
-			borderCapStyle: 'butt',
-			borderDash: [],
-			borderDashOffset: 0.0,
-			borderJoinStyle: 'miter',
-			pointBorderColor:  (context) => {
-				const index = context.dataIndex; // Get data point index
-				const xValue = context.dataset.data[index].x; // Get X-value
-				return pointColor(xValue); // Return color based on X-value
-			},
-			pointBackgroundColor: (context) => {
-				const index = context.dataIndex; // Get data point index
-				const xValue = context.dataset.data[index].x; // Get X-value
-				return pointColor(xValue); // Return color based on X-value
-			},
-			pointBorderWidth: 1,
-			pointHoverRadius: 5,
-			pointHoverBackgroundColor: "rgba(153, 102, 155, 0.2)",
-			pointHoverBorderColor: "rgba(153, 102, 155, 1)",
-			pointHoverBorderWidth: 2,
-			pointRadius: 1,
-			pointHitRadius: 5,
-			data: bubbleDataPoints
-		}]
-	};
-
-
-	// 11x14 inches in pixels at 72 DPI
-	const width = 1008; // Width of the chart
-	const height = 1008; // Height of the chart
-
-	const chartJSNodeCanvas = new ChartJSNodeCanvas({ width, height, backgroundColour: 'white' });
-	const configuration = {
-		type: 'bubble',
-		data: bubbleChartData,
-		options: {
-			responsive: true,
-			title: {
-				display: false
-			},
-			legend: {
-				display: false
-			},
-			font: {
-				family: 'OpenSans, sans-serif'
-			},
-			plugins: {
-				legend: {
-					display: false
-				},
-			},
-			elements: {
-				point: {
-					radius: (context) => {
-						// Set bubble size based on data.r (default is 5 in getLeavesWithParent)
-						const index = context.dataIndex;
-						const value = context.dataset.data[index];
-						return value && value.r ? value.r : 5;
-					}
-				}
-			},
-			scales: {
-				y: {
-					// will this create y-axis with days of week?
-					type: 'category',
-					ticks: {
-						padding: 20 // Add padding to the right of y-axis labels
-					}
-				},
-				x: {
-					type: 'category',
-					labels: [
-						"Content Provenance",
-						"Trust and Authenticity",
-						"Asset Identifiers",
-						"Rights Declarations",
-						"Watermarking",
-						"Other"
-					],
-					grid: {
-						display: false // Turn off vertical grid lines
-					}
-				}
-			}
-		}
-	};
-
-	const buffer = await chartJSNodeCanvas.renderToBuffer(configuration);
-	fs.writeFileSync(outputPath, buffer);
-	console.log(`Bubble chart PNG saved to ${outputPath}`);
+function esc(s) {
+    return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
 }
 
+// Wrap to at most 2 lines; truncates with ellipsis if still too long
+function wrap(text, maxChars) {
+    if (!text || text.length <= maxChars) return [text || ''];
+    const words = text.split(' ');
+    let line1 = '';
+    let breakAt = -1;
+    for (let i = 0; i < words.length; i++) {
+        const cand = line1 ? `${line1} ${words[i]}` : words[i];
+        if (cand.length > maxChars) {
+            if (!line1) { line1 = cand; breakAt = i + 1; }
+            else breakAt = i;
+            break;
+        }
+        line1 = cand;
+    }
+    if (breakAt < 0) return [line1];
+    const rest = words.slice(breakAt).join(' ');
+    if (!rest) return [line1];
+    const line2 = rest.length > maxChars ? rest.slice(0, maxChars - 1) + '…' : rest;
+    return [line1, line2];
+}
 
-export async function createBubbleChartPNGByMediaType(data, outputPath) {
-	var bubbleBackgroundColor = function() {
-		return 'rgba(54, 162, 235, 0.2)';
-	};
-	var bubbleBorderColor = function() {
-		return 'rgba(54, 162, 235, 1)';
-	};
+function renderText(lines, x, baseY, lineHeight, attrs) {
+    const parts = [`<text ${attrs}>`];
+    lines.forEach((line, i) => {
+        if (i === 0) parts.push(`<tspan x="${x}" y="${baseY}">${esc(line)}</tspan>`);
+        else parts.push(`<tspan x="${x}" dy="${lineHeight}">${esc(line)}</tspan>`);
+    });
+    parts.push('</text>');
+    return parts.join('');
+}
 
-	// Helper to extract unique media types (x) and standards (y)
-	function extractMediaTypesAndStandards(node, mediaTypes = new Set(), standards = new Set()) {
-		if (node.children && node.children.length) {
-			if (node.mediaType) mediaTypes.add(node.mediaType);
-			node.children.forEach(child => extractMediaTypesAndStandards(child, mediaTypes, standards));
-		} else {
-			standards.add(node.name);
-			if (node.mediaType) mediaTypes.add(node.mediaType);
-		}
-		return { mediaTypes: Array.from(mediaTypes), standards: Array.from(standards) };
-	}
+function buildSVG({ stds, cols, colors, title, pageNum, totalPages, labelW, hdrH }) {
+    const colW = (PAGE_W - ML - MR - labelW) / cols.length;
+    const rightX = ML + labelW + cols.length * colW;
+    const titleH = title ? TITLE_H : 0;
+    const dataY = MT + titleH + hdrH;
+    const tableBottom = dataY + stds.length * ROW_H;
 
-	// Flatten data to get all leaf nodes (standards) with their mediaType
-	function getLeavesWithMediaType(node, arr = []) {
-		if (node.children && node.children.length) {
-			node.children.forEach(child => getLeavesWithMediaType(child, arr));
-		} else {
-			arr.push({ x: node.mediaType || "Unknown", y: node.name, r: 7 });
-		}
-		return arr;
-	}
+    // chars that fit in each column / label area at given px-per-char approximations
+    const maxLabelChars = Math.floor((labelW - 8) / 5.0);
+    const maxHdrChars   = Math.max(4, Math.floor((colW - 4) / 5.0));
 
-	const { mediaTypes, standards } = extractMediaTypesAndStandards(data);
-	// console.log(`Media Types: ${mediaTypes.join(', ')}`);
-	const bubbleDataPoints = getLeavesWithMediaType(data);
-	// console.log(`Bubble Data Points: ${JSON.stringify(bubbleDataPoints)}`);
+    const tableTop = MT + titleH;
+    const out = [];
+    out.push(`<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11in" viewBox="0 0 ${PAGE_W} ${PAGE_H}">`);
+    out.push(`<rect width="${PAGE_W}" height="${PAGE_H}" fill="white"/>`);
 
-	const bubbleChartData = {
-		animation: { duration: 10 },
-		datasets: [{
-			fill: false,
-			lineTension: 0.1,
-			backgroundColor: bubbleBackgroundColor(),
-			borderColor: bubbleBorderColor(),
-			borderCapStyle: 'butt',
-			borderDash: [],
-			borderDashOffset: 0.0,
-			borderJoinStyle: 'miter',
-			pointBorderColor: (context) => {
-				const index = context.dataIndex;
-				const xValue = context.dataset.data[index].x;
-				// Assign color based on media type index
-				const colors = ['#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#46f0f0', '#f032e6'];
-				const idx = mediaTypes.indexOf(xValue);
-				return colors[idx % colors.length];
-			},
-			pointBackgroundColor: (context) => {
-				const index = context.dataIndex;
-				const xValue = context.dataset.data[index].x;
-				const colors = ['#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#46f0f0', '#f032e6'];
-				const idx = mediaTypes.indexOf(xValue);
-				return colors[idx % colors.length];
-			},
-			pointBorderWidth: 1,
-			pointHoverRadius: 5,
-			pointHoverBackgroundColor: "rgba(153, 102, 155, 0.2)",
-			pointHoverBorderColor: "rgba(153, 102, 155, 1)",
-			pointHoverBorderWidth: 2,
-			pointRadius: 1,
-			pointHitRadius: 5,
-			data: bubbleDataPoints
-		}]
-	};
+    // Title
+    if (title) {
+        const t = pageNum > 1 ? `${title} (cont'd)` : title;
+        out.push(`<text x="${ML}" y="${MT + 20}" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#222">${esc(t)}</text>`);
+        out.push(`<line x1="${ML}" y1="${MT + titleH - 4}" x2="${rightX}" y2="${MT + titleH - 4}" stroke="#ccc" stroke-width="0.5"/>`);
+    }
 
-	const width = 1008;
-	const height = 1008;
+    // === LAYER 1: horizontal row separators — label column only ===
+    for (let ri = 0; ri <= stds.length; ri++) {
+        const y = dataY + ri * ROW_H;
+        const hStroke = ri === 0 ? "#999" : "#d0d0d0";
+        const hWidth  = ri === 0 ? 1.5 : 0.5;
+        out.push(`<line x1="${ML}" y1="${y}" x2="${ML + labelW}" y2="${y}" stroke="${hStroke}" stroke-width="${hWidth}"/>`);
+    }
 
-	const chartJSNodeCanvas = new ChartJSNodeCanvas({ width, height, backgroundColour: 'white' });
-	const configuration = {
-		type: 'bubble',
-		data: bubbleChartData,
-		options: {
-			responsive: true,
-			title: {
-				display: false
-			},
-			legend: {
-				display: false
-			},
-			font: {
-				family: 'OpenSans, sans-serif'
-			},
-			plugins: {
-				legend: {
-					display: false
-				},
-			},
-			elements: {
-				point: {
-					radius: (context) => {
-						const index = context.dataIndex;
-						const value = context.dataset.data[index];
-						return value && value.r ? value.r : 5;
-					}
-				}
-			},
-			scales: {
-				y: {
-					type: 'category',
-					ticks: {
-						padding: 20
-					}
-				},
-				x: {
-					type: 'category',
-					labels: [
-						"Any",
-						"Any (image focused)",
-						"Images",
-						"Video",
-						"Audio",
-						"Web pages",
-						"PDF",
-						"EPUB",
-						"Data"
-					]
-				}
-			}
-		}
-	};
+    // === LAYER 2: single vertical divider between label column and data area ===
+    out.push(`<line x1="${ML + labelW}" y1="${tableTop}" x2="${ML + labelW}" y2="${tableBottom}" stroke="#bbb" stroke-width="1"/>`);
 
-	const buffer = await chartJSNodeCanvas.renderToBuffer(configuration);
-	fs.writeFileSync(outputPath, buffer);
-	console.log(`Bubble chart PNG (by media type) saved to ${outputPath}`);
+    // === LAYER 3: center guide lines — one per data column, behind dots ===
+    for (let i = 0; i < cols.length; i++) {
+        const x = ML + labelW + (i + 0.5) * colW;
+        out.push(`<line x1="${x}" y1="${dataY}" x2="${x}" y2="${tableBottom}" stroke="#ccc" stroke-width="0.5"/>`);
+    }
+
+    // === LAYER 4: outer border ===
+    out.push(`<rect x="${ML}" y="${tableTop}" width="${rightX - ML}" height="${tableBottom - tableTop}" fill="none" stroke="#bbb" stroke-width="1"/>`);
+
+    // === LAYER 5: column header text ===
+    cols.forEach((col, i) => {
+        const cx = ML + labelW + (i + 0.5) * colW;
+        const color = colors[col] || '#555';
+        const hLines = wrap(col, maxHdrChars);
+        const lh = 13;
+        const blockH = (hLines.length - 1) * lh + 10;
+        const firstY = tableTop + (hdrH - blockH) / 2 + 10;
+        out.push(renderText(hLines, cx, firstY, lh,
+            `text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="${color}"`));
+    });
+
+    // === LAYER 6: standard name text, then dots (dots cover guide lines at their position) ===
+    stds.forEach((std, ri) => {
+        const rowY = dataY + ri * ROW_H;
+        const dotCY = rowY + ROW_H / 2;
+        const fontSize = 9.5, lh = 12;
+
+        const nameLines = wrap(std.name, maxLabelChars);
+        const blockH = (nameLines.length - 1) * lh + fontSize;
+        const firstY = rowY + (ROW_H - blockH) / 2 + fontSize;
+        out.push(renderText(nameLines, ML + 6, firstY, lh,
+            `font-family="Arial,Helvetica,sans-serif" font-size="${fontSize}" fill="#333"`));
+
+        cols.forEach((col, ci) => {
+            if (std.activeCols.has(col)) {
+                const cx = ML + labelW + (ci + 0.5) * colW;
+                out.push(`<circle cx="${cx}" cy="${dotCY}" r="${DOT_R}" fill="${colors[col] || '#555'}"/>`);
+            }
+        });
+    });
+
+    // Page footer
+    if (totalPages > 1) {
+        out.push(`<text x="${PAGE_W / 2}" y="${PAGE_H - 20}" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#aaa">Page ${pageNum} of ${totalPages}</text>`);
+    }
+
+    out.push(`</svg>`);
+    return out.join('\n');
+}
+
+function buildStandards(rows, nameCol, dataCol) {
+    return rows.slice(1)
+        .filter(r => r[nameCol])
+        .map(r => ({
+            name: String(r[nameCol]),
+            activeCols: new Set(
+                r[dataCol]
+                    ? String(r[dataCol]).split('\n').map(s => s.trim()).filter(Boolean)
+                    : []
+            )
+        }));
+}
+
+function writePages(stds, cols, colors, title, basePath, labelW, hdrH) {
+    const dataAreaH = PAGE_H - MT - MB - (title ? TITLE_H : 0) - hdrH;
+    const perPage = Math.max(1, Math.floor(dataAreaH / ROW_H));
+    const chunks = [];
+    for (let i = 0; i < stds.length; i += perPage) chunks.push(stds.slice(i, i + perPage));
+    if (chunks.length === 0) chunks.push([]);
+
+    return chunks.map((chunk, idx) => {
+        const svg = buildSVG({
+            stds: chunk, cols, colors, title,
+            pageNum: idx + 1, totalPages: chunks.length,
+            labelW, hdrH
+        });
+        const suffix = chunks.length > 1 ? `-p${idx + 1}` : '';
+        const fp = `${basePath}${suffix}.svg`;
+        fs.writeFileSync(fp, svg, 'utf8');
+        console.log(`  Saved: ${fp}`);
+        return fp;
+    });
+}
+
+export function createCategoryMapSVGs(rows, outputPathBase) {
+    const stds = buildStandards(rows, 0, 1);
+    return writePages(stds, CATEGORIES, CATEGORY_COLORS,
+        "Standards & Specification Map", outputPathBase, 260, 60);
+}
+
+export function createMediaTypeMapSVGs(rows, outputPathBase) {
+    const stds = buildStandards(rows, 0, 7);
+    return writePages(stds, MEDIA_TYPES, MEDIA_COLORS,
+        "Standards & Media Type Map", outputPathBase, 230, 70);
 }
