@@ -16,17 +16,21 @@
 <line x1="48" y1="544" x2="278" y2="544" stroke="#d0d0d0" stroke-width="0.5"/>
 <line x1="48" y1="580" x2="278" y2="580" stroke="#d0d0d0" stroke-width="0.5"/>
 <line x1="48" y1="616" x2="278" y2="616" stroke="#d0d0d0" stroke-width="0.5"/>
-<line x1="278" y1="78" x2="278" y2="616" stroke="#bbb" stroke-width="1"/>
-<line x1="305.22222222222223" y1="148" x2="305.22222222222223" y2="616" stroke="#ccc" stroke-width="0.5"/>
-<line x1="359.66666666666663" y1="148" x2="359.66666666666663" y2="616" stroke="#ccc" stroke-width="0.5"/>
-<line x1="414.1111111111111" y1="148" x2="414.1111111111111" y2="616" stroke="#ccc" stroke-width="0.5"/>
-<line x1="468.55555555555554" y1="148" x2="468.55555555555554" y2="616" stroke="#ccc" stroke-width="0.5"/>
-<line x1="523" y1="148" x2="523" y2="616" stroke="#ccc" stroke-width="0.5"/>
-<line x1="577.4444444444445" y1="148" x2="577.4444444444445" y2="616" stroke="#ccc" stroke-width="0.5"/>
-<line x1="631.8888888888889" y1="148" x2="631.8888888888889" y2="616" stroke="#ccc" stroke-width="0.5"/>
-<line x1="686.3333333333333" y1="148" x2="686.3333333333333" y2="616" stroke="#ccc" stroke-width="0.5"/>
-<line x1="740.7777777777778" y1="148" x2="740.7777777777778" y2="616" stroke="#ccc" stroke-width="0.5"/>
-<rect x="48" y="78" width="720" height="538" fill="none" stroke="#bbb" stroke-width="1"/>
+<line x1="48" y1="652" x2="278" y2="652" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="688" x2="278" y2="688" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="724" x2="278" y2="724" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="760" x2="278" y2="760" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="278" y1="78" x2="278" y2="760" stroke="#bbb" stroke-width="1"/>
+<line x1="305.22222222222223" y1="148" x2="305.22222222222223" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="359.66666666666663" y1="148" x2="359.66666666666663" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="414.1111111111111" y1="148" x2="414.1111111111111" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="468.55555555555554" y1="148" x2="468.55555555555554" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="523" y1="148" x2="523" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="577.4444444444445" y1="148" x2="577.4444444444445" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="631.8888888888889" y1="148" x2="631.8888888888889" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="686.3333333333333" y1="148" x2="686.3333333333333" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="740.7777777777778" y1="148" x2="740.7777777777778" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<rect x="48" y="78" width="720" height="682" fill="none" stroke="#bbb" stroke-width="1"/>
 <text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1565C0"><tspan x="305.22222222222223" y="118">Any</tspan></text>
 <text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1976D2"><tspan x="359.66666666666663" y="111.5">Any (image</tspan><tspan x="359.66666666666663" dy="13">focused)</tspan></text>
 <text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#388E3C"><tspan x="414.1111111111111" y="118">Images</tspan></text>
@@ -65,9 +69,23 @@
 <circle cx="414.1111111111111" cy="526" r="7" fill="#388E3C"/>
 <circle cx="468.55555555555554" cy="526" r="7" fill="#F57C00"/>
 <circle cx="523" cy="526" r="7" fill="#7B1FA2"/>
-<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="566.75">ITU-T X.2210</tspan></text>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="566.75">ITU-T Recommendation X.2210</tspan></text>
+<circle cx="414.1111111111111" cy="562" r="7" fill="#388E3C"/>
+<circle cx="468.55555555555554" cy="562" r="7" fill="#F57C00"/>
 <text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="596.75">HSTP-MMAuth:
 Multimedia authentication</tspan><tspan x="54" dy="12">framework, workflows and procedures</tspan></text>
 <circle cx="468.55555555555554" cy="598" r="7" fill="#F57C00"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="632.75">Open Binding of Content Identifiers -</tspan><tspan x="54" dy="12">Resilient Layer (OBID-R)</tspan></text>
+<circle cx="523" cy="634" r="7" fill="#7B1FA2"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="668.75">Descriptive Metadata Scheme for Identity and</tspan><tspan x="54" dy="12">Integrity (DMS-II)</tspan></text>
+<circle cx="468.55555555555554" cy="670" r="7" fill="#F57C00"/>
+<circle cx="523" cy="670" r="7" fill="#7B1FA2"/>
+<circle cx="740.7777777777778" cy="670" r="7" fill="#795548"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="704.75">Descriptive Metadata Scheme for Identity and</tspan><tspan x="54" dy="12">Integrity JUMBF approach</tspan></text>
+<circle cx="468.55555555555554" cy="706" r="7" fill="#F57C00"/>
+<circle cx="523" cy="706" r="7" fill="#7B1FA2"/>
+<circle cx="740.7777777777778" cy="706" r="7" fill="#795548"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="746.75">Journalism Trust Initiative</tspan></text>
+<circle cx="305.22222222222223" cy="742" r="7" fill="#1565C0"/>
 <text x="408" y="1036" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#aaa">Page 2 of 2</text>
 </svg>

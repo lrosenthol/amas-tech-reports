@@ -15,14 +15,18 @@
 <line x1="48" y1="498" x2="308" y2="498" stroke="#d0d0d0" stroke-width="0.5"/>
 <line x1="48" y1="534" x2="308" y2="534" stroke="#d0d0d0" stroke-width="0.5"/>
 <line x1="48" y1="570" x2="308" y2="570" stroke="#d0d0d0" stroke-width="0.5"/>
-<line x1="308" y1="78" x2="308" y2="570" stroke="#bbb" stroke-width="1"/>
-<line x1="346.3333333333333" y1="138" x2="346.3333333333333" y2="570" stroke="#ccc" stroke-width="0.5"/>
-<line x1="423" y1="138" x2="423" y2="570" stroke="#ccc" stroke-width="0.5"/>
-<line x1="499.6666666666667" y1="138" x2="499.6666666666667" y2="570" stroke="#ccc" stroke-width="0.5"/>
-<line x1="576.3333333333334" y1="138" x2="576.3333333333334" y2="570" stroke="#ccc" stroke-width="0.5"/>
-<line x1="653" y1="138" x2="653" y2="570" stroke="#ccc" stroke-width="0.5"/>
-<line x1="729.6666666666667" y1="138" x2="729.6666666666667" y2="570" stroke="#ccc" stroke-width="0.5"/>
-<rect x="48" y="78" width="720" height="492" fill="none" stroke="#bbb" stroke-width="1"/>
+<line x1="48" y1="606" x2="308" y2="606" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="642" x2="308" y2="642" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="678" x2="308" y2="678" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="714" x2="308" y2="714" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="308" y1="78" x2="308" y2="714" stroke="#bbb" stroke-width="1"/>
+<line x1="346.3333333333333" y1="138" x2="346.3333333333333" y2="714" stroke="#ccc" stroke-width="0.5"/>
+<line x1="423" y1="138" x2="423" y2="714" stroke="#ccc" stroke-width="0.5"/>
+<line x1="499.6666666666667" y1="138" x2="499.6666666666667" y2="714" stroke="#ccc" stroke-width="0.5"/>
+<line x1="576.3333333333334" y1="138" x2="576.3333333333334" y2="714" stroke="#ccc" stroke-width="0.5"/>
+<line x1="653" y1="138" x2="653" y2="714" stroke="#ccc" stroke-width="0.5"/>
+<line x1="729.6666666666667" y1="138" x2="729.6666666666667" y2="714" stroke="#ccc" stroke-width="0.5"/>
+<rect x="48" y="78" width="720" height="636" fill="none" stroke="#bbb" stroke-width="1"/>
 <text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#C2185B"><tspan x="346.3333333333333" y="106.5">Content</tspan><tspan x="346.3333333333333" dy="13">Provenance</tspan></text>
 <text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1565C0"><tspan x="423" y="106.5">Trust and</tspan><tspan x="423" dy="13">Authenticity</tspan></text>
 <text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1A1A1A"><tspan x="499.6666666666667" y="106.5">Asset</tspan><tspan x="499.6666666666667" dy="13">Identifiers</tspan></text>
@@ -55,10 +59,21 @@
 <circle cx="346.3333333333333" cy="480" r="7" fill="#C2185B"/>
 <circle cx="423" cy="480" r="7" fill="#1565C0"/>
 <circle cx="653" cy="480" r="7" fill="#90CAF9"/>
-<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="520.75">ITU-T X.2210</tspan></text>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="520.75">ITU-T Recommendation X.2210</tspan></text>
 <circle cx="653" cy="516" r="7" fill="#90CAF9"/>
 <text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="550.75">HSTP-MMAuth:
 Multimedia authentication framework,</tspan><tspan x="54" dy="12">workflows and procedures</tspan></text>
 <circle cx="423" cy="552" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="586.75">Open Binding of Content Identifiers - Resilient</tspan><tspan x="54" dy="12">Layer (OBID-R)</tspan></text>
+<circle cx="499.6666666666667" cy="588" r="7" fill="#1A1A1A"/>
+<circle cx="653" cy="588" r="7" fill="#90CAF9"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="622.75">Descriptive Metadata Scheme for Identity and</tspan><tspan x="54" dy="12">Integrity (DMS-II)</tspan></text>
+<circle cx="346.3333333333333" cy="624" r="7" fill="#C2185B"/>
+<circle cx="423" cy="624" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="658.75">Descriptive Metadata Scheme for Identity and</tspan><tspan x="54" dy="12">Integrity JUMBF approach</tspan></text>
+<circle cx="346.3333333333333" cy="660" r="7" fill="#C2185B"/>
+<circle cx="423" cy="660" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="700.75">Journalism Trust Initiative</tspan></text>
+<circle cx="423" cy="696" r="7" fill="#1565C0"/>
 <text x="408" y="1036" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#aaa">Page 2 of 2</text>
 </svg>
