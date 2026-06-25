@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11in" viewBox="0 0 816 1056">
+<rect width="816" height="1056" fill="white"/>
+<text x="48" y="68" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#222">Standards &amp; Media Type Map (cont'd)</text>
+<line x1="48" y1="74" x2="768" y2="74" stroke="#ccc" stroke-width="0.5"/>
+<line x1="48" y1="148" x2="278" y2="148" stroke="#999" stroke-width="1.5"/>
+<line x1="48" y1="184" x2="278" y2="184" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="220" x2="278" y2="220" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="256" x2="278" y2="256" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="292" x2="278" y2="292" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="328" x2="278" y2="328" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="364" x2="278" y2="364" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="400" x2="278" y2="400" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="436" x2="278" y2="436" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="472" x2="278" y2="472" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="508" x2="278" y2="508" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="544" x2="278" y2="544" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="580" x2="278" y2="580" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="616" x2="278" y2="616" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="652" x2="278" y2="652" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="688" x2="278" y2="688" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="724" x2="278" y2="724" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="48" y1="760" x2="278" y2="760" stroke="#d0d0d0" stroke-width="0.5"/>
+<line x1="278" y1="78" x2="278" y2="760" stroke="#bbb" stroke-width="1"/>
+<line x1="305.22222222222223" y1="148" x2="305.22222222222223" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="359.66666666666663" y1="148" x2="359.66666666666663" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="414.1111111111111" y1="148" x2="414.1111111111111" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="468.55555555555554" y1="148" x2="468.55555555555554" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="523" y1="148" x2="523" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="577.4444444444445" y1="148" x2="577.4444444444445" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="631.8888888888889" y1="148" x2="631.8888888888889" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="686.3333333333333" y1="148" x2="686.3333333333333" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<line x1="740.7777777777778" y1="148" x2="740.7777777777778" y2="760" stroke="#ccc" stroke-width="0.5"/>
+<rect x="48" y="78" width="720" height="682" fill="none" stroke="#bbb" stroke-width="1"/>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1565C0"><tspan x="305.22222222222223" y="118">Any</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1976D2"><tspan x="359.66666666666663" y="111.5">Any (image</tspan><tspan x="359.66666666666663" dy="13">focused)</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#388E3C"><tspan x="414.1111111111111" y="118">Images</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#F57C00"><tspan x="468.55555555555554" y="118">Video</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#7B1FA2"><tspan x="523" y="118">Audio</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#0097A7"><tspan x="577.4444444444445" y="118">Web pages</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#C62828"><tspan x="631.8888888888889" y="118">PDF</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#558B2F"><tspan x="686.3333333333333" y="118">EPUB</tspan></text>
+<text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#795548"><tspan x="740.7777777777778" y="118">Data</tspan></text>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="164.75">Technical and Governance Guidelines for</tspan><tspan x="54" dy="12">Responsible Data Collection</tspan></text>
+<circle cx="740.7777777777778" cy="166" r="7" fill="#795548"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="206.75">Data Provenance Standards</tspan></text>
+<circle cx="740.7777777777778" cy="202" r="7" fill="#795548"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="236.75">IEEE Standard for Transparent Human and</tspan><tspan x="54" dy="12">Machine Agency Identification</tspan></text>
+<circle cx="414.1111111111111" cy="238" r="7" fill="#388E3C"/>
+<circle cx="523" cy="238" r="7" fill="#7B1FA2"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="278.75">IPTC Photo Metadata Standard</tspan></text>
+<circle cx="414.1111111111111" cy="274" r="7" fill="#388E3C"/>
+<circle cx="468.55555555555554" cy="274" r="7" fill="#F57C00"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="308.75">DASH - Part 4: Segment Encryption and</tspan><tspan x="54" dy="12">Authentication</tspan></text>
+<circle cx="468.55555555555554" cy="310" r="7" fill="#F57C00"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="344.75">Recommended Practices for  Levels of</tspan><tspan x="54" dy="12">Artificial Intelligence Generated Content T…</tspan></text>
+<circle cx="305.22222222222223" cy="346" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="386.75">CAWG Identity Assertion Specification</tspan></text>
+<circle cx="305.22222222222223" cy="382" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="422.75">W3C Verifiable Credentials Data Model v2.0</tspan></text>
+<circle cx="305.22222222222223" cy="418" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="452.75">NIST AI 100-4: Reducing Risks Posed by</tspan><tspan x="54" dy="12">Synthetic Content</tspan></text>
+<circle cx="305.22222222222223" cy="454" r="7" fill="#1565C0"/>
+<circle cx="414.1111111111111" cy="454" r="7" fill="#388E3C"/>
+<circle cx="468.55555555555554" cy="454" r="7" fill="#F57C00"/>
+<circle cx="523" cy="454" r="7" fill="#7B1FA2"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="494.75">MPEG-21 Part 3: Digital Item Identification</tspan></text>
+<circle cx="305.22222222222223" cy="490" r="7" fill="#1565C0"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="524.75">Cybersecurity technology—Labeling method for</tspan><tspan x="54" dy="12">content generated by artificial intelligence</tspan></text>
+<circle cx="414.1111111111111" cy="526" r="7" fill="#388E3C"/>
+<circle cx="468.55555555555554" cy="526" r="7" fill="#F57C00"/>
+<circle cx="523" cy="526" r="7" fill="#7B1FA2"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="566.75">ITU-T Recommendation X.2210</tspan></text>
+<circle cx="414.1111111111111" cy="562" r="7" fill="#388E3C"/>
+<circle cx="468.55555555555554" cy="562" r="7" fill="#F57C00"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="596.75">HSTP-MMAuth:
+Multimedia authentication</tspan><tspan x="54" dy="12">framework, workflows and procedures</tspan></text>
+<circle cx="468.55555555555554" cy="598" r="7" fill="#F57C00"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="632.75">Open Binding of Content Identifiers -</tspan><tspan x="54" dy="12">Resilient Layer (OBID-R)</tspan></text>
+<circle cx="523" cy="634" r="7" fill="#7B1FA2"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="668.75">Descriptive Metadata Scheme for Identity and</tspan><tspan x="54" dy="12">Integrity (DMS-II)</tspan></text>
+<circle cx="468.55555555555554" cy="670" r="7" fill="#F57C00"/>
+<circle cx="523" cy="670" r="7" fill="#7B1FA2"/>
+<circle cx="740.7777777777778" cy="670" r="7" fill="#795548"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="704.75">Descriptive Metadata Scheme for Identity and</tspan><tspan x="54" dy="12">Integrity JUMBF approach</tspan></text>
+<circle cx="468.55555555555554" cy="706" r="7" fill="#F57C00"/>
+<circle cx="523" cy="706" r="7" fill="#7B1FA2"/>
+<circle cx="740.7777777777778" cy="706" r="7" fill="#795548"/>
+<text font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#333"><tspan x="54" y="746.75">Journalism Trust Initiative</tspan></text>
+<circle cx="305.22222222222223" cy="742" r="7" fill="#1565C0"/>
+<text x="408" y="1036" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#aaa">Page 2 of 2</text>
+</svg>

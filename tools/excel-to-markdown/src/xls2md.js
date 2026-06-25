@@ -2,7 +2,7 @@ import path from 'path';
 import readXlsxFile from 'read-excel-file/node';
 import pandoc from 'node-pandoc';
 // import { createSunburstSVG, createSunburstPNG, createBubbleChartSVG, createBubbleChartPNG } from './sunburst.js';
-import { createBubbleChartPNG, createBubbleChartPNGByMediaType } from './bubbles.js';
+import { createCategoryMapSVGs, createMediaTypeMapSVGs } from './bubbles.js';
 
 const inputPath = process.argv[2];
 const outputPath = process.argv[3];
@@ -39,18 +39,13 @@ function main() {
             writeMarkdownAsWord(mediaTableOutput, mediaTableOutputPath);
             console.log('Media table written to:', mediaTableOutputPath);
 
-            // // create a bubble chart, by category using the data
-            const chartData = rowsToChartData(rows);
-            const chartBubbleOutputPath = path.join(parsedPath.dir, parsedPath.name + '-bubbleChart.png');
-            createBubbleChartPNG(chartData, chartBubbleOutputPath);
-            console.log('Bubble chart written to:', mediaTableOutputPath);
+            // create category dot matrix SVG(s)
+            const chartSVGBase = path.join(parsedPath.dir, parsedPath.name + '-bubbleChart');
+            createCategoryMapSVGs(rows, chartSVGBase);
 
-            // create a bubble chart, by media type using the data
-            const chartDataByMediaType = rowsToChartDataByMediaType(rows);
-            // console.log('Chart data by media type:', chartDataByMediaType);
-            const chartBubbleMediaOutputPath = path.join(parsedPath.dir, parsedPath.name + '-mediaTypes-bubbleChart.png');
-            createBubbleChartPNGByMediaType(chartDataByMediaType, chartBubbleMediaOutputPath);
-            console.log('Media bubble chart written to:', mediaTableOutputPath);
+            // create media type dot matrix SVG(s)
+            const mediaSVGBase = path.join(parsedPath.dir, parsedPath.name + '-mediaTypes-bubbleChart');
+            createMediaTypeMapSVGs(rows, mediaSVGBase);
         });
     } catch (error) {
         console.error('Error reading Excel file:', error);
@@ -203,57 +198,6 @@ function convertToMediaTable(data) {
     });
 
     return markdown;
-}
-
-// Example: Convert rows to chart hierarchy by Category -> Standard Name
-function rowsToChartData(rows) {
-    // Skip header row
-    const children = {};
-    rows.slice(1).forEach(row => {
-        if (!row[FIELDS.NAME] || !row[FIELDS.CATEGORIES]) return;
-        // Each row may have multiple categories (split by newline)
-        row[FIELDS.CATEGORIES].split('\n').map(s => s.trim()).forEach(category => {
-            if (!category) return;
-            if (!children[category]) children[category] = [];
-            children[category].push({
-                name: row[FIELDS.NAME],
-                value: 1 // or use another field for value
-            });
-        });
-    });
-    return {
-        name: "root",
-        children: Object.entries(children).map(([cat, items]) => ({
-            name: cat,
-            children: items
-        }))
-    };
-}
-
-// Similar function but splits on the mediaType field
-function rowsToChartDataByMediaType(rows) {
-    // Skip header row
-    const children = {};
-    rows.slice(1).forEach(row => {
-        if (!row[FIELDS.NAME] || !row[FIELDS.MEDIA]) return;
-        // Each row may have multiple media types (split by newline)
-        row[FIELDS.MEDIA].toString().split('\n').map(s => s.trim()).forEach(mediaType => {
-            if (!mediaType) return;
-            if (!children[mediaType]) children[mediaType] = [];
-            children[mediaType].push({
-                name: row[FIELDS.NAME],
-                mediaType: mediaType, // Store the media type for reference
-                value: 1 // or use another field for value
-            });
-        });
-    });
-    return {
-        name: "root",
-        children: Object.entries(children).map(([media, items]) => ({
-            name: media,
-            children: items
-        }))
-    };
 }
 
 main();
